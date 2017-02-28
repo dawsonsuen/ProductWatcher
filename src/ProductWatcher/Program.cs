@@ -13,11 +13,11 @@ namespace ProductWatcher
     {
         public static Endpoint[] Endpoints = new[]{
             new Endpoint{
-                Url = "https://shop.coles.com.au/search/resources/store/20601/productview/bySeoUrlKeyword/coca-cola-soft-drink-coke-375ml-cans",
+                Url = "https://shop.coles.com.au/search/resources/store/20601/productview/bySearchTerm/8464796",
                 Company = "Coles"
             },
               new Endpoint{
-                Url = "https://shop.coles.com.au/search/resources/store/20601/productview/bySeoUrlKeyword/coca-cola-soft-drink-coke-375ml-cans-7365777p",
+                Url = "https://shop.coles.com.au/search/resources/store/20601/productview/bySearchTerm/7365777",
                 Company = "Coles"
             },
               new Endpoint{
@@ -55,7 +55,7 @@ namespace ProductWatcher
                         When = DateTime.Now
                     };
 
-                    db.Insert(price);
+                    //db.Insert(price);
 
                     if (cleanResponse?.catalogEntryView != null)
                     {
@@ -88,7 +88,7 @@ namespace ProductWatcher
                     }
                     price.Description = price.Description.Trim();
 
-                    db.Update(price);
+                   // db.Update(price);
                 }
             };
         }

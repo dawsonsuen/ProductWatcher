@@ -1,50 +1,50 @@
 {
-    "catalogEntryView": [{
-        "a": {
-            "A4": ["1.0"],
-            "B": ["9300675047067", "9300675045674", "9300675012089", "10291"],
-            "E1": ["false"],
-            "F3": ["S"],
-            "H1": ["false"],
-            "H2": ["false"],
-            "I1": ["true"],
-            "L2": ["false"],
-            "O": ["L"],
-            "O1": ["1.0"],
-            "O3": ["30 pack"],
-            "P": ["1.0"],
-            "P8": ["Drinks"],
-            "P9": ["6"],
-            "S": ["11.25"],
-            "S5": ["30 Pack"],
-            "S9": ["931859 COCA COLA AMATIL AUST P/L (GHPL)", "931858 COCA COLA AMATIL AUST P/L (DIREC"],
-            "T": ["10.0"],
-            "T1": ["false"],
-            "T2": ["Cola"],
-            "U": ["Ea"],
-            "W1": ["false"],
-            "WEIGHTEDBYEACH": ["false"]
-        },
-        "fi": "/wcsstore/Coles-CAS/images/8/4/6/8464796.jpg",
-        "m": "Coca-Cola",
-        "n": "Coke 375mL Cans",
-        "p": "8464796P",
-        "p1": {
-            "l4": "37.07",
-            "o": "18.0"
-        },
-        "pl": "6",
-        "s": "coca-cola-soft-drink-coke-375ml-cans",
-        "s9": "38147",
-        "t": "/wcsstore/Coles-CAS/images/8/4/6/8464796-th.jpg",
-        "t1": "S",
-        "u": "11434",
-        "u2": "$1.60 per 1L"
-    }],
-    "m4": {
-        "p1": "1"
-    },
-    "recordSetCount": 1,
-    "recordSetStartNumber": 0,
-    "recordSetTotal": 1
+"catalogEntryView": [{
+"a": {
+    "A4": ["1.0"],
+    "B": ["9300675047067", "9300675045674", "9300675012089", "10291"],
+    "E1": ["false"],
+    "F3": ["S"],
+    "H1": ["false"],
+    "H2": ["false"],
+    "I1": ["true"],
+    "L2": ["false"],
+    "O": ["L"],
+    "O1": ["1.0"],
+    "O3": ["30 pack"],
+    "P": ["1.0"],
+    "P8": ["Drinks"],
+    "P9": ["6"],
+    "S": ["11.25"],
+    "S5": ["30 Pack"],
+    "S9": ["931859 COCA COLA AMATIL AUST P/L (GHPL)", "931858 COCA COLA AMATIL AUST P/L (DIREC"],
+    "T": ["10.0"],
+    "T1": ["false"],
+    "T2": ["Cola"],
+    "U": ["Ea"],
+    "W1": ["false"],
+    "WEIGHTEDBYEACH": ["false"]
+},
+"fi": "/wcsstore/Coles-CAS/images/8/4/6/8464796.jpg",
+"m": "Coca-Cola",
+"n": "Coke 375mL Cans",
+"p": "8464796P",
+"p1": {
+    "l4": "37.07",
+    "o": "18.0"
+},
+"pl": "6",
+"s": "coca-cola-soft-drink-coke-375ml-cans",
+"s9": "38147",
+"t": "/wcsstore/Coles-CAS/images/8/4/6/8464796-th.jpg",
+"t1": "S",
+"u": "11434",
+"u2": "$1.60 per 1L"
+}],
+"m4": {
+"p1": "1"
+},
+"recordSetCount": 1,
+"recordSetStartNumber": 0,
+"recordSetTotal": 1
 }
