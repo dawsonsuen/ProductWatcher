@@ -75,7 +75,7 @@ namespace ProductWatcher.Models
             }
 
             this.Name = model.Product.Name;
-            this.Description = model.Product.Description;
+            this.Description = model.Product.Description.Trim();
             this.ImgUrl = model.Product.LargeImageFile;
         }
     }

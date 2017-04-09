@@ -20,6 +20,7 @@ namespace ProductWatcher.Cli
 
         public static void LockInsert(IDatabase db, object poco)
         {
+            //Console.WriteLine(poco.GetType().FullName);
             lock (db)
             {
                 db.Insert(poco);
@@ -44,9 +45,10 @@ namespace ProductWatcher.Cli
             using (var db = Container.GetInstance<IDatabase>())
             {
                 db.OpenSharedConnection();
-                var productList = db.Query<DbModels.Product>().ToArray();
+                var productList = db.Query<DbModels.Product>().ToList();
 
                 Parallel.ForEach(productList, (x) =>
+               // productList.ForEach(x =>
                 {
                     try
                     {
@@ -118,7 +120,7 @@ namespace ProductWatcher.Cli
 
             var services = new ServiceCollection()
                 .AddSingleton<IConfigurationRoot>(Configuration)
-                .AddSingleton<IDatabase>(new Database(Configuration.GetConnectionString("Default"), DatabaseType.SqlServer2012, System.Data.SqlClient.SqlClientFactory.Instance));
+                .AddSingleton<IDatabase>(new Database(Configuration.GetConnectionString("postgres"), DatabaseType.PostgreSQL, Npgsql.NpgsqlFactory.Instance));
 
             Container.Populate(services);
         }

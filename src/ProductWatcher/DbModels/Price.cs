@@ -2,9 +2,9 @@ using NPoco;
 using System;
 using System.Collections.Generic;
 
-namespace ProductWatcher
+namespace ProductWatcher.DbModels
 {
-    [TableNameAttribute("price")]
+    [TableNameAttribute("price"), PrimaryKeyAttribute("id")]
     public class Price
     {
         [ColumnAttribute("id")]

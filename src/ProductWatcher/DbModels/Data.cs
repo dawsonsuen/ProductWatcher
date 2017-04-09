@@ -3,9 +3,10 @@ using NPoco;
 
 namespace ProductWatcher.DbModels
 {
+    [TableNameAttribute("data"), PrimaryKeyAttribute("id")]
     public class Data
     {
-        [Column("id")]
+        [ColumnAttribute("id")]
         public int Id { get; set; }
 
         [ColumnAttribute("product_id")]
