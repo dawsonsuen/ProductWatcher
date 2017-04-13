@@ -1,4 +1,4 @@
-CREATE TABLE data(
+CREATE TABLE data (
 	id bigserial PRIMARY KEY,
 	product_id uuid NOT NULL,
 	product_model text NULL,
@@ -6,7 +6,7 @@ CREATE TABLE data(
 	_when timestamp NOT NULL
 );
 
-create table price(
+create table price (
     id bigserial primary key,
     data_id bigint not null,
     product_id uuid not null,
@@ -18,10 +18,18 @@ create table price(
     additional_data text
 );
 
-CREATE TABLE product(
+CREATE TABLE product (
 	_id bigserial primary key,
 	id uuid NOT NULL,
 	code varchar(120) NOT NULL,
 	name varchar(255) NOT NULL,
 	company varchar(120) NOT NULL
+);
+
+create table read_model (
+    id bigserial primary key,
+    stream_id uuid not null,
+    type varchar(500) not null,
+    body text not null,
+    last_update timestamp not null
 );

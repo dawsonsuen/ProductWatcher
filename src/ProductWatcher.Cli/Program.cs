@@ -1,14 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Reflection;
 using System.Threading.Tasks;
+using Autofac;
+using Autofac.Core;
 using Flurl.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using NEvilES.Pipeline;
 using Newtonsoft.Json;
 using NPoco;
 using ProductWatcher.DbModels;
-using StructureMap;
+using ProductWatcher.ES.Common;
+using ProductWatcher.ES.ReadModel;
+using ProductWatcher.ES.SeedData;
 
 namespace ProductWatcher.Cli
 {
@@ -17,112 +23,36 @@ namespace ProductWatcher.Cli
         public static IConfigurationRoot Configuration { get; set; }
         public static IContainer Container { get; set; }
         public static object _lock = new object();
-
-        public static void LockInsert(IDatabase db, object poco)
-        {
-            //Console.WriteLine(poco.GetType().FullName);
-            lock (db)
-            {
-                db.Insert(poco);
-            }
-        }
-
-        public static void LockUpdate(IDatabase db, object poco)
-        {
-            lock (db)
-            {
-                db.Update(poco);
-            }
-        }
-
         public static void Main(string[] args)
         {
+            bool shouldExit = false;
             SetupConfiguration();
             ConfigureServices();
 
-            Console.WriteLine("One sec brah keep on yo coke....");
-
-            using (var db = Container.GetInstance<IDatabase>())
+            Console.CancelKeyPress += (sender, e) =>
             {
-                db.OpenSharedConnection();
-                var productList = db.Query<DbModels.Product>().ToList();
-
-                Parallel.ForEach(productList, (x) =>
-               // productList.ForEach(x =>
-                {
-                    try
-                    {
-                        Models.Product product = null;
-                        var data = new DbModels.Data();
-                        data.ProductId = x.Id;
-                        data.When = DateTime.UtcNow;
-
-                        if (ApiConstants.Coles.Is(x.Company))
-                        {
-                            data.RawData = ApiConstants.Coles.GetProductJson(x.Code);
-                            LockInsert(db, data);
-                            product = ApiConstants.Coles.GetProductFromJson(data.RawData);
-                        }
-                        else if (ApiConstants.Woolworths.Is(x.Company))
-                        {
-                            data.RawData = ApiConstants.Woolworths.GetProductJson(x.Code);
-                            LockInsert(db, data);
-                            product = ApiConstants.Woolworths.GetProductFromJson(data.RawData);
-                        }
-                        else
-                        {
-                            throw new NotSupportedException($"Oops looks like this company type is not supported: '{x.Company}', id: {x.Id}, product code: {x.Code} ");
-                            //insert error log
-                        }
-                        data.ProductModel = JsonConvert.SerializeObject(product);
-                        LockUpdate(db, data);
-
-                        var price = new Price
-                        {
-                            DataId = data.Id,
-                            ProductId = x.Id,
-                            OriginalPrice = product.Price,
-                            OnSalePrice = product.SpecialPrice,
-                            Company = product.Company,
-                            Description = product.Description,
-                            AdditionalData = new Dictionary<string, object>(){
-                                 {
-                                     "$/L", product.DollarPerLitre
-                                 },
-                                 {
-                                     "imgUrl",
-                                     product.ImgUrl
-                                 },
-
-                            },
-                            When = data.When
-                        };
-
-                        LockInsert(db, price);
-
-
-                    }
-                    catch (System.Exception)
-                    {
-
-                        throw;
-                    }
-
-                });
-
-
+                shouldExit = true;
+                Console.WriteLine("Please wait for tasks to finalize... we will exit after all tasks complete");
             };
+
+            while(!shouldExit)
+            {
+
+                System.Threading.Tasks.Task.
+            }
         }
 
         public static void ConfigureServices()
         {
-            Container = new Container();
+            var builder = new ContainerBuilder();
+            builder.RegisterInstance<IConfigurationRoot>(Configuration);
+            builder.RegisterInstance(new CommandContext.User(Guid.NewGuid())).Named<CommandContext.IUser>("user");
+            builder.RegisterModule(new EventStoreDatabaseModule(Configuration.GetConnectionString("postgres")));
+            builder.RegisterModule(new EventProcessorModule(typeof(ES.Domain.User).GetTypeInfo().Assembly, typeof(ProductWatcher.ES.ReadModel.Product).GetTypeInfo().Assembly));
+            builder.RegisterType<WriteData>().As<IWriteReadModel>();
+            builder.RegisterType<ReadModelReader>().As<IReadFromReadModel>();
 
-            var services = new ServiceCollection()
-                .AddSingleton<IConfigurationRoot>(Configuration)
-                .AddSingleton<IDatabase>(new Database(Configuration.GetConnectionString("postgres"), DatabaseType.PostgreSQL, Npgsql.NpgsqlFactory.Instance));
-
-            Container.Populate(services);
+            Container = builder.Build();
         }
 
         public static void SetupConfiguration()
@@ -134,12 +64,5 @@ namespace ProductWatcher.Cli
 
             Configuration = builder.Build();
         }
-    }
-
-
-    public class Endpoint
-    {
-        public string Url { get; set; }
-        public string Company { get; set; }
     }
 }

@@ -5,7 +5,6 @@
     <TargetFramework>netcoreapp1.1</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-      <PackagaeReference Include="System.Data" Version="*"/>
-      <ProjectReference Include="../ProductWatcher/ProductWatcher.csproj" Version="*" />
+    <ProjectReference Include="../ProductWatcher.ES.ReadModel/ProductWatcher.ES.ReadModel.csproj" />
   </ItemGroup>
 </Project>
