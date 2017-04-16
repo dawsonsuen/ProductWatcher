@@ -1,0 +1,118 @@
+{
+    "Terms": {
+        "Order": 2,
+        "Suggestions": [
+            {
+                "Term": "corona extra"
+            }
+        ]
+    },
+    "Stores": {
+        "Order": 4,
+        "Suggestions": []
+    },
+    "Products": {
+        "Order": 3,
+        "Suggestions": [
+            {
+                "Brand": "Corona",
+                "Title": "Corona Extra Beer 355ml ",
+                "VolumeSize": "355mL",
+                "Stockcode": "357480",
+                "ParentStockcode": 357480,
+                "Price": 4.2,
+                "IsSpecial": false,
+                "AmountSaved": 0.0,
+                "ImageFile": "https://edgmedia.blob.core.windows.net/bws/Content/wowProductImages/small/357480-1.png",
+                "ProductTag": null,
+                "ProductName": "Corona Extra Beer 355mL",
+                "WebPackType": "Bottle",
+                "Image1": "357480-1.png",
+                "ProductUnitQuantity": 1
+            },
+            {
+                "Brand": "Corona",
+                "Title": "Corona Extra Beer 355ml ",
+                "VolumeSize": "",
+                "Stockcode": "357466",
+                "ParentStockcode": 357480,
+                "Price": 21,
+                "IsSpecial": true,
+                "AmountSaved": 0,
+                "ImageFile": "https://edgmedia.blob.core.windows.net/bws/Content/wowProductImages/small/357466-1.png",
+                "ProductTag": {
+                    "ID": 41742472,
+                    "Name": "4852764-CORONA EXTRA  OFFER",
+                    "Content": "2 for $30.000",
+                    "Link": null,
+                    "Type": "FixedPricePromo",
+                    "SessionGroupID": 2829,
+                    "StartDate": "2017-04-12T00:00:00.0000000",
+                    "EndDate": "2017-05-02T23:59:59.0000000",
+                    "TagTestType": "ProductGroup",
+                    "TagTestValue": "101970",
+                    "LeftType": "None",
+                    "LeftTag": null,
+                    "SmallLeftTag": null,
+                    "LeftLink": null,
+                    "LeftLinkTarget": null,
+                    "OverrideLeftImage": false,
+                    "FooterTag": false,
+                    "AltText": null
+                },
+                "ProductName": "Corona Extra Beer 355mL",
+                "WebPackType": "Pack",
+                "Image1": "357466-1.png",
+                "ProductUnitQuantity": 6
+            },
+            {
+                "Brand": "Corona",
+                "Title": "Corona Extra Beer 355ml ",
+                "VolumeSize": "",
+                "Stockcode": "328473",
+                "ParentStockcode": 357480,
+                "Price": 57,
+                "IsSpecial": true,
+                "AmountSaved": 0,
+                "ImageFile": "https://edgmedia.blob.core.windows.net/bws/Content/wowProductImages/small/328473-1.png",
+                "ProductTag": {
+                    "ID": 41742470,
+                    "Name": "4859659-CORONA EXTRA  OFFER",
+                    "Content": "2 for $92.000",
+                    "Link": null,
+                    "Type": "FixedPricePromo",
+                    "SessionGroupID": 2829,
+                    "StartDate": "2017-04-12T00:00:00.0000000",
+                    "EndDate": "2017-04-18T23:59:59.0000000",
+                    "TagTestType": "ProductGroup",
+                    "TagTestValue": "101966",
+                    "LeftType": "None",
+                    "LeftTag": null,
+                    "SmallLeftTag": null,
+                    "LeftLink": null,
+                    "LeftLinkTarget": null,
+                    "OverrideLeftImage": false,
+                    "FooterTag": false,
+                    "AltText": null
+                },
+                "ProductName": "Corona Extra Beer 355mL",
+                "WebPackType": "Case",
+                "Image1": "328473-1.png",
+                "ProductUnitQuantity": 24
+            }
+        ]
+    },
+    "Categories": {
+        "Order": 1,
+        "Suggestions": [
+            {
+                "Name": "Corona",
+                "CategoryKey": "143",
+                "Department": "Beer",
+                "Subdepartment": "Brand",
+                "Category": "Corona",
+                "Subcategory": null
+            }
+        ]
+    }
+}

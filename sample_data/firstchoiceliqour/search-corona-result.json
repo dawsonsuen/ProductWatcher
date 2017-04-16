@@ -1,0 +1,61 @@
+{
+    "query": "corona",
+    "suggestions": [
+        "Products",
+        "Corona Bottle 355mL",
+        "Found in these categories...",
+        "Corona",
+        "Coronado",
+        "See all 1 results for corona"
+    ],
+    "data": [
+        {
+            "text": "Products",
+            "isCategory": true,
+            "url": "",
+            "availability": "",
+            "joinerText": "",
+            "itemType": "category"
+        },
+        {
+            "text": "Corona Bottle 355mL",
+            "isCategory": false,
+            "url": "/Beer/corona-bottle-355ml_54492?q=Corona+Bottle+355mL",
+            "availability": "",
+            "joinerText": "",
+            "itemType": "product"
+        },
+        {
+            "text": "Found in these categories...",
+            "isCategory": true,
+            "url": "",
+            "availability": "",
+            "joinerText": "",
+            "itemType": "category"
+        },
+        {
+            "text": "Corona",
+            "isCategory": false,
+            "url": "/Beer/?facets=brand%3dCorona&q=Corona&fromac=true",
+            "availability": "",
+            "joinerText": " in Beer",
+            "itemType": "facet"
+        },
+        {
+            "text": "Coronado",
+            "isCategory": false,
+            "url": "/Beer/?facets=brand%3dCoronado&q=Coronado&fromac=true",
+            "availability": "",
+            "joinerText": " in Beer",
+            "itemType": "facet"
+        },
+        {
+            "text": "See all 1 results for corona",
+            "isCategory": false,
+            "url": "/Search?q=corona",
+            "availability": "",
+            "joinerText": null,
+            "itemType": "summary"
+        }
+    ]
+}

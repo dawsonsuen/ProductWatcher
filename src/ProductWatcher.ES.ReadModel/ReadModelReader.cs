@@ -1,13 +1,11 @@
 using System;
 using System.Data;
-using MySql.Data.MySqlClient;
 using NEvilES.Pipeline;
 using Newtonsoft.Json;
-using NPoco;
 
 namespace ProductWatcher.ES.ReadModel
 {
-    public class ReadModelReader : NEvilES.Pipeline.IReadFromReadModel
+    public class ReadModelReader : IReadFromReadModel
     {
         private readonly IDbConnection _db;
         private readonly IDbTransaction _trans;
@@ -20,7 +18,7 @@ namespace ProductWatcher.ES.ReadModel
 
         public T Get<T>(Guid id) where T : IHaveIdentity
         {
-            var readModel = new Db.ReadModel();
+            var readModel = new ReadModel();
 
             using (var cmd = _db.CreateCommand())
             {

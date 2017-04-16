@@ -4,7 +4,7 @@ using ProductWatcher.ES.Common;
 using NEvilES.DataStore;
 using Npgsql;
 
-namespace ProductWatcher.ES.SeedData
+namespace ProductWatcher.ES.Common
 {
     public class EventStoreDatabaseModule : Module
     {

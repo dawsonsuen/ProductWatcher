@@ -1,0 +1,968 @@
+{
+    "PackDefaultStockCode": 328473,
+    "PackParentStockCode": 357480,
+    "Products": [
+        {
+            "Nutrition": null,
+            "VideoUrl": null,
+            "RecommendedProducts": [
+                {
+                    "Stockcode": 36066,
+                    "CupPrice": null,
+                    "CupMeasure": null,
+                    "CupString": "",
+                    "HasCupPrice": false,
+                    "Price": null,
+                    "Name": "Tim tams",
+                    "UrlFriendlyName": null,
+                    "Description": null,
+                    "SmallImageFile": null,
+                    "MediumImageFile": null,
+                    "LargeImageFile": null,
+                    "IsOnSpecial": false,
+                    "IsEdrSpecial": false,
+                    "SavingsAmount": null,
+                    "WasPrice": null,
+                    "QuantityInTrolley": 0,
+                    "Unit": null,
+                    "MinimumQuantity": 0,
+                    "IsInTrolley": false,
+                    "Source": null,
+                    "SupplyLimit": 0,
+                    "PackageSize": null,
+                    "IsPmDelivery": false,
+                    "IsForCollection": false,
+                    "IsForDelivery": false,
+                    "ImageTag": null,
+                    "CentreTag": null,
+                    "FooterTag": null,
+                    "PercentageOffTag": null,
+                    "FixedPricePromoTag": null,
+                    "IsCentreTag": false,
+                    "IsFooterEnabled": false,
+                    "UnitWeightInGrams": 0,
+                    "SupplyLimitMessage": null,
+                    "SmallFormatDescription": null,
+                    "IsAvailable": false,
+                    "AgeRestricted": false,
+                    "DisplayQuantity": 0,
+                    "RichDescription": null,
+                    "IsDeliveryPass": false,
+                    "HideWasSavedPrice": false,
+                    "IsFeaturedTag": false,
+                    "OverallRating": 0,
+                    "NumberOfReviews": 0,
+                    "IsWatched": false,
+                    "BrandName": null,
+                    "Title": null,
+                    "IsNew": false,
+                    "ImageVariants": null,
+                    "AdditionalDetails": null,
+                    "ParentStockCode": 0,
+                    "StockOnHand": 0,
+                    "BackorderStockOnHand": 0
+                }
+            ],
+            "ProductsInSameOffer": [
+                {
+                    "Stockcode": 36066,
+                    "CupPrice": null,
+                    "CupMeasure": null,
+                    "CupString": "",
+                    "HasCupPrice": false,
+                    "Price": null,
+                    "Name": "Tim tams",
+                    "UrlFriendlyName": null,
+                    "Description": null,
+                    "SmallImageFile": null,
+                    "MediumImageFile": null,
+                    "LargeImageFile": null,
+                    "IsOnSpecial": false,
+                    "IsEdrSpecial": false,
+                    "SavingsAmount": null,
+                    "WasPrice": null,
+                    "QuantityInTrolley": 0,
+                    "Unit": null,
+                    "MinimumQuantity": 0,
+                    "IsInTrolley": false,
+                    "Source": null,
+                    "SupplyLimit": 0,
+                    "PackageSize": null,
+                    "IsPmDelivery": false,
+                    "IsForCollection": false,
+                    "IsForDelivery": false,
+                    "ImageTag": null,
+                    "CentreTag": null,
+                    "FooterTag": null,
+                    "PercentageOffTag": null,
+                    "FixedPricePromoTag": null,
+                    "IsCentreTag": false,
+                    "IsFooterEnabled": false,
+                    "UnitWeightInGrams": 0,
+                    "SupplyLimitMessage": null,
+                    "SmallFormatDescription": null,
+                    "IsAvailable": false,
+                    "AgeRestricted": false,
+                    "DisplayQuantity": 0,
+                    "RichDescription": null,
+                    "IsDeliveryPass": false,
+                    "HideWasSavedPrice": false,
+                    "IsFeaturedTag": false,
+                    "OverallRating": 0,
+                    "NumberOfReviews": 0,
+                    "IsWatched": false,
+                    "BrandName": null,
+                    "Title": null,
+                    "IsNew": false,
+                    "ImageVariants": null,
+                    "AdditionalDetails": null,
+                    "ParentStockCode": 0,
+                    "StockOnHand": 0,
+                    "BackorderStockOnHand": 0
+                }
+            ],
+            "BackorderMessage": null,
+            "Stockcode": 357480,
+            "CupPrice": 0,
+            "CupMeasure": "",
+            "CupString": "$0.00 / ",
+            "HasCupPrice": false,
+            "Price": 4.2,
+            "Name": "Corona Extra Beer 355ml ",
+            "UrlFriendlyName": "corona-extra-beer-355ml",
+            "Description": " Corona Extra Beer 355ml  355mL",
+            "SmallImageFile": "https://edgmedia.blob.core.windows.net/bws/Content/wowProductImages/small/357480-1.png",
+            "MediumImageFile": "https://edgmedia.blob.core.windows.net/bws/Content/wowProductImages/medium/357480-1.png",
+            "LargeImageFile": "https://edgmedia.blob.core.windows.net/bws/Content/wowProductImages/large/357480-1.png",
+            "IsOnSpecial": false,
+            "IsEdrSpecial": false,
+            "SavingsAmount": 0.0,
+            "WasPrice": 4.2,
+            "QuantityInTrolley": 0,
+            "Unit": "Each",
+            "MinimumQuantity": 1,
+            "IsInTrolley": false,
+            "Source": "ProductDetail",
+            "SupplyLimit": 480,
+            "PackageSize": "355mL",
+            "IsPmDelivery": false,
+            "IsForCollection": false,
+            "IsForDelivery": false,
+            "ImageTag": {
+                "TagContent": null,
+                "TagLink": null,
+                "FallbackText": "",
+                "TagType": "None"
+            },
+            "CentreTag": {
+                "TagContent": null,
+                "TagLink": null,
+                "FallbackText": null,
+                "TagType": "None"
+            },
+            "FooterTag": {
+                "TagContent": null,
+                "TagLink": null,
+                "FallbackText": null,
+                "TagType": "None"
+            },
+            "PercentageOffTag": {
+                "PromotionalPrice": 0,
+                "SavedAmount": 0,
+                "TopText": null,
+                "BottomText": null,
+                "ProductMultiplier": 0,
+                "TagContent": null,
+                "TagLink": null,
+                "FallbackText": null,
+                "TagType": "None"
+            },
+            "FixedPricePromoTag": {
+                "PromotionalPrice": 0,
+                "SavedAmount": 0,
+                "TopText": null,
+                "BottomText": null,
+                "ProductMultiplier": 0,
+                "TagContent": null,
+                "TagLink": null,
+                "FallbackText": null,
+                "TagType": "None"
+            },
+            "IsCentreTag": false,
+            "IsFooterEnabled": false,
+            "UnitWeightInGrams": 1000,
+            "SupplyLimitMessage": "'Corona Extra Beer 355ml ' has a supply limit of 480. The quantity in your trolley has been reduced accordingly. To purchase a larger quantity, please contact us on 1300 138 297, or e-mail us at contactus@bws.com.au. Please note - we do not supply trade orders.",
+            "SmallFormatDescription": "Corona Extra Beer 355ml ",
+            "IsAvailable": true,
+            "AgeRestricted": false,
+            "DisplayQuantity": 1,
+            "RichDescription": "Originally from Mexico, Corona is now famous all over the world for its refreshing, crisp and smooth taste. It's a great summer beer that makes any celebration a fiesta. Garnish with a slice of lime or lemon, and you're good to go!",
+            "IsDeliveryPass": false,
+            "HideWasSavedPrice": false,
+            "IsFeaturedTag": false,
+            "OverallRating": 5,
+            "NumberOfReviews": 3,
+            "IsWatched": false,
+            "BrandName": "Corona",
+            "Title": "Extra Beer 355mL ",
+            "IsNew": false,
+            "ImageVariants": [],
+            "AdditionalDetails": [
+                {
+                    "Name": "categoryleafnodeid",
+                    "DisplayName": null,
+                    "Value": [
+                        "143",
+                        "124",
+                        "129",
+                        "127",
+                        "1015"
+                    ]
+                },
+                {
+                    "Name": "productname",
+                    "DisplayName": null,
+                    "Value": "Corona Extra Beer 355mL"
+                },
+                {
+                    "Name": "product_short_name",
+                    "DisplayName": null,
+                    "Value": "Corona Extra Beer 355mL"
+                },
+                {
+                    "Name": "parentstockcode",
+                    "DisplayName": null,
+                    "Value": "357480"
+                },
+                {
+                    "Name": "producttitle",
+                    "DisplayName": null,
+                    "Value": "Extra Beer 355mL"
+                },
+                {
+                    "Name": "minpurchasequantity",
+                    "DisplayName": null,
+                    "Value": "1"
+                },
+                {
+                    "Name": "productcopy",
+                    "DisplayName": null,
+                    "Value": "Originally from Mexico, Corona is now famous all over the world for its refreshing, crisp and smooth taste. It's a great summer beer that makes any celebration a fiesta. Garnish with a slice of lime or lemon, and you're good to go!"
+                },
+                {
+                    "Name": "maxpurchasequantity",
+                    "DisplayName": null,
+                    "Value": "480"
+                },
+                {
+                    "Name": "bufferstock",
+                    "DisplayName": null,
+                    "Value": "1"
+                },
+                {
+                    "Name": "defaultproductsku",
+                    "DisplayName": "Product Number",
+                    "Value": "328473"
+                },
+                {
+                    "Name": "productunitquantity",
+                    "DisplayName": null,
+                    "Value": "1"
+                },
+                {
+                    "Name": "alcohol%",
+                    "DisplayName": "Alcohol %",
+                    "Value": "4.5%"
+                },
+                {
+                    "Name": "beertype",
+                    "DisplayName": "Beer Type",
+                    "Value": "Lager"
+                },
+                {
+                    "Name": "closuretype",
+                    "DisplayName": "Closure Type",
+                    "Value": "Crown"
+                },
+                {
+                    "Name": "countryoforigin",
+                    "DisplayName": "Country Of Origin",
+                    "Value": "Mexico"
+                },
+                {
+                    "Name": "ischillable",
+                    "DisplayName": null,
+                    "Value": true
+                },
+                {
+                    "Name": "liquorsize",
+                    "DisplayName": "Liquor Size",
+                    "Value": "355mL"
+                },
+                {
+                    "Name": "liquorstyle",
+                    "DisplayName": "Liquor Style",
+                    "Value": "Lager"
+                },
+                {
+                    "Name": "standarddrinks",
+                    "DisplayName": "Standard Drinks",
+                    "Value": "1.3"
+                },
+                {
+                    "Name": "varietal",
+                    "DisplayName": "Varietal",
+                    "Value": "International Beer"
+                },
+                {
+                    "Name": "bottleopenerrequired",
+                    "DisplayName": "Bottle Opener Required",
+                    "Value": true
+                },
+                {
+                    "Name": "brand_name",
+                    "DisplayName": "Brand",
+                    "Value": "Corona"
+                },
+                {
+                    "Name": "webpacktype",
+                    "DisplayName": null,
+                    "Value": "Bottle"
+                },
+                {
+                    "Name": "image1",
+                    "DisplayName": null,
+                    "Value": "357480-1.png"
+                },
+                {
+                    "Name": "defaultcategory",
+                    "DisplayName": null,
+                    "Value": "Beer > Beer Style > Lager"
+                },
+                {
+                    "Name": "brandcategory",
+                    "DisplayName": null,
+                    "Value": "Beer / Brand / Corona"
+                },
+                {
+                    "Name": "displayunitquantity",
+                    "DisplayName": null,
+                    "Value": "1"
+                },
+                {
+                    "Name": "backordereligible",
+                    "DisplayName": null,
+                    "Value": false
+                }
+            ],
+            "ParentStockCode": 357480,
+            "StockOnHand": 2230,
+            "BackorderStockOnHand": 0
+        },
+        {
+            "Nutrition": null,
+            "VideoUrl": null,
+            "RecommendedProducts": [
+                {
+                    "Stockcode": 36066,
+                    "CupPrice": null,
+                    "CupMeasure": null,
+                    "CupString": "",
+                    "HasCupPrice": false,
+                    "Price": null,
+                    "Name": "Tim tams",
+                    "UrlFriendlyName": null,
+                    "Description": null,
+                    "SmallImageFile": null,
+                    "MediumImageFile": null,
+                    "LargeImageFile": null,
+                    "IsOnSpecial": false,
+                    "IsEdrSpecial": false,
+                    "SavingsAmount": null,
+                    "WasPrice": null,
+                    "QuantityInTrolley": 0,
+                    "Unit": null,
+                    "MinimumQuantity": 0,
+                    "IsInTrolley": false,
+                    "Source": null,
+                    "SupplyLimit": 0,
+                    "PackageSize": null,
+                    "IsPmDelivery": false,
+                    "IsForCollection": false,
+                    "IsForDelivery": false,
+                    "ImageTag": null,
+                    "CentreTag": null,
+                    "FooterTag": null,
+                    "PercentageOffTag": null,
+                    "FixedPricePromoTag": null,
+                    "IsCentreTag": false,
+                    "IsFooterEnabled": false,
+                    "UnitWeightInGrams": 0,
+                    "SupplyLimitMessage": null,
+                    "SmallFormatDescription": null,
+                    "IsAvailable": false,
+                    "AgeRestricted": false,
+                    "DisplayQuantity": 0,
+                    "RichDescription": null,
+                    "IsDeliveryPass": false,
+                    "HideWasSavedPrice": false,
+                    "IsFeaturedTag": false,
+                    "OverallRating": 0,
+                    "NumberOfReviews": 0,
+                    "IsWatched": false,
+                    "BrandName": null,
+                    "Title": null,
+                    "IsNew": false,
+                    "ImageVariants": null,
+                    "AdditionalDetails": null,
+                    "ParentStockCode": 0,
+                    "StockOnHand": 0,
+                    "BackorderStockOnHand": 0
+                }
+            ],
+            "ProductsInSameOffer": [
+                {
+                    "Stockcode": 36066,
+                    "CupPrice": null,
+                    "CupMeasure": null,
+                    "CupString": "",
+                    "HasCupPrice": false,
+                    "Price": null,
+                    "Name": "Tim tams",
+                    "UrlFriendlyName": null,
+                    "Description": null,
+                    "SmallImageFile": null,
+                    "MediumImageFile": null,
+                    "LargeImageFile": null,
+                    "IsOnSpecial": false,
+                    "IsEdrSpecial": false,
+                    "SavingsAmount": null,
+                    "WasPrice": null,
+                    "QuantityInTrolley": 0,
+                    "Unit": null,
+                    "MinimumQuantity": 0,
+                    "IsInTrolley": false,
+                    "Source": null,
+                    "SupplyLimit": 0,
+                    "PackageSize": null,
+                    "IsPmDelivery": false,
+                    "IsForCollection": false,
+                    "IsForDelivery": false,
+                    "ImageTag": null,
+                    "CentreTag": null,
+                    "FooterTag": null,
+                    "PercentageOffTag": null,
+                    "FixedPricePromoTag": null,
+                    "IsCentreTag": false,
+                    "IsFooterEnabled": false,
+                    "UnitWeightInGrams": 0,
+                    "SupplyLimitMessage": null,
+                    "SmallFormatDescription": null,
+                    "IsAvailable": false,
+                    "AgeRestricted": false,
+                    "DisplayQuantity": 0,
+                    "RichDescription": null,
+                    "IsDeliveryPass": false,
+                    "HideWasSavedPrice": false,
+                    "IsFeaturedTag": false,
+                    "OverallRating": 0,
+                    "NumberOfReviews": 0,
+                    "IsWatched": false,
+                    "BrandName": null,
+                    "Title": null,
+                    "IsNew": false,
+                    "ImageVariants": null,
+                    "AdditionalDetails": null,
+                    "ParentStockCode": 0,
+                    "StockOnHand": 0,
+                    "BackorderStockOnHand": 0
+                }
+            ],
+            "BackorderMessage": null,
+            "Stockcode": 328473,
+            "CupPrice": 0,
+            "CupMeasure": "",
+            "CupString": "$0.00 / ",
+            "HasCupPrice": false,
+            "Price": 57,
+            "Name": "Corona Extra Beer 355ml ",
+            "UrlFriendlyName": "corona-extra-beer-355ml",
+            "Description": " Corona Extra Beer 355ml  ",
+            "SmallImageFile": "https://edgmedia.blob.core.windows.net/bws/Content/wowProductImages/small/328473-1.png",
+            "MediumImageFile": "https://edgmedia.blob.core.windows.net/bws/Content/wowProductImages/medium/328473-1.png",
+            "LargeImageFile": "https://edgmedia.blob.core.windows.net/bws/Content/wowProductImages/large/328473-1.png",
+            "IsOnSpecial": true,
+            "IsEdrSpecial": false,
+            "SavingsAmount": 0,
+            "WasPrice": 57,
+            "QuantityInTrolley": 0,
+            "Unit": "Each",
+            "MinimumQuantity": 1,
+            "IsInTrolley": false,
+            "Source": "ProductDetail",
+            "SupplyLimit": 10,
+            "PackageSize": "",
+            "IsPmDelivery": false,
+            "IsForCollection": false,
+            "IsForDelivery": false,
+            "ImageTag": {
+                "TagContent": null,
+                "TagLink": null,
+                "FallbackText": null,
+                "TagType": "None"
+            },
+            "CentreTag": {
+                "TagContent": "<a title=\"2 for $94.000\" href=\"/ProductGroup/101979\"> <span style=\"COLOR: #e2001a\">2 for $94.00</span></a>",
+                "TagLink": null,
+                "FallbackText": null,
+                "TagType": "Html"
+            },
+            "FooterTag": {
+                "TagContent": null,
+                "TagLink": null,
+                "FallbackText": null,
+                "TagType": "None"
+            },
+            "PercentageOffTag": {
+                "PromotionalPrice": 0,
+                "SavedAmount": 0,
+                "TopText": null,
+                "BottomText": null,
+                "ProductMultiplier": 0,
+                "TagContent": null,
+                "TagLink": null,
+                "FallbackText": null,
+                "TagType": "None"
+            },
+            "FixedPricePromoTag": {
+                "PromotionalPrice": 92.000,
+                "SavedAmount": 22.000,
+                "TopText": "2 for",
+                "BottomText": "",
+                "ProductMultiplier": 2,
+                "TagContent": null,
+                "TagLink": null,
+                "FallbackText": null,
+                "TagType": "FixedPricePromo"
+            },
+            "IsCentreTag": true,
+            "IsFooterEnabled": false,
+            "UnitWeightInGrams": 1000,
+            "SupplyLimitMessage": "'Corona Extra Beer 355ml ' has a supply limit of 10. The quantity in your trolley has been reduced accordingly. To purchase a larger quantity, please contact us on 1300 138 297, or e-mail us at contactus@bws.com.au. Please note - we do not supply trade orders.",
+            "SmallFormatDescription": "Corona Extra Beer 355ml ",
+            "IsAvailable": true,
+            "AgeRestricted": false,
+            "DisplayQuantity": 1,
+            "RichDescription": "",
+            "IsDeliveryPass": false,
+            "HideWasSavedPrice": false,
+            "IsFeaturedTag": true,
+            "OverallRating": 0,
+            "NumberOfReviews": 0,
+            "IsWatched": false,
+            "BrandName": "Corona",
+            "Title": "Extra Beer 355mL ",
+            "IsNew": false,
+            "ImageVariants": [],
+            "AdditionalDetails": [
+                {
+                    "Name": "itemtype",
+                    "DisplayName": null,
+                    "Value": "Product"
+                },
+                {
+                    "Name": "categoryleafnodeid",
+                    "DisplayName": null,
+                    "Value": [
+                        "1015",
+                        "143",
+                        "124",
+                        "129",
+                        "127"
+                    ]
+                },
+                {
+                    "Name": "productname",
+                    "DisplayName": null,
+                    "Value": "Corona Extra Beer 355mL"
+                },
+                {
+                    "Name": "product_short_name",
+                    "DisplayName": null,
+                    "Value": "Corona Extra Beer 355mL"
+                },
+                {
+                    "Name": "parentstockcode",
+                    "DisplayName": null,
+                    "Value": "357480"
+                },
+                {
+                    "Name": "producttitle",
+                    "DisplayName": null,
+                    "Value": "Extra Beer 355mL"
+                },
+                {
+                    "Name": "minpurchasequantity",
+                    "DisplayName": null,
+                    "Value": "1"
+                },
+                {
+                    "Name": "maxpurchasequantity",
+                    "DisplayName": null,
+                    "Value": "10"
+                },
+                {
+                    "Name": "bufferstock",
+                    "DisplayName": null,
+                    "Value": "1"
+                },
+                {
+                    "Name": "defaultproductsku",
+                    "DisplayName": "Product Number",
+                    "Value": "328473"
+                },
+                {
+                    "Name": "productunitquantity",
+                    "DisplayName": null,
+                    "Value": "24"
+                },
+                {
+                    "Name": "ischillable",
+                    "DisplayName": null,
+                    "Value": true
+                },
+                {
+                    "Name": "brand_name",
+                    "DisplayName": "Brand",
+                    "Value": "Corona"
+                },
+                {
+                    "Name": "webpacktype",
+                    "DisplayName": null,
+                    "Value": "Case"
+                },
+                {
+                    "Name": "image1",
+                    "DisplayName": null,
+                    "Value": "328473-1.png"
+                },
+                {
+                    "Name": "defaultcategory",
+                    "DisplayName": null,
+                    "Value": "1015"
+                },
+                {
+                    "Name": "displayunitquantity",
+                    "DisplayName": null,
+                    "Value": "24"
+                },
+                {
+                    "Name": "backordereligible",
+                    "DisplayName": null,
+                    "Value": false
+                }
+            ],
+            "ParentStockCode": 357480,
+            "StockOnHand": 92,
+            "BackorderStockOnHand": 0
+        },
+        {
+            "Nutrition": null,
+            "VideoUrl": null,
+            "RecommendedProducts": [
+                {
+                    "Stockcode": 36066,
+                    "CupPrice": null,
+                    "CupMeasure": null,
+                    "CupString": "",
+                    "HasCupPrice": false,
+                    "Price": null,
+                    "Name": "Tim tams",
+                    "UrlFriendlyName": null,
+                    "Description": null,
+                    "SmallImageFile": null,
+                    "MediumImageFile": null,
+                    "LargeImageFile": null,
+                    "IsOnSpecial": false,
+                    "IsEdrSpecial": false,
+                    "SavingsAmount": null,
+                    "WasPrice": null,
+                    "QuantityInTrolley": 0,
+                    "Unit": null,
+                    "MinimumQuantity": 0,
+                    "IsInTrolley": false,
+                    "Source": null,
+                    "SupplyLimit": 0,
+                    "PackageSize": null,
+                    "IsPmDelivery": false,
+                    "IsForCollection": false,
+                    "IsForDelivery": false,
+                    "ImageTag": null,
+                    "CentreTag": null,
+                    "FooterTag": null,
+                    "PercentageOffTag": null,
+                    "FixedPricePromoTag": null,
+                    "IsCentreTag": false,
+                    "IsFooterEnabled": false,
+                    "UnitWeightInGrams": 0,
+                    "SupplyLimitMessage": null,
+                    "SmallFormatDescription": null,
+                    "IsAvailable": false,
+                    "AgeRestricted": false,
+                    "DisplayQuantity": 0,
+                    "RichDescription": null,
+                    "IsDeliveryPass": false,
+                    "HideWasSavedPrice": false,
+                    "IsFeaturedTag": false,
+                    "OverallRating": 0,
+                    "NumberOfReviews": 0,
+                    "IsWatched": false,
+                    "BrandName": null,
+                    "Title": null,
+                    "IsNew": false,
+                    "ImageVariants": null,
+                    "AdditionalDetails": null,
+                    "ParentStockCode": 0,
+                    "StockOnHand": 0,
+                    "BackorderStockOnHand": 0
+                }
+            ],
+            "ProductsInSameOffer": [
+                {
+                    "Stockcode": 36066,
+                    "CupPrice": null,
+                    "CupMeasure": null,
+                    "CupString": "",
+                    "HasCupPrice": false,
+                    "Price": null,
+                    "Name": "Tim tams",
+                    "UrlFriendlyName": null,
+                    "Description": null,
+                    "SmallImageFile": null,
+                    "MediumImageFile": null,
+                    "LargeImageFile": null,
+                    "IsOnSpecial": false,
+                    "IsEdrSpecial": false,
+                    "SavingsAmount": null,
+                    "WasPrice": null,
+                    "QuantityInTrolley": 0,
+                    "Unit": null,
+                    "MinimumQuantity": 0,
+                    "IsInTrolley": false,
+                    "Source": null,
+                    "SupplyLimit": 0,
+                    "PackageSize": null,
+                    "IsPmDelivery": false,
+                    "IsForCollection": false,
+                    "IsForDelivery": false,
+                    "ImageTag": null,
+                    "CentreTag": null,
+                    "FooterTag": null,
+                    "PercentageOffTag": null,
+                    "FixedPricePromoTag": null,
+                    "IsCentreTag": false,
+                    "IsFooterEnabled": false,
+                    "UnitWeightInGrams": 0,
+                    "SupplyLimitMessage": null,
+                    "SmallFormatDescription": null,
+                    "IsAvailable": false,
+                    "AgeRestricted": false,
+                    "DisplayQuantity": 0,
+                    "RichDescription": null,
+                    "IsDeliveryPass": false,
+                    "HideWasSavedPrice": false,
+                    "IsFeaturedTag": false,
+                    "OverallRating": 0,
+                    "NumberOfReviews": 0,
+                    "IsWatched": false,
+                    "BrandName": null,
+                    "Title": null,
+                    "IsNew": false,
+                    "ImageVariants": null,
+                    "AdditionalDetails": null,
+                    "ParentStockCode": 0,
+                    "StockOnHand": 0,
+                    "BackorderStockOnHand": 0
+                }
+            ],
+            "BackorderMessage": null,
+            "Stockcode": 357466,
+            "CupPrice": 0,
+            "CupMeasure": "",
+            "CupString": "$0.00 / ",
+            "HasCupPrice": false,
+            "Price": 21,
+            "Name": "Corona Extra Beer 355ml ",
+            "UrlFriendlyName": "corona-extra-beer-355ml",
+            "Description": " Corona Extra Beer 355ml  ",
+            "SmallImageFile": "https://edgmedia.blob.core.windows.net/bws/Content/wowProductImages/small/357466-1.png",
+            "MediumImageFile": "https://edgmedia.blob.core.windows.net/bws/Content/wowProductImages/medium/357466-1.png",
+            "LargeImageFile": "https://edgmedia.blob.core.windows.net/bws/Content/wowProductImages/large/357466-1.png",
+            "IsOnSpecial": true,
+            "IsEdrSpecial": false,
+            "SavingsAmount": 0,
+            "WasPrice": 21,
+            "QuantityInTrolley": 0,
+            "Unit": "Each",
+            "MinimumQuantity": 1,
+            "IsInTrolley": false,
+            "Source": "ProductDetail",
+            "SupplyLimit": 80,
+            "PackageSize": "",
+            "IsPmDelivery": false,
+            "IsForCollection": false,
+            "IsForDelivery": false,
+            "ImageTag": {
+                "TagContent": null,
+                "TagLink": null,
+                "FallbackText": null,
+                "TagType": "None"
+            },
+            "CentreTag": {
+                "TagContent": "<a title=\"Buy me &amp; add 1 John Boston 6pk for $10\" href=\"/productgroup/98358\"><span style=\"COLOR: #e2001a\">Buy me &amp; add 1 John Boston 6pk for $10</span></a>",
+                "TagLink": null,
+                "FallbackText": null,
+                "TagType": "Html"
+            },
+            "FooterTag": {
+                "TagContent": null,
+                "TagLink": null,
+                "FallbackText": null,
+                "TagType": "None"
+            },
+            "PercentageOffTag": {
+                "PromotionalPrice": 0,
+                "SavedAmount": 0,
+                "TopText": null,
+                "BottomText": null,
+                "ProductMultiplier": 0,
+                "TagContent": null,
+                "TagLink": null,
+                "FallbackText": null,
+                "TagType": "None"
+            },
+            "FixedPricePromoTag": {
+                "PromotionalPrice": 30.000,
+                "SavedAmount": 12.000,
+                "TopText": "2 for",
+                "BottomText": "",
+                "ProductMultiplier": 2,
+                "TagContent": null,
+                "TagLink": null,
+                "FallbackText": null,
+                "TagType": "FixedPricePromo"
+            },
+            "IsCentreTag": true,
+            "IsFooterEnabled": false,
+            "UnitWeightInGrams": 1000,
+            "SupplyLimitMessage": "'Corona Extra Beer 355ml ' has a supply limit of 80. The quantity in your trolley has been reduced accordingly. To purchase a larger quantity, please contact us on 1300 138 297, or e-mail us at contactus@bws.com.au. Please note - we do not supply trade orders.",
+            "SmallFormatDescription": "Corona Extra Beer 355ml ",
+            "IsAvailable": true,
+            "AgeRestricted": false,
+            "DisplayQuantity": 1,
+            "RichDescription": "",
+            "IsDeliveryPass": false,
+            "HideWasSavedPrice": false,
+            "IsFeaturedTag": true,
+            "OverallRating": 0,
+            "NumberOfReviews": 0,
+            "IsWatched": false,
+            "BrandName": "Corona",
+            "Title": "Extra Beer 355mL ",
+            "IsNew": false,
+            "ImageVariants": [],
+            "AdditionalDetails": [
+                {
+                    "Name": "categoryleafnodeid",
+                    "DisplayName": null,
+                    "Value": [
+                        "143",
+                        "124",
+                        "127",
+                        "129",
+                        "1015"
+                    ]
+                },
+                {
+                    "Name": "productname",
+                    "DisplayName": null,
+                    "Value": "Corona Extra Beer 355mL"
+                },
+                {
+                    "Name": "product_short_name",
+                    "DisplayName": null,
+                    "Value": "Corona Extra Beer 355mL"
+                },
+                {
+                    "Name": "parentstockcode",
+                    "DisplayName": null,
+                    "Value": "357480"
+                },
+                {
+                    "Name": "producttitle",
+                    "DisplayName": null,
+                    "Value": "Extra Beer 355mL"
+                },
+                {
+                    "Name": "minpurchasequantity",
+                    "DisplayName": null,
+                    "Value": "1"
+                },
+                {
+                    "Name": "maxpurchasequantity",
+                    "DisplayName": null,
+                    "Value": "80"
+                },
+                {
+                    "Name": "bufferstock",
+                    "DisplayName": null,
+                    "Value": "1"
+                },
+                {
+                    "Name": "defaultproductsku",
+                    "DisplayName": "Product Number",
+                    "Value": "328473"
+                },
+                {
+                    "Name": "productunitquantity",
+                    "DisplayName": null,
+                    "Value": "6"
+                },
+                {
+                    "Name": "ischillable",
+                    "DisplayName": null,
+                    "Value": true
+                },
+                {
+                    "Name": "brand_name",
+                    "DisplayName": "Brand",
+                    "Value": "Corona"
+                },
+                {
+                    "Name": "webpacktype",
+                    "DisplayName": null,
+                    "Value": "Pack"
+                },
+                {
+                    "Name": "image1",
+                    "DisplayName": null,
+                    "Value": "357466-1.png"
+                },
+                {
+                    "Name": "defaultcategory",
+                    "DisplayName": null,
+                    "Value": "1015"
+                },
+                {
+                    "Name": "displayunitquantity",
+                    "DisplayName": null,
+                    "Value": "6"
+                }
+            ],
+            "ParentStockCode": 357480,
+            "StockOnHand": 371,
+            "BackorderStockOnHand": 0
+        }
+    ],
+    "PackMessage": ""
+}

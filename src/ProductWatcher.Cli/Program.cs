@@ -14,7 +14,6 @@ using NPoco;
 using ProductWatcher.DbModels;
 using ProductWatcher.ES.Common;
 using ProductWatcher.ES.ReadModel;
-using ProductWatcher.ES.SeedData;
 
 namespace ProductWatcher.Cli
 {
@@ -38,7 +37,7 @@ namespace ProductWatcher.Cli
             while(!shouldExit)
             {
 
-                System.Threading.Tasks.Task.
+               // System.Threading.Tasks.Task.
             }
         }
 
@@ -48,8 +47,8 @@ namespace ProductWatcher.Cli
             builder.RegisterInstance<IConfigurationRoot>(Configuration);
             builder.RegisterInstance(new CommandContext.User(Guid.NewGuid())).Named<CommandContext.IUser>("user");
             builder.RegisterModule(new EventStoreDatabaseModule(Configuration.GetConnectionString("postgres")));
-            builder.RegisterModule(new EventProcessorModule(typeof(ES.Domain.User).GetTypeInfo().Assembly, typeof(ProductWatcher.ES.ReadModel.Product).GetTypeInfo().Assembly));
-            builder.RegisterType<WriteData>().As<IWriteReadModel>();
+            builder.RegisterModule(new EventProcessorModule(typeof(ES.Domain.Product).GetTypeInfo().Assembly, typeof(ES.ReadModel.Product).GetTypeInfo().Assembly));
+            builder.RegisterType<WriteReadModel>().As<IWriteReadModel>();
             builder.RegisterType<ReadModelReader>().As<IReadFromReadModel>();
 
             Container = builder.Build();

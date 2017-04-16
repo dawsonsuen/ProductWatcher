@@ -1,0 +1,53 @@
+{
+    "suggestionGroups": [
+        {
+            "indexName": "1keywords",
+            "indexTitle": "1keywords",
+            "suggestions": [
+                {
+                    "searchterm": "corona",
+                    "nrResults": 8
+                }
+            ]
+        },
+        {
+            "indexName": "2products",
+            "indexTitle": "2products",
+            "suggestions": [
+                {
+                    "secondId": "dm_357480",
+                    "name": "Corona Extra Beer Bottles 355mL",
+                    "_thumburl": "https://www.danmurphys.com.au/media/DM/Product/60x75/357480_0_9999_tny_v1_m56577569854566418.png",
+                    "brand": "Corona"
+                },
+                {
+                    "secondId": "dm_583624",
+                    "name": "Corona Extra Beer Cans 10 Pack 355mL",
+                    "_thumburl": "https://www.danmurphys.com.au/media/DM/Product/60x75/583624_0_9999_tny_v1_m56577569855292705.png",
+                    "brand": "Corona"
+                },
+                {
+                    "secondId": "dm_769160",
+                    "name": "Corona Extra Beer 710mL",
+                    "_thumburl": "https://www.danmurphys.com.au/media/DM/Product/60x75/769160_0_9999_tny_v1_m56577569854529687.png",
+                    "brand": "Corona"
+                }
+            ]
+        },
+        {
+            "indexName": "3categories",
+            "indexTitle": "3categories",
+            "suggestions": []
+        },
+        {
+            "indexName": "4content",
+            "indexTitle": "4content",
+            "suggestions": []
+        },
+        {
+            "indexName": "5stores",
+            "indexTitle": "5stores",
+            "suggestions": []
+        }
+    ]
+}
