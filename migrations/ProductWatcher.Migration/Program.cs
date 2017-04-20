@@ -79,7 +79,7 @@ namespace ProductWatcher.Migration
                     Description = productModel.Description.Trim(),
                     AdditionalData = new Dictionary<string, object>(){
                                  {
-                                     "$/L", productModel.DollarPerLitre
+                                     "$/L", productModel.CupPrice
                                  },
                                  {
                                      "imgUrl",
@@ -125,7 +125,7 @@ namespace ProductWatcher.Migration
                     Description = productModel.Description.Trim(),
                     AdditionalData = new Dictionary<string, object>(){
                                  {
-                                     "$/L", productModel.DollarPerLitre
+                                     "$/L", productModel.CupPrice
                                  },
                                  {
                                      "imgUrl",
@@ -159,47 +159,47 @@ namespace ProductWatcher.Migration
 
                     data.When = x.When.AddHours(-11);
 
-                    if (ApiConstants.Coles.Is(x.Company))
-                    {
-                        data.RawData = x.OriginalData;
+                    //if (ApiConstants.Coles.Is(x.Company))
+                    // {
+                    //     data.RawData = x.OriginalData;
 
-                        product = ApiConstants.Coles.GetProductFromJson(data.RawData);
-                    }
-                    else if (ApiConstants.Woolworths.Is(x.Company))
-                    {
-                        data.RawData = x.OriginalData;
+                    //     product = ApiConstants.Coles.GetProductFromJson(data.RawData);
+                    // }
+                    // else if (ApiConstants.Woolworths.Is(x.Company))
+                    // {
+                    //     data.RawData = x.OriginalData;
 
-                        product = ApiConstants.Woolworths.GetProductFromJson(data.RawData);
-                    }
-                    data.ProductModel = JsonConvert.SerializeObject(product);
-                    var productType = products.Where(p => p.Code == product.Id).FirstOrDefault();
-                    data.ProductId = productType.Id;
-                    LockInsert(sql, data);
-                    LockUpdate(sql, data);
+                    //     product = ApiConstants.Woolworths.GetProductFromJson(data.RawData);
+                    // }
+                    // data.ProductModel = JsonConvert.SerializeObject(product);
+                    // var productType = products.Where(p => p.Code == product.Id).FirstOrDefault();
+                    // data.ProductId = productType.Id;
+                    // LockInsert(sql, data);
+                    // LockUpdate(sql, data);
 
 
-                    var price = new DbModels.Price
-                    {
-                        DataId = data.Id,
-                        ProductId = productType.Id,
-                        OriginalPrice = product.Price,
-                        OnSalePrice = product.SpecialPrice,
-                        Company = product.Company,
-                        Description = product.Description.Trim(),
-                        AdditionalData = new Dictionary<string, object>(){
-                                 {
-                                     "$/L", product.DollarPerLitre
-                                 },
-                                 {
-                                     "imgUrl",
-                                     product.ImgUrl
-                                 },
+                    // var price = new DbModels.Price
+                    // {
+                    //     DataId = data.Id,
+                    //     ProductId = productType.Id,
+                    //     OriginalPrice = product.Price,
+                    //     OnSalePrice = product.SpecialPrice,
+                    //     Company = product.Company,
+                    //     Description = product.Description.Trim(),
+                    //     AdditionalData = new Dictionary<string, object>(){
+                    //              {
+                    //                  "$/L", product.DollarPerLitre
+                    //              },
+                    //              {
+                    //                  "imgUrl",
+                    //                  product.ImgUrl
+                    //              },
 
-                    },
-                        When = data.When
-                    };
+                    // },
+                    //     When = data.When
+                    // };
 
-                    LockInsert(sql, price);
+                    // LockInsert(sql, price);
 
 
 

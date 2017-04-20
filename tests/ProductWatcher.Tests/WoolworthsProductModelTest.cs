@@ -18,8 +18,9 @@ namespace ProductWatcher.Tests
         [Fact]
         public void doa()
         {
-            var a = ApiConstants.Woolworths.SearchProducts("coke");
-            _output.WriteLine($"elllo{a}" );
+            //var a = ApiConstants.Woolworths.SearchProducts("coke");
+            //_output.WriteLine($"elllo{a}" );
+
         }
     }
 }

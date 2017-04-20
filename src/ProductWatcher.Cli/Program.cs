@@ -48,8 +48,8 @@ namespace ProductWatcher.Cli
             builder.RegisterInstance(new CommandContext.User(Guid.NewGuid())).Named<CommandContext.IUser>("user");
             builder.RegisterModule(new EventStoreDatabaseModule(Configuration.GetConnectionString("postgres")));
             builder.RegisterModule(new EventProcessorModule(typeof(ES.Domain.Product).GetTypeInfo().Assembly, typeof(ES.ReadModel.Product).GetTypeInfo().Assembly));
-            builder.RegisterType<WriteReadModel>().As<IWriteReadModel>();
-            builder.RegisterType<ReadModelReader>().As<IReadFromReadModel>();
+            builder.RegisterType<SqlReadModel>().AsImplementedInterfaces();
+            builder.RegisterType<IScrapeProduct>().SingleInstance().AsImplementedInterfaces();
 
             Container = builder.Build();
         }

@@ -15,12 +15,13 @@ namespace ProductWatcher.Tests
         [Fact]
         public void DoesTheGarbageParseIsShitFuckedWhenIsOnSpecial()
         {
+            var a = new Apis.Coles.Scraper();
             var expectedModel = new Product()
             {
                 Id = "8464796",
-                Company = Coles.COMPANY_NAME,
+                Company = a.CompanyName,
                 Description = "Coke 375mL Cans 30 pack",
-                DollarPerLitre = 1.60M,
+                CupPrice = 1.60M,
                 ImgUrl = "/wcsstore/Coles-CAS/images/8/4/6/8464796.jpg",
                 Name = "Coke 375mL Cans",
                 Price = 37.07M,
@@ -31,8 +32,8 @@ namespace ProductWatcher.Tests
             //Do this coz deep equalz be ballin up
             var expectedModelStringfiled = JsonConvert.SerializeObject(expectedModel);
 
-            var parsedProduct = JsonConvert.DeserializeObject<Coles.ShitAsProductModel>(CokeTestDataOnSpecial);
-            var product = new Product(parsedProduct);
+            //var parsedProduct = JsonConvert.DeserializeObject<Apis.Coles.Models.ShitAsProductModel>(CokeTestDataOnSpecial);
+            var product = a.GetProduct(CokeTestDataOnSpecial);
             var productStringified = JsonConvert.SerializeObject(product);
 
             Assert.Equal(expectedModelStringfiled,productStringified);
@@ -41,12 +42,13 @@ namespace ProductWatcher.Tests
         [Fact]
         public void DoesTheGarbageParseIsShitFuckedWhenIsNotOnSpecial()
         {
+             var a = new Apis.Coles.Scraper();
             var expectedModel = new Product()
             {
                 Id = "7365777",
-                Company = Coles.COMPANY_NAME,
+                Company = a.CompanyName,
                 Description = "Coke Can 375mL 24 pack",
-                DollarPerLitre = 3.36M,
+                CupPrice = 3.36M,
                 ImgUrl = "/wcsstore/Coles-CAS/images/7/3/6/7365777.jpg",
                 Name = "Coke Can 375mL",
                 Price = 30.25M
@@ -55,8 +57,8 @@ namespace ProductWatcher.Tests
             //Do this coz deep equalz be ballin up
             var expectedModelStringfiled = JsonConvert.SerializeObject(expectedModel);
 
-            var parsedProduct = JsonConvert.DeserializeObject<Coles.ShitAsProductModel>(CokeTestDataNotOnSpecial);
-            var product = new Product(parsedProduct);
+            //var parsedProduct = JsonConvert.DeserializeObject<Apis.Coles.Models.ShitAsProductModel>(CokeTestDataNotOnSpecial);
+            var product = a.GetProduct(CokeTestDataNotOnSpecial);
             var productStringified = JsonConvert.SerializeObject(product);
 
             Assert.Equal(expectedModelStringfiled, productStringified);
@@ -65,7 +67,7 @@ namespace ProductWatcher.Tests
         [Fact]
         public void TestPriceApiEndpointIsCorrect()
         {
-            var endpoint = "https://shop.coles.com.au/search/resources/store/20601/productview/bySearchTerm/8464796";  
+            var endpoint = "https://shop.coles.com.au/search/resources/store/20601/productview/bySearchTerm/8464796";
 
             var result = endpoint.GetJsonAsync().Result;
 
@@ -75,9 +77,10 @@ namespace ProductWatcher.Tests
         [Fact]
         public void TestSearchApiEndpointIsCorrect()
         {
-            var result = ApiConstants.Coles.SearchProducts("candles");
+            //var result = ApiConstants.Coles.SearchProducts("candles");
 
-            Assert.NotNull(result);
+            //Assert.NotNull(result);
+            Assert.True(false);
         }
     }
 }

@@ -3,9 +3,9 @@ using NEvilES.Pipeline;
 
 namespace ProductWatcher.ES.ReadModel
 {
-    public class ReadModel
+    public class ReadModelSql
     {
-        public int Id { get; set; }
+        public Int64 Id { get; set; }
         public Guid StreamId { get; set; }
         public string Type { get; set; }
         public string Body { get; set; }
