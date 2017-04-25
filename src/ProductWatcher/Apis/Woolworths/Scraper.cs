@@ -41,21 +41,20 @@ namespace ProductWatcher.Apis.Woolworths
 
             product.Name = model.Product.Name;
             product.Description = model.Product.Description.Trim();
-            product.ImgUrl = model.Product.LargeImageFile;
+            product.MediumImageLink = model.Product.LargeImageFile;
 
             return product;
         }
 
         public Task<string> Search(string searchTerm)
-        {
-            throw new NotImplementedException();
+        {throw new NotImplementedException();
         }
 
         public async Task<string> SearchAsync(string searchTerm, string storeData)
         {
             var a = string.Format(SEARCH_URL, WebUtility.UrlEncode(searchTerm), "20");
 
-            var b = a.GetStringAsync().Result;
+            var b = await a.GetStringAsync();
             return b;
             // JArray res = b.Results;
             // return res.Select(x => ((JObject)x).Property("Id").Value.ToString()).ToArray();

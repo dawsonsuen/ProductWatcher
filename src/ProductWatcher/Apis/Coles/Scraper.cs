@@ -55,11 +55,12 @@ namespace ProductWatcher.Apis.Coles
                     product.Price = catalogItem.P1.o ?? -1;
                 }
 
-                product.ImgUrl = catalogItem.fi;
+                product.MediumImageLink = catalogItem.fi;
 
                 if (catalogItem.u2 != null)
                 {
                     var a = catalogItem.u2.Split(' ');
+
                     product.CupPrice = decimal.Parse(a[0], System.Globalization.NumberStyles.Currency);
                 }
             }
@@ -69,16 +70,16 @@ namespace ProductWatcher.Apis.Coles
 
         public async Task<string> Search(string searchTerm)
         {
-            throw new NotImplementedException();
+            return await SearchAsync(searchTerm, null);
         }
 
         public async Task<string> SearchAsync(string searchTerm, string storeData)
         {
             var a = string.Format(SEARCH_URL, searchTerm, "20", "560");
 
-            var b = await a.WithHeaders(SEARCH_URL_HEADERS).GetJsonAsync<dynamic>();
-            JArray res = b.Results;
-            return a;//res.Select(x => ((JObject)x).Property("Id").Value.ToString()).ToArray();
+            var b = await a.WithHeaders(SEARCH_URL_HEADERS).GetStringAsync();
+
+            return b;
         }
     }
 }

@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using NEvilES.Pipeline;
 using Newtonsoft.Json;
 using NPoco;
+using ProductWatcher.Apis;
 using ProductWatcher.DbModels;
 using ProductWatcher.ES.Common;
 using ProductWatcher.ES.ReadModel;

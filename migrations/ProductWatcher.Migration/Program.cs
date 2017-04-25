@@ -83,7 +83,7 @@ namespace ProductWatcher.Migration
                                  },
                                  {
                                      "imgUrl",
-                                     productModel.ImgUrl
+                                     productModel.MediumImageLink
                                  },
 
                     },
@@ -129,7 +129,7 @@ namespace ProductWatcher.Migration
                                  },
                                  {
                                      "imgUrl",
-                                     productModel.ImgUrl
+                                     productModel.MediumImageLink
                                  },
 
                     },

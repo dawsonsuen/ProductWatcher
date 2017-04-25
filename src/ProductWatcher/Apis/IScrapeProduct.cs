@@ -1,7 +1,7 @@
 using System.Threading.Tasks;
 using ProductWatcher.Models;
 
-namespace ProductWatcher
+namespace ProductWatcher.Apis
 {
     public interface IScrapeProduct
     {
