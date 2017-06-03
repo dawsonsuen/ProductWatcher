@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
-using Autofac;
-using Autofac.Core;
+//using Autofac;
+//using Autofac.Core;
 using Flurl.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -15,6 +16,8 @@ using ProductWatcher.Apis;
 using ProductWatcher.DbModels;
 using ProductWatcher.ES.Common;
 using ProductWatcher.ES.ReadModel;
+using StructureMap;
+using StructureMap.Graph.Scanning;
 
 namespace ProductWatcher.Cli
 {
@@ -35,34 +38,61 @@ namespace ProductWatcher.Cli
                 Console.WriteLine("Please wait for tasks to finalize... we will exit after all tasks complete");
             };
 
-            while(!shouldExit)
-            {
+            var search = "corona";//Console.ReadLine();
 
-               // System.Threading.Tasks.Task.
+            using (Container)
+            {
+                foreach (var scraper in Container.GetAllInstances<IScrapeProduct>().Where(x=> x.Alcohol && !x.GetType().GetTypeInfo().IsAbstract))
+                {
+                    Console.WriteLine($"Searching {scraper.CompanyName} for {search}....");
+                    var a = scraper.Search(search).Result;
+                    Console.WriteLine(a);
+                    Console.WriteLine("                 ");
+                }
             }
+
+
         }
 
         public static void ConfigureServices()
         {
-            var builder = new ContainerBuilder();
-            builder.RegisterInstance<IConfigurationRoot>(Configuration);
-            builder.RegisterInstance(new CommandContext.User(Guid.NewGuid())).Named<CommandContext.IUser>("user");
-            builder.RegisterModule(new EventStoreDatabaseModule(Configuration.GetConnectionString("postgres")));
-            builder.RegisterModule(new EventProcessorModule(typeof(ES.Domain.Product).GetTypeInfo().Assembly, typeof(ES.ReadModel.Product).GetTypeInfo().Assembly));
-            builder.RegisterType<SqlReadModel>().AsImplementedInterfaces();
-            builder.RegisterType<IScrapeProduct>().SingleInstance().AsImplementedInterfaces();
+            var container = new Container();
+            container.Configure((x) =>
+            {
+                x.Scan(scan =>
+                {
+                    scan.TheCallingAssembly();
+                    scan.Assembly(typeof(IScrapeProduct).GetTypeInfo().Assembly);
+                    scan.WithDefaultConventions();
+                    scan.AddAllTypesOf<IScrapeProduct>();
+                    //scan.AddAllTypesOf<IValidator<Address>>();
 
-            Container = builder.Build();
-        }
+                    //scan.ConnectImplementationsToTypesClosing(typeof(IScrapeProduct));
+
+                });
+            });
+
+
+                //builder.RegisterInstance<IConfigurationRoot>(Configuration);
+                //builder.RegisterInstance(new CommandContext.User(Guid.NewGuid())).Named<CommandContext.IUser>("user");
+                //builder.RegisterModule(new EventStoreDatabaseModule(Configuration.GetConnectionString("postgres")));
+                //builder.RegisterModule(new EventProcessorModule(typeof(ES.Domain.Product).GetTypeInfo().Assembly, typeof(ES.ReadModel.Product).GetTypeInfo().Assembly));
+                //builder.RegisterType<SqlReadModel>().AsImplementedInterfaces();
+                //builder.RegisterType<IScrapeProduct>().SingleInstance().AsImplementedInterfaces();
+                //builder.
+
+                //Container = builder.Build();
+                Container = container;
+            }
 
         public static void SetupConfiguration()
-        {
-            var builder = new ConfigurationBuilder()
-               .SetBasePath(Directory.GetCurrentDirectory())
-               .AddJsonFile("appsettings.json", optional: true, reloadOnChange: false)
-               .AddJsonFile("appsettings.*.json", optional: true, reloadOnChange: false);
+            {
+                var builder = new ConfigurationBuilder()
+                   .SetBasePath(Directory.GetCurrentDirectory())
+                   .AddJsonFile("appsettings.json", optional: true, reloadOnChange: false)
+                   .AddJsonFile("appsettings.*.json", optional: true, reloadOnChange: false);
 
-            Configuration = builder.Build();
+                Configuration = builder.Build();
+            }
         }
     }
-}

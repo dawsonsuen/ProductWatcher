@@ -10,5 +10,6 @@
     <PackageReference Include="Microsoft.AspNetCore.WebUtilities" Version="1.1.0" />
     <ProjectReference Include="../ProductWatcher/ProductWatcher.csproj" Version="*" />
     <ProjectReference Include="../ProductWatcher.ES.ReadModel/ProductWatcher.ES.ReadModel.csproj" Version="*" />
+    <PackageReference Include="StructureMap" Version="4.4.5" />
   </ItemGroup>
 </Project>

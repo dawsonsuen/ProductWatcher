@@ -9,6 +9,7 @@ namespace ProductWatcher.Apis.Woolworths
 {
     public class Scraper : IScrapeProduct
     {
+        public bool Alcohol => false;
         public string CompanyName => "Woolworths";
         public const string PRICE_URL = "https://www.woolworths.com.au/apis/ui/product/detail/{0}";
         public const string SEARCH_URL = "https://www.woolworths.com.au/apis/ui/Search/products?IsSpecial=false&PageNumber=1&PageSize={1}&SearchTerm={0}&SortType=Personalised";
@@ -46,9 +47,7 @@ namespace ProductWatcher.Apis.Woolworths
             return product;
         }
 
-        public Task<string> Search(string searchTerm)
-        {throw new NotImplementedException();
-        }
+        public async Task<string> Search(string searchTerm) => await SearchAsync(searchTerm, "20");
 
         public async Task<string> SearchAsync(string searchTerm, string storeData)
         {

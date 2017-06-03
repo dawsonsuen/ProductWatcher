@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductWatcher.Cli", "src\P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductWatcher.ES.Common", "src\ProductWatcher.ES.Common\ProductWatcher.ES.Common.csproj", "{906791D1-F195-4406-A504-4DD28D6CA121}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductWatcher.SeedData", "src\ProductWatcher.SeedData\ProductWatcher.SeedData.csproj", "{731F00F2-4A1E-4842-B51F-4E2A8A791600}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductWatcher.ES.SeedData", "src\ProductWatcher.ES.SeedData\ProductWatcher.ES.SeedData.csproj", "{731F00F2-4A1E-4842-B51F-4E2A8A791600}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductWatcher.ES.ReadModel", "src\ProductWatcher.ES.ReadModel\ProductWatcher.ES.ReadModel.csproj", "{CC0D422F-1344-46D0-B61E-BB18E3ED23B2}"
 EndProject

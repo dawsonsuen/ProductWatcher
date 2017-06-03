@@ -5,6 +5,7 @@ namespace ProductWatcher.Apis
 {
     public interface IScrapeProduct
     {
+        bool Alcohol { get; }
         string CompanyName { get; }
         Task<string> Search(string searchTerm);
         Task<string> SearchAsync(string searchTerm, string storeData);

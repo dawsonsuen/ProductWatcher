@@ -11,6 +11,7 @@ namespace ProductWatcher.Apis.Coles
 {
     public class Scraper : IScrapeProduct
     {
+        public bool Alcohol => false;
         public string CompanyName => "Coles";
         public const string PRICE_URL = "https://shop.coles.com.au/search/resources/store/20601/productview/bySearchTerm/{0}";
         public const string SEARCH_URL = "https://api.coles.com.au/customer/v1/coles/products/search?limit={1}&q={0}&start=0&storeId={2}&type=SKU";
