@@ -10,6 +10,6 @@ namespace ProductWatcher.Apis
         Task<string> Search(string searchTerm);
         Task<string> SearchAsync(string searchTerm, string storeData);
         Task<string> Get(string productCode);
-        Task<Product> GetProduct(string rawData);
+        Task<Models.Product> GetProduct(string rawData);
     }
 }

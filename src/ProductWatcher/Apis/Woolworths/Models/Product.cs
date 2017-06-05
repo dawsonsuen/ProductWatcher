@@ -18,7 +18,7 @@ namespace ProductWatcher.Apis.Woolworths.Models
     {
     }
 
-    public class CentreTag
+    public class CentreTag : BaseTag
     {
         public string TagContent { get; set; }
         public string TagLink { get; set; }
@@ -26,7 +26,7 @@ namespace ProductWatcher.Apis.Woolworths.Models
         public string TagType { get; set; }
     }
 
-    public class ImageTag
+    public class ImageTag : BaseTag
     {
         public string TagContent { get; set; }
         public string TagLink { get; set; }
@@ -34,7 +34,7 @@ namespace ProductWatcher.Apis.Woolworths.Models
         public string TagType { get; set; }
     }
 
-    public class HeaderTag
+    public class HeaderTag : BaseTag
     {
         public object BackgroundColor { get; set; }
         public object BorderColor { get; set; }
@@ -52,12 +52,18 @@ namespace ProductWatcher.Apis.Woolworths.Models
         public string SapSegmentName { get; set; }
     }
 
-    public class FooterTag
+    public class FooterTag : BaseTag
     {
         public object TagContent { get; set; }
         public object TagLink { get; set; }
         public object FallbackText { get; set; }
         public string TagType { get; set; }
+    }
+
+    public class BaseTag
+    {
+        public string TagTestType { get; set; }
+        public object TagTestValue { get; set; }
     }
     #endregion
 

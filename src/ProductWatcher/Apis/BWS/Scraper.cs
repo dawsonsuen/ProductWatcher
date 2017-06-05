@@ -11,6 +11,7 @@ namespace ProductWatcher.Apis.BWS
     {
         public bool Alcohol => true;
         public static string SEARCH_URL = "https://api.bws.com.au/apis/ui/Search/Suggestion?Key={0}";
+        public static string PRODUCT_URL = "https://api.bws.com.au/apis/ui/Product/{0}";
         public string CompanyName => "BWS";
 
         public Task<string> Get(string productCode)
@@ -18,7 +19,7 @@ namespace ProductWatcher.Apis.BWS
             throw new NotImplementedException();
         }
 
-        public Task<Product> GetProduct(string rawData)
+        public Task<ProductWatcher.Models.Product> GetProduct(string rawData)
         {
             throw new NotImplementedException();
         }
@@ -32,7 +33,17 @@ namespace ProductWatcher.Apis.BWS
             //var b = await url.GetStringAsync();
             var b = await url.GetJsonAsync<SearchModel>();
 
-            return b.Products.Suggestions.First().ParentStockcode;
+            return string.Format(PRODUCT_URL, b.Products.Suggestions.First().Stockcode);
+        }
+
+        public async Task<SearchModel> SearchModelAsync(string searchTerm, string storeData)
+        {
+            var url = string.Format(SEARCH_URL, searchTerm);
+
+            //var b = await url.GetStringAsync();
+            var b = await url.GetJsonAsync<SearchModel>();
+
+            return b;
         }
     }
 }
