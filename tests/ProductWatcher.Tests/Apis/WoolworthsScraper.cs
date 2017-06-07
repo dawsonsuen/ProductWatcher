@@ -37,8 +37,8 @@ namespace ProductWatcher.Tests
         public override async Task Integreation_Search_Should_WorkAsync()
         {
             var data = await _scraper.Search("candles");
-            var product = await _scraper.GetProduct(data);
-
+            var products = await _scraper.GetSearchModel(data);
+            var product = await _scraper.GetProduct(products[0].ProductCode);
             Assert.NotNull(product);
         }
 

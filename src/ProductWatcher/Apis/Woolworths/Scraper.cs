@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 using Flurl.Http;
@@ -47,16 +48,35 @@ namespace ProductWatcher.Apis.Woolworths
             return product;
         }
 
-        public async Task<string> Search(string searchTerm) => await SearchAsync(searchTerm, "20");
+        public async Task<string> Search(string searchTerm) => await Search(searchTerm, "20");
 
-        public async Task<string> SearchAsync(string searchTerm, string storeData)
+        public async Task<string> Search(string searchTerm, string storeData)
         {
             var a = string.Format(SEARCH_URL, WebUtility.UrlEncode(searchTerm), "20");
 
             var b = await a.GetStringAsync();
+
             return b;
-            // JArray res = b.Results;
-            // return res.Select(x => ((JObject)x).Property("Id").Value.ToString()).ToArray();
+        }
+
+        public async Task<Search[]> GetSearchModel(string rawData)
+        {
+            var b = JsonConvert.DeserializeObject<Woolworths.Models.SearchModel>(rawData);
+
+            if(b.Products == null) return new Search[0];
+
+            return b.Products.SelectMany(x => x.Products).Select(x =>
+            {
+                return new Search
+                {
+                    Company = CompanyName,
+                    Brand = x.Brand,
+                    Name = x.Name,
+                    Description = x.Description,
+                    ProductCode = x.Stockcode.ToString(),
+                    Amount = x.Price
+                };
+            }).ToArray();
         }
     }
 }

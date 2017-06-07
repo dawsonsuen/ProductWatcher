@@ -1,2517 +1,2907 @@
 {
-    "Results": [{
-        "Id": 191736,
-        "Name": "Coke",
-        "Size": "2L",
-        "Brand": "Coca-Cola",
-        "ImageUri": "/customer/v1/coles/products/images/191736.jpg",
-        "Locations": [{
-            "Aisle": "5",
-            "Order": 5.0,
-            "Description": "Aisle 5",
-            "AisleSide": "Right",
-            "Facing": 0,
-            "Shelf": 0,
-            "LayoutId": "0258",
-            "LayoutName": "DRINKS - BOTTLED"
-        }, {
-            "Aisle": "5",
-            "Order": 5.0,
-            "Description": "Aisle 5",
-            "AisleSide": "Right",
-            "Facing": 0,
-            "Shelf": 0,
-            "LayoutId": "0258",
-            "LayoutName": "DRINKS - BOTTLED"
-        }, {
-            "Aisle": "5",
-            "Order": 5.0,
-            "Description": "Aisle 5",
-            "AisleSide": "Right",
-            "Facing": 0,
-            "Shelf": 0,
-            "LayoutId": "0258",
-            "LayoutName": "DRINKS - BOTTLED"
-        }, {
-            "Aisle": "5",
-            "Order": 5.0,
-            "Description": "Aisle 5",
-            "AisleSide": "Right",
-            "Facing": 0,
-            "Shelf": 0,
-            "LayoutId": "0258",
-            "LayoutName": "DRINKS - BOTTLED"
-        }, {
-            "Aisle": "5",
-            "Order": 5.0,
-            "Description": "Aisle 5",
-            "AisleSide": "Right",
-            "Facing": 0,
-            "Shelf": 0,
-            "LayoutId": "0258",
-            "LayoutName": "DRINKS - BOTTLED"
-        }],
-        "Promotions": null,
-        "Tags": [{
-            "Label": "bottles",
-            "Name": "BOTTLES",
-            "TagType": {
-                "Label": "subclass",
-                "Name": "SubClass"
-            }
-        }, {
-            "Label": "bottles",
-            "Name": "BOTTLES",
-            "TagType": {
-                "Label": "class",
-                "Name": "Class"
-            }
-        }, {
-            "Label": "softdrinks",
-            "Name": "SOFTDRINKS",
-            "TagType": {
-                "Label": "category",
-                "Name": "Category"
-            }
-        }, {
-            "Label": "impulse",
-            "Name": "IMPULSE",
-            "TagType": {
-                "Label": "group",
-                "Name": "Group"
-            }
-        }, {
-            "Label": "grocery",
-            "Name": "GROCERY",
-            "TagType": {
-                "Label": "tpc",
-                "Name": "TPC"
-            }
-        }, {
-            "Label": "flavoured-soft-drinks",
-            "Name": "Flavoured Soft Drinks",
-            "TagType": {
-                "Label": "online-1",
-                "Name": "Online 1"
-            }
-        }, {
-            "Label": "soft-drinks",
-            "Name": "Soft Drinks",
-            "TagType": {
-                "Label": "online-2",
-                "Name": "Online 2"
-            }
-        }, {
-            "Label": "drinks",
-            "Name": "Drinks",
-            "TagType": {
-                "Label": "online-3",
-                "Name": "Online 3"
-            }
-        }, {
-            "Label": "cocacola",
-            "Name": "Coca-Cola",
-            "TagType": {
-                "Label": "brand",
-                "Name": "Brand"
-            }
-        }]
-    }, {
-        "Id": 4919238,
-        "Name": "Coke Zero",
-        "Size": "2L",
-        "Brand": "Coca-Cola",
-        "ImageUri": "/customer/v1/coles/products/images/4919238.jpg",
-        "Locations": [{
-            "Aisle": "5",
-            "Order": 5.0,
-            "Description": "Aisle 5",
-            "AisleSide": "Right",
-            "Facing": 0,
-            "Shelf": 0,
-            "LayoutId": "0258",
-            "LayoutName": "DRINKS - BOTTLED"
-        }, {
-            "Aisle": "5",
-            "Order": 5.0,
-            "Description": "Aisle 5",
-            "AisleSide": "Right",
-            "Facing": 0,
-            "Shelf": 0,
-            "LayoutId": "0258",
-            "LayoutName": "DRINKS - BOTTLED"
-        }],
-        "Promotions": null,
-        "Tags": [{
-            "Label": "bottles",
-            "Name": "BOTTLES",
-            "TagType": {
-                "Label": "subclass",
-                "Name": "SubClass"
-            }
-        }, {
-            "Label": "bottles",
-            "Name": "BOTTLES",
-            "TagType": {
-                "Label": "class",
-                "Name": "Class"
-            }
-        }, {
-            "Label": "softdrinks",
-            "Name": "SOFTDRINKS",
-            "TagType": {
-                "Label": "category",
-                "Name": "Category"
-            }
-        }, {
-            "Label": "impulse",
-            "Name": "IMPULSE",
-            "TagType": {
-                "Label": "group",
-                "Name": "Group"
-            }
-        }, {
-            "Label": "grocery",
-            "Name": "GROCERY",
-            "TagType": {
-                "Label": "tpc",
-                "Name": "TPC"
-            }
-        }, {
-            "Label": "flavoured-soft-drinks",
-            "Name": "Flavoured Soft Drinks",
-            "TagType": {
-                "Label": "online-1",
-                "Name": "Online 1"
-            }
-        }, {
-            "Label": "soft-drinks",
-            "Name": "Soft Drinks",
-            "TagType": {
-                "Label": "online-2",
-                "Name": "Online 2"
-            }
-        }, {
-            "Label": "drinks",
-            "Name": "Drinks",
-            "TagType": {
-                "Label": "online-3",
-                "Name": "Online 3"
-            }
-        }, {
-            "Label": "cocacola",
-            "Name": "Coca-Cola",
-            "TagType": {
-                "Label": "brand",
-                "Name": "Brand"
-            }
-        }]
-    }, {
-        "Id": 6999759,
-        "Name": "Coke Chilled",
-        "Size": "1.5L",
-        "Brand": "Coca-Cola",
-        "ImageUri": "/customer/v1/coles/products/images/6999759.jpg",
-        "Locations": null,
-        "Promotions": null,
-        "Tags": [{
-            "Label": "cold-drinks",
-            "Name": "COLD DRINKS",
-            "TagType": {
-                "Label": "subclass",
-                "Name": "SubClass"
-            }
-        }, {
-            "Label": "cold-drinks",
-            "Name": "COLD DRINKS",
-            "TagType": {
-                "Label": "class",
-                "Name": "Class"
-            }
-        }, {
-            "Label": "softdrinks",
-            "Name": "SOFTDRINKS",
-            "TagType": {
-                "Label": "category",
-                "Name": "Category"
-            }
-        }, {
-            "Label": "impulse",
-            "Name": "IMPULSE",
-            "TagType": {
-                "Label": "group",
-                "Name": "Group"
-            }
-        }, {
-            "Label": "grocery",
-            "Name": "GROCERY",
-            "TagType": {
-                "Label": "tpc",
-                "Name": "TPC"
-            }
-        }, {
-            "Label": "flavoured-soft-drinks",
-            "Name": "Flavoured Soft Drinks",
-            "TagType": {
-                "Label": "online-1",
-                "Name": "Online 1"
-            }
-        }, {
-            "Label": "soft-drinks",
-            "Name": "Soft Drinks",
-            "TagType": {
-                "Label": "online-2",
-                "Name": "Online 2"
-            }
-        }, {
-            "Label": "drinks",
-            "Name": "Drinks",
-            "TagType": {
-                "Label": "online-3",
-                "Name": "Online 3"
-            }
-        }, {
-            "Label": "cocacola",
-            "Name": "Coca-Cola",
-            "TagType": {
-                "Label": "brand",
-                "Name": "Brand"
-            }
-        }]
-    }, {
-        "Id": 5326344,
-        "Name": "Coke 375mL Cans",
-        "Size": "15 pack",
-        "Brand": "Coca-Cola",
-        "ImageUri": "/customer/v1/coles/products/images/5326344.jpg",
-        "Locations": null,
-        "Promotions": null,
-        "Tags": [{
-            "Label": "cans",
-            "Name": "CANS",
-            "TagType": {
-                "Label": "subclass",
-                "Name": "SubClass"
-            }
-        }, {
-            "Label": "cans",
-            "Name": "CANS",
-            "TagType": {
-                "Label": "class",
-                "Name": "Class"
-            }
-        }, {
-            "Label": "softdrinks",
-            "Name": "SOFTDRINKS",
-            "TagType": {
-                "Label": "category",
-                "Name": "Category"
-            }
-        }, {
-            "Label": "impulse",
-            "Name": "IMPULSE",
-            "TagType": {
-                "Label": "group",
-                "Name": "Group"
-            }
-        }, {
-            "Label": "grocery",
-            "Name": "GROCERY",
-            "TagType": {
-                "Label": "tpc",
-                "Name": "TPC"
-            }
-        }, {
-            "Label": "flavoured-soft-drinks",
-            "Name": "Flavoured Soft Drinks",
-            "TagType": {
-                "Label": "online-1",
-                "Name": "Online 1"
-            }
-        }, {
-            "Label": "soft-drinks",
-            "Name": "Soft Drinks",
-            "TagType": {
-                "Label": "online-2",
-                "Name": "Online 2"
-            }
-        }, {
-            "Label": "drinks",
-            "Name": "Drinks",
-            "TagType": {
-                "Label": "online-3",
-                "Name": "Online 3"
-            }
-        }, {
-            "Label": "cocacola",
-            "Name": "Coca-Cola",
-            "TagType": {
-                "Label": "brand",
-                "Name": "Brand"
-            }
-        }]
-    }, {
-        "Id": 7365777,
-        "Name": "Coke Can 375mL",
-        "Size": "24 pack",
-        "Brand": "Coca-Cola",
-        "ImageUri": "/customer/v1/coles/products/images/7365777.jpg",
-        "Locations": [{
-            "Aisle": "5",
-            "Order": 5.0,
-            "Description": "Aisle 5",
-            "AisleSide": "Right",
-            "Facing": 0,
-            "Shelf": 0,
-            "LayoutId": "0257",
-            "LayoutName": "DRINKS - CANS"
-        }],
-        "Promotions": null,
-        "Tags": [{
-            "Label": "cans",
-            "Name": "CANS",
-            "TagType": {
-                "Label": "subclass",
-                "Name": "SubClass"
-            }
-        }, {
-            "Label": "cans",
-            "Name": "CANS",
-            "TagType": {
-                "Label": "class",
-                "Name": "Class"
-            }
-        }, {
-            "Label": "softdrinks",
-            "Name": "SOFTDRINKS",
-            "TagType": {
-                "Label": "category",
-                "Name": "Category"
-            }
-        }, {
-            "Label": "impulse",
-            "Name": "IMPULSE",
-            "TagType": {
-                "Label": "group",
-                "Name": "Group"
-            }
-        }, {
-            "Label": "grocery",
-            "Name": "GROCERY",
-            "TagType": {
-                "Label": "tpc",
-                "Name": "TPC"
-            }
-        }, {
-            "Label": "flavoured-soft-drinks",
-            "Name": "Flavoured Soft Drinks",
-            "TagType": {
-                "Label": "online-1",
-                "Name": "Online 1"
-            }
-        }, {
-            "Label": "soft-drinks",
-            "Name": "Soft Drinks",
-            "TagType": {
-                "Label": "online-2",
-                "Name": "Online 2"
-            }
-        }, {
-            "Label": "drinks",
-            "Name": "Drinks",
-            "TagType": {
-                "Label": "online-3",
-                "Name": "Online 3"
-            }
-        }, {
-            "Label": "cocacola",
-            "Name": "Coca-Cola",
-            "TagType": {
-                "Label": "brand",
-                "Name": "Brand"
-            }
-        }]
-    }, {
-        "Id": 4919170,
-        "Name": "Coke Zero 375mL Cans",
-        "Size": "24 pack",
-        "Brand": "Coca-Cola",
-        "ImageUri": "/customer/v1/coles/products/images/4919170.jpg",
-        "Locations": [{
-            "Aisle": "5",
-            "Order": 5.0,
-            "Description": "Aisle 5",
-            "AisleSide": "Right",
-            "Facing": 0,
-            "Shelf": 0,
-            "LayoutId": "0257",
-            "LayoutName": "DRINKS - CANS"
-        }],
-        "Promotions": null,
-        "Tags": [{
-            "Label": "cans",
-            "Name": "CANS",
-            "TagType": {
-                "Label": "subclass",
-                "Name": "SubClass"
-            }
-        }, {
-            "Label": "cans",
-            "Name": "CANS",
-            "TagType": {
-                "Label": "class",
-                "Name": "Class"
-            }
-        }, {
-            "Label": "softdrinks",
-            "Name": "SOFTDRINKS",
-            "TagType": {
-                "Label": "category",
-                "Name": "Category"
-            }
-        }, {
-            "Label": "impulse",
-            "Name": "IMPULSE",
-            "TagType": {
-                "Label": "group",
-                "Name": "Group"
-            }
-        }, {
-            "Label": "grocery",
-            "Name": "GROCERY",
-            "TagType": {
-                "Label": "tpc",
-                "Name": "TPC"
-            }
-        }, {
-            "Label": "flavoured-soft-drinks",
-            "Name": "Flavoured Soft Drinks",
-            "TagType": {
-                "Label": "online-1",
-                "Name": "Online 1"
-            }
-        }, {
-            "Label": "soft-drinks",
-            "Name": "Soft Drinks",
-            "TagType": {
-                "Label": "online-2",
-                "Name": "Online 2"
-            }
-        }, {
-            "Label": "drinks",
-            "Name": "Drinks",
-            "TagType": {
-                "Label": "online-3",
-                "Name": "Online 3"
-            }
-        }, {
-            "Label": "cocacola",
-            "Name": "Coca-Cola",
-            "TagType": {
-                "Label": "brand",
-                "Name": "Brand"
-            }
-        }]
-    }, {
-        "Id": 4919249,
-        "Name": "Coke Zero",
-        "Size": "1.5L",
-        "Brand": "Coca-Cola",
-        "ImageUri": "/customer/v1/coles/products/images/4919249.jpg",
-        "Locations": null,
-        "Promotions": null,
-        "Tags": [{
-            "Label": "cold-drinks",
-            "Name": "COLD DRINKS",
-            "TagType": {
-                "Label": "subclass",
-                "Name": "SubClass"
-            }
-        }, {
-            "Label": "cold-drinks",
-            "Name": "COLD DRINKS",
-            "TagType": {
-                "Label": "class",
-                "Name": "Class"
-            }
-        }, {
-            "Label": "softdrinks",
-            "Name": "SOFTDRINKS",
-            "TagType": {
-                "Label": "category",
-                "Name": "Category"
-            }
-        }, {
-            "Label": "impulse",
-            "Name": "IMPULSE",
-            "TagType": {
-                "Label": "group",
-                "Name": "Group"
-            }
-        }, {
-            "Label": "grocery",
-            "Name": "GROCERY",
-            "TagType": {
-                "Label": "tpc",
-                "Name": "TPC"
-            }
-        }, {
-            "Label": "flavoured-soft-drinks",
-            "Name": "Flavoured Soft Drinks",
-            "TagType": {
-                "Label": "online-1",
-                "Name": "Online 1"
-            }
-        }, {
-            "Label": "soft-drinks",
-            "Name": "Soft Drinks",
-            "TagType": {
-                "Label": "online-2",
-                "Name": "Online 2"
-            }
-        }, {
-            "Label": "drinks",
-            "Name": "Drinks",
-            "TagType": {
-                "Label": "online-3",
-                "Name": "Online 3"
-            }
-        }, {
-            "Label": "cocacola",
-            "Name": "Coca-Cola",
-            "TagType": {
-                "Label": "brand",
-                "Name": "Brand"
-            }
-        }]
-    }, {
-        "Id": 8464796,
-        "Name": "Coke 375mL Cans",
-        "Size": "30 pack",
-        "Brand": "Coca-Cola",
-        "ImageUri": "/customer/v1/coles/products/images/8464796.jpg",
-        "Locations": [{
-            "Aisle": "5",
-            "Order": 5.0,
-            "Description": "Aisle 5",
-            "AisleSide": "Right",
-            "Facing": 0,
-            "Shelf": 0,
-            "LayoutId": "0257",
-            "LayoutName": "DRINKS - CANS"
-        }],
-        "Promotions": [{
-            "PromotionId": 135127039,
-            "Type": "Value (Excl FP)",
-            "Description": "40% Off",
-            "Price": 18.0,
-            "WasPrice": 34.45,
-            "SaveAmount": 16.45,
-            "UnitPrice": "$1.60 per 1L",
-            "UnitOfMeasure": "EA",
-            "PriceDescription": null,
-            "StartDate": "2017-02-22T00:00:00",
-            "EndDate": "2017-02-28T23:59:59",
-            "SavePercent": 47.75
-        }],
-        "Tags": [{
-            "Label": "cans",
-            "Name": "CANS",
-            "TagType": {
-                "Label": "subclass",
-                "Name": "SubClass"
-            }
-        }, {
-            "Label": "cans",
-            "Name": "CANS",
-            "TagType": {
-                "Label": "class",
-                "Name": "Class"
-            }
-        }, {
-            "Label": "softdrinks",
-            "Name": "SOFTDRINKS",
-            "TagType": {
-                "Label": "category",
-                "Name": "Category"
-            }
-        }, {
-            "Label": "impulse",
-            "Name": "IMPULSE",
-            "TagType": {
-                "Label": "group",
-                "Name": "Group"
-            }
-        }, {
-            "Label": "grocery",
-            "Name": "GROCERY",
-            "TagType": {
-                "Label": "tpc",
-                "Name": "TPC"
-            }
-        }, {
-            "Label": "flavoured-soft-drinks",
-            "Name": "Flavoured Soft Drinks",
-            "TagType": {
-                "Label": "online-1",
-                "Name": "Online 1"
-            }
-        }, {
-            "Label": "soft-drinks",
-            "Name": "Soft Drinks",
-            "TagType": {
-                "Label": "online-2",
-                "Name": "Online 2"
-            }
-        }, {
-            "Label": "drinks",
-            "Name": "Drinks",
-            "TagType": {
-                "Label": "online-3",
-                "Name": "Online 3"
-            }
-        }, {
-            "Label": "cocacola",
-            "Name": "Coca-Cola",
-            "TagType": {
-                "Label": "brand",
-                "Name": "Brand"
-            }
-        }]
-    }, {
-        "Id": 5326366,
-        "Name": "Coke Zero 375mL Cans",
-        "Size": "15 pack",
-        "Brand": "Coca-Cola",
-        "ImageUri": "/customer/v1/coles/products/images/5326366.jpg",
-        "Locations": null,
-        "Promotions": null,
-        "Tags": [{
-            "Label": "cans",
-            "Name": "CANS",
-            "TagType": {
-                "Label": "subclass",
-                "Name": "SubClass"
-            }
-        }, {
-            "Label": "cans",
-            "Name": "CANS",
-            "TagType": {
-                "Label": "class",
-                "Name": "Class"
-            }
-        }, {
-            "Label": "softdrinks",
-            "Name": "SOFTDRINKS",
-            "TagType": {
-                "Label": "category",
-                "Name": "Category"
-            }
-        }, {
-            "Label": "impulse",
-            "Name": "IMPULSE",
-            "TagType": {
-                "Label": "group",
-                "Name": "Group"
-            }
-        }, {
-            "Label": "grocery",
-            "Name": "GROCERY",
-            "TagType": {
-                "Label": "tpc",
-                "Name": "TPC"
-            }
-        }, {
-            "Label": "flavoured-soft-drinks",
-            "Name": "Flavoured Soft Drinks",
-            "TagType": {
-                "Label": "online-1",
-                "Name": "Online 1"
-            }
-        }, {
-            "Label": "soft-drinks",
-            "Name": "Soft Drinks",
-            "TagType": {
-                "Label": "online-2",
-                "Name": "Online 2"
-            }
-        }, {
-            "Label": "drinks",
-            "Name": "Drinks",
-            "TagType": {
-                "Label": "online-3",
-                "Name": "Online 3"
-            }
-        }, {
-            "Label": "cocacola",
-            "Name": "Coca-Cola",
-            "TagType": {
-                "Label": "brand",
-                "Name": "Brand"
-            }
-        }]
-    }, {
-        "Id": 418503,
-        "Name": "Diet Coke",
-        "Size": "2L",
-        "Brand": "Coca-Cola",
-        "ImageUri": "/customer/v1/coles/products/images/418503.jpg",
-        "Locations": [{
-            "Aisle": "5",
-            "Order": 5.0,
-            "Description": "Aisle 5",
-            "AisleSide": "Right",
-            "Facing": 0,
-            "Shelf": 0,
-            "LayoutId": "0258",
-            "LayoutName": "DRINKS - BOTTLED"
-        }, {
-            "Aisle": "5",
-            "Order": 5.0,
-            "Description": "Aisle 5",
-            "AisleSide": "Right",
-            "Facing": 0,
-            "Shelf": 0,
-            "LayoutId": "0258",
-            "LayoutName": "DRINKS - BOTTLED"
-        }],
-        "Promotions": null,
-        "Tags": [{
-            "Label": "bottles",
-            "Name": "BOTTLES",
-            "TagType": {
-                "Label": "subclass",
-                "Name": "SubClass"
-            }
-        }, {
-            "Label": "bottles",
-            "Name": "BOTTLES",
-            "TagType": {
-                "Label": "class",
-                "Name": "Class"
-            }
-        }, {
-            "Label": "softdrinks",
-            "Name": "SOFTDRINKS",
-            "TagType": {
-                "Label": "category",
-                "Name": "Category"
-            }
-        }, {
-            "Label": "impulse",
-            "Name": "IMPULSE",
-            "TagType": {
-                "Label": "group",
-                "Name": "Group"
-            }
-        }, {
-            "Label": "grocery",
-            "Name": "GROCERY",
-            "TagType": {
-                "Label": "tpc",
-                "Name": "TPC"
-            }
-        }, {
-            "Label": "flavoured-soft-drinks",
-            "Name": "Flavoured Soft Drinks",
-            "TagType": {
-                "Label": "online-1",
-                "Name": "Online 1"
-            }
-        }, {
-            "Label": "soft-drinks",
-            "Name": "Soft Drinks",
-            "TagType": {
-                "Label": "online-2",
-                "Name": "Online 2"
-            }
-        }, {
-            "Label": "drinks",
-            "Name": "Drinks",
-            "TagType": {
-                "Label": "online-3",
-                "Name": "Online 3"
-            }
-        }, {
-            "Label": "cocacola",
-            "Name": "Coca-Cola",
-            "TagType": {
-                "Label": "brand",
-                "Name": "Brand"
-            }
-        }]
-    }, {
-        "Id": 2034105,
-        "Name": "Coke",
-        "Size": "250mL",
-        "Brand": "Coca-Cola",
-        "ImageUri": "/customer/v1/coles/products/images/2034105.jpg",
-        "Locations": [{
-            "Aisle": null,
-            "Order": 9999.0,
-            "Description": null,
-            "AisleSide": null,
-            "Facing": 0,
-            "Shelf": 0,
-            "LayoutId": "0128",
-            "LayoutName": "COLD DRINK - OD230"
-        }, {
-            "Aisle": "SERVICE",
-            "Order": 9999.0,
-            "Description": "Service desk",
-            "AisleSide": "Front of Store",
-            "Facing": 0,
-            "Shelf": 0,
-            "LayoutId": "9049",
-            "LayoutName": "COLD DRINK - OD290"
-        }],
-        "Promotions": null,
-        "Tags": [{
-            "Label": "cold-drinks",
-            "Name": "COLD DRINKS",
-            "TagType": {
-                "Label": "subclass",
-                "Name": "SubClass"
-            }
-        }, {
-            "Label": "cold-drinks",
-            "Name": "COLD DRINKS",
-            "TagType": {
-                "Label": "class",
-                "Name": "Class"
-            }
-        }, {
-            "Label": "softdrinks",
-            "Name": "SOFTDRINKS",
-            "TagType": {
-                "Label": "category",
-                "Name": "Category"
-            }
-        }, {
-            "Label": "impulse",
-            "Name": "IMPULSE",
-            "TagType": {
-                "Label": "group",
-                "Name": "Group"
-            }
-        }, {
-            "Label": "grocery",
-            "Name": "GROCERY",
-            "TagType": {
-                "Label": "tpc",
-                "Name": "TPC"
-            }
-        }, {
-            "Label": "flavoured-soft-drinks",
-            "Name": "Flavoured Soft Drinks",
-            "TagType": {
-                "Label": "online-1",
-                "Name": "Online 1"
-            }
-        }, {
-            "Label": "soft-drinks",
-            "Name": "Soft Drinks",
-            "TagType": {
-                "Label": "online-2",
-                "Name": "Online 2"
-            }
-        }, {
-            "Label": "drinks",
-            "Name": "Drinks",
-            "TagType": {
-                "Label": "online-3",
-                "Name": "Online 3"
-            }
-        }, {
-            "Label": "cocacola",
-            "Name": "Coca-Cola",
-            "TagType": {
-                "Label": "brand",
-                "Name": "Brand"
-            }
-        }]
-    }, {
-        "Id": 123011,
-        "Name": "Coke",
-        "Size": "1.25L",
-        "Brand": "Coca-Cola",
-        "ImageUri": "/customer/v1/coles/products/images/123011.jpg",
-        "Locations": [{
-            "Aisle": "5",
-            "Order": 5.0,
-            "Description": "Aisle 5",
-            "AisleSide": "Right",
-            "Facing": 0,
-            "Shelf": 0,
-            "LayoutId": "0258",
-            "LayoutName": "DRINKS - BOTTLED"
-        }, {
-            "Aisle": "5",
-            "Order": 5.0,
-            "Description": "Aisle 5",
-            "AisleSide": "Right",
-            "Facing": 0,
-            "Shelf": 0,
-            "LayoutId": "0258",
-            "LayoutName": "DRINKS - BOTTLED"
-        }, {
-            "Aisle": "5",
-            "Order": 5.0,
-            "Description": "Aisle 5",
-            "AisleSide": "Right",
-            "Facing": 0,
-            "Shelf": 0,
-            "LayoutId": "0258",
-            "LayoutName": "DRINKS - BOTTLED"
-        }, {
-            "Aisle": "5",
-            "Order": 5.0,
-            "Description": "Aisle 5",
-            "AisleSide": "Right",
-            "Facing": 0,
-            "Shelf": 0,
-            "LayoutId": "0258",
-            "LayoutName": "DRINKS - BOTTLED"
-        }],
-        "Promotions": [{
-            "PromotionId": 135127267,
-            "Type": "Value (Excl FP)",
-            "Description": "25% Off",
-            "Price": 2.0,
-            "WasPrice": 2.85,
-            "SaveAmount": 0.85,
-            "UnitPrice": "$1.60 per 1L",
-            "UnitOfMeasure": "EA",
-            "PriceDescription": null,
-            "StartDate": "2017-02-22T00:00:00",
-            "EndDate": "2017-02-28T23:59:59",
-            "SavePercent": 29.82
-        }],
-        "Tags": [{
-            "Label": "bottles",
-            "Name": "BOTTLES",
-            "TagType": {
-                "Label": "subclass",
-                "Name": "SubClass"
-            }
-        }, {
-            "Label": "bottles",
-            "Name": "BOTTLES",
-            "TagType": {
-                "Label": "class",
-                "Name": "Class"
-            }
-        }, {
-            "Label": "softdrinks",
-            "Name": "SOFTDRINKS",
-            "TagType": {
-                "Label": "category",
-                "Name": "Category"
-            }
-        }, {
-            "Label": "impulse",
-            "Name": "IMPULSE",
-            "TagType": {
-                "Label": "group",
-                "Name": "Group"
-            }
-        }, {
-            "Label": "grocery",
-            "Name": "GROCERY",
-            "TagType": {
-                "Label": "tpc",
-                "Name": "TPC"
-            }
-        }, {
-            "Label": "flavoured-soft-drinks",
-            "Name": "Flavoured Soft Drinks",
-            "TagType": {
-                "Label": "online-1",
-                "Name": "Online 1"
-            }
-        }, {
-            "Label": "soft-drinks",
-            "Name": "Soft Drinks",
-            "TagType": {
-                "Label": "online-2",
-                "Name": "Online 2"
-            }
-        }, {
-            "Label": "drinks",
-            "Name": "Drinks",
-            "TagType": {
-                "Label": "online-3",
-                "Name": "Online 3"
-            }
-        }, {
-            "Label": "cocacola",
-            "Name": "Coca-Cola",
-            "TagType": {
-                "Label": "brand",
-                "Name": "Brand"
-            }
-        }]
-    }, {
-        "Id": 4869333,
-        "Name": "Coke",
-        "Size": "1L",
-        "Brand": "Coca-Cola",
-        "ImageUri": "/customer/v1/coles/products/images/4869333.jpg",
-        "Locations": [{
-            "Aisle": "SERVICE",
-            "Order": 9999.0,
-            "Description": "Service desk",
-            "AisleSide": "Front of Store",
-            "Facing": 0,
-            "Shelf": 0,
-            "LayoutId": "9049",
-            "LayoutName": "COLD DRINK - OD290"
-        }],
-        "Promotions": null,
-        "Tags": [{
-            "Label": "cold-drinks",
-            "Name": "COLD DRINKS",
-            "TagType": {
-                "Label": "subclass",
-                "Name": "SubClass"
-            }
-        }, {
-            "Label": "cold-drinks",
-            "Name": "COLD DRINKS",
-            "TagType": {
-                "Label": "class",
-                "Name": "Class"
-            }
-        }, {
-            "Label": "softdrinks",
-            "Name": "SOFTDRINKS",
-            "TagType": {
-                "Label": "category",
-                "Name": "Category"
-            }
-        }, {
-            "Label": "impulse",
-            "Name": "IMPULSE",
-            "TagType": {
-                "Label": "group",
-                "Name": "Group"
-            }
-        }, {
-            "Label": "grocery",
-            "Name": "GROCERY",
-            "TagType": {
-                "Label": "tpc",
-                "Name": "TPC"
-            }
-        }, {
-            "Label": "flavoured-soft-drinks",
-            "Name": "Flavoured Soft Drinks",
-            "TagType": {
-                "Label": "online-1",
-                "Name": "Online 1"
-            }
-        }, {
-            "Label": "soft-drinks",
-            "Name": "Soft Drinks",
-            "TagType": {
-                "Label": "online-2",
-                "Name": "Online 2"
-            }
-        }, {
-            "Label": "drinks",
-            "Name": "Drinks",
-            "TagType": {
-                "Label": "online-3",
-                "Name": "Online 3"
-            }
-        }, {
-            "Label": "cocacola",
-            "Name": "Coca-Cola",
-            "TagType": {
-                "Label": "brand",
-                "Name": "Brand"
-            }
-        }]
-    }, {
-        "Id": 1849318,
-        "Name": "Diet Coke 375mL Cans",
-        "Size": "10 pack",
-        "Brand": "Coca-Cola",
-        "ImageUri": "/customer/v1/coles/products/images/1849318.jpg",
-        "Locations": [{
-            "Aisle": "5",
-            "Order": 5.0,
-            "Description": "Aisle 5",
-            "AisleSide": "Right",
-            "Facing": 0,
-            "Shelf": 0,
-            "LayoutId": "0257",
-            "LayoutName": "DRINKS - CANS"
-        }],
-        "Promotions": [{
-            "PromotionId": 135128950,
-            "Type": "Value (Excl FP)",
-            "Description": "1/2 Price",
-            "Price": 6.0,
-            "WasPrice": 12.3,
-            "SaveAmount": 6.3,
-            "UnitPrice": "$1.60 per 1L",
-            "UnitOfMeasure": "EA",
-            "PriceDescription": null,
-            "StartDate": "2017-02-22T00:00:00",
-            "EndDate": "2017-02-28T23:59:59",
-            "SavePercent": 51.22
-        }],
-        "Tags": [{
-            "Label": "cans",
-            "Name": "CANS",
-            "TagType": {
-                "Label": "subclass",
-                "Name": "SubClass"
-            }
-        }, {
-            "Label": "cans",
-            "Name": "CANS",
-            "TagType": {
-                "Label": "class",
-                "Name": "Class"
-            }
-        }, {
-            "Label": "softdrinks",
-            "Name": "SOFTDRINKS",
-            "TagType": {
-                "Label": "category",
-                "Name": "Category"
-            }
-        }, {
-            "Label": "impulse",
-            "Name": "IMPULSE",
-            "TagType": {
-                "Label": "group",
-                "Name": "Group"
-            }
-        }, {
-            "Label": "grocery",
-            "Name": "GROCERY",
-            "TagType": {
-                "Label": "tpc",
-                "Name": "TPC"
-            }
-        }, {
-            "Label": "flavoured-soft-drinks",
-            "Name": "Flavoured Soft Drinks",
-            "TagType": {
-                "Label": "online-1",
-                "Name": "Online 1"
-            }
-        }, {
-            "Label": "soft-drinks",
-            "Name": "Soft Drinks",
-            "TagType": {
-                "Label": "online-2",
-                "Name": "Online 2"
-            }
-        }, {
-            "Label": "drinks",
-            "Name": "Drinks",
-            "TagType": {
-                "Label": "online-3",
-                "Name": "Online 3"
-            }
-        }, {
-            "Label": "cocacola",
-            "Name": "Coca-Cola",
-            "TagType": {
-                "Label": "brand",
-                "Name": "Brand"
-            }
-        }]
-    }, {
-        "Id": 1849293,
-        "Name": "Coke Zero 375mL Cans",
-        "Size": "10 pack",
-        "Brand": "Coca-Cola",
-        "ImageUri": "/customer/v1/coles/products/images/1849293.jpg",
-        "Locations": [{
-            "Aisle": "5",
-            "Order": 5.0,
-            "Description": "Aisle 5",
-            "AisleSide": "Right",
-            "Facing": 0,
-            "Shelf": 0,
-            "LayoutId": "0257",
-            "LayoutName": "DRINKS - CANS"
-        }, {
-            "Aisle": "5",
-            "Order": 5.0,
-            "Description": "Aisle 5",
-            "AisleSide": "Right",
-            "Facing": 0,
-            "Shelf": 0,
-            "LayoutId": "0257",
-            "LayoutName": "DRINKS - CANS"
-        }],
-        "Promotions": [{
-            "PromotionId": 135128709,
-            "Type": "Value (Excl FP)",
-            "Description": "1/2 Price",
-            "Price": 6.0,
-            "WasPrice": 12.3,
-            "SaveAmount": 6.3,
-            "UnitPrice": "$1.60 per 1L",
-            "UnitOfMeasure": "EA",
-            "PriceDescription": null,
-            "StartDate": "2017-02-22T00:00:00",
-            "EndDate": "2017-02-28T23:59:59",
-            "SavePercent": 51.22
-        }],
-        "Tags": [{
-            "Label": "cans",
-            "Name": "CANS",
-            "TagType": {
-                "Label": "subclass",
-                "Name": "SubClass"
-            }
-        }, {
-            "Label": "cans",
-            "Name": "CANS",
-            "TagType": {
-                "Label": "class",
-                "Name": "Class"
-            }
-        }, {
-            "Label": "softdrinks",
-            "Name": "SOFTDRINKS",
-            "TagType": {
-                "Label": "category",
-                "Name": "Category"
-            }
-        }, {
-            "Label": "impulse",
-            "Name": "IMPULSE",
-            "TagType": {
-                "Label": "group",
-                "Name": "Group"
-            }
-        }, {
-            "Label": "grocery",
-            "Name": "GROCERY",
-            "TagType": {
-                "Label": "tpc",
-                "Name": "TPC"
-            }
-        }, {
-            "Label": "flavoured-soft-drinks",
-            "Name": "Flavoured Soft Drinks",
-            "TagType": {
-                "Label": "online-1",
-                "Name": "Online 1"
-            }
-        }, {
-            "Label": "soft-drinks",
-            "Name": "Soft Drinks",
-            "TagType": {
-                "Label": "online-2",
-                "Name": "Online 2"
-            }
-        }, {
-            "Label": "drinks",
-            "Name": "Drinks",
-            "TagType": {
-                "Label": "online-3",
-                "Name": "Online 3"
-            }
-        }, {
-            "Label": "cocacola",
-            "Name": "Coca-Cola",
-            "TagType": {
-                "Label": "brand",
-                "Name": "Brand"
-            }
-        }]
-    }, {
-        "Id": 1755190,
-        "Name": "Coke Zero Glass Bottle Chilled",
-        "Size": "385mL",
-        "Brand": "Coca-Cola",
-        "ImageUri": "/customer/v1/coles/products/images/1755190.jpg",
-        "Locations": [{
-            "Aisle": "SERVICE",
-            "Order": 9999.0,
-            "Description": "Service desk",
-            "AisleSide": "Front of Store",
-            "Facing": 0,
-            "Shelf": 0,
-            "LayoutId": "9049",
-            "LayoutName": "COLD DRINK - OD290"
-        }],
-        "Promotions": null,
-        "Tags": [{
-            "Label": "cold-drinks",
-            "Name": "COLD DRINKS",
-            "TagType": {
-                "Label": "subclass",
-                "Name": "SubClass"
-            }
-        }, {
-            "Label": "cold-drinks",
-            "Name": "COLD DRINKS",
-            "TagType": {
-                "Label": "class",
-                "Name": "Class"
-            }
-        }, {
-            "Label": "softdrinks",
-            "Name": "SOFTDRINKS",
-            "TagType": {
-                "Label": "category",
-                "Name": "Category"
-            }
-        }, {
-            "Label": "impulse",
-            "Name": "IMPULSE",
-            "TagType": {
-                "Label": "group",
-                "Name": "Group"
-            }
-        }, {
-            "Label": "grocery",
-            "Name": "GROCERY",
-            "TagType": {
-                "Label": "tpc",
-                "Name": "TPC"
-            }
-        }, {
-            "Label": "flavoured-soft-drinks",
-            "Name": "Flavoured Soft Drinks",
-            "TagType": {
-                "Label": "online-1",
-                "Name": "Online 1"
-            }
-        }, {
-            "Label": "soft-drinks",
-            "Name": "Soft Drinks",
-            "TagType": {
-                "Label": "online-2",
-                "Name": "Online 2"
-            }
-        }, {
-            "Label": "drinks",
-            "Name": "Drinks",
-            "TagType": {
-                "Label": "online-3",
-                "Name": "Online 3"
-            }
-        }, {
-            "Label": "cocacola",
-            "Name": "Coca-Cola",
-            "TagType": {
-                "Label": "brand",
-                "Name": "Brand"
-            }
-        }]
-    }, {
-        "Id": 1870223,
-        "Name": "Coke Glass Bottle",
-        "Size": "1L",
-        "Brand": "Coca-Cola",
-        "ImageUri": "/customer/v1/coles/products/images/1870223.jpg",
-        "Locations": [{
-            "Aisle": "5",
-            "Order": 5.0,
-            "Description": "Aisle 5",
-            "AisleSide": "Right",
-            "Facing": 0,
-            "Shelf": 0,
-            "LayoutId": "0258",
-            "LayoutName": "DRINKS - BOTTLED"
-        }, {
-            "Aisle": "5",
-            "Order": 5.0,
-            "Description": "Aisle 5",
-            "AisleSide": "Right",
-            "Facing": 0,
-            "Shelf": 0,
-            "LayoutId": "0257",
-            "LayoutName": "DRINKS - CANS"
-        }],
-        "Promotions": null,
-        "Tags": [{
-            "Label": "bottles",
-            "Name": "BOTTLES",
-            "TagType": {
-                "Label": "subclass",
-                "Name": "SubClass"
-            }
-        }, {
-            "Label": "bottles",
-            "Name": "BOTTLES",
-            "TagType": {
-                "Label": "class",
-                "Name": "Class"
-            }
-        }, {
-            "Label": "softdrinks",
-            "Name": "SOFTDRINKS",
-            "TagType": {
-                "Label": "category",
-                "Name": "Category"
-            }
-        }, {
-            "Label": "impulse",
-            "Name": "IMPULSE",
-            "TagType": {
-                "Label": "group",
-                "Name": "Group"
-            }
-        }, {
-            "Label": "grocery",
-            "Name": "GROCERY",
-            "TagType": {
-                "Label": "tpc",
-                "Name": "TPC"
-            }
-        }, {
-            "Label": "flavoured-soft-drinks",
-            "Name": "Flavoured Soft Drinks",
-            "TagType": {
-                "Label": "online-1",
-                "Name": "Online 1"
-            }
-        }, {
-            "Label": "soft-drinks",
-            "Name": "Soft Drinks",
-            "TagType": {
-                "Label": "online-2",
-                "Name": "Online 2"
-            }
-        }, {
-            "Label": "drinks",
-            "Name": "Drinks",
-            "TagType": {
-                "Label": "online-3",
-                "Name": "Online 3"
-            }
-        }, {
-            "Label": "cocacola",
-            "Name": "Coca-Cola",
-            "TagType": {
-                "Label": "brand",
-                "Name": "Brand"
-            }
-        }]
-    }, {
-        "Id": 2049339,
-        "Name": "Coke Zero Glass Bottle",
-        "Size": "1L",
-        "Brand": "Coca-Cola",
-        "ImageUri": "/customer/v1/coles/products/images/2049339.jpg",
-        "Locations": [{
-            "Aisle": "5",
-            "Order": 5.0,
-            "Description": "Aisle 5",
-            "AisleSide": "Right",
-            "Facing": 0,
-            "Shelf": 0,
-            "LayoutId": "0258",
-            "LayoutName": "DRINKS - BOTTLED"
-        }, {
-            "Aisle": "5",
-            "Order": 5.0,
-            "Description": "Aisle 5",
-            "AisleSide": "Right",
-            "Facing": 0,
-            "Shelf": 0,
-            "LayoutId": "0257",
-            "LayoutName": "DRINKS - CANS"
-        }],
-        "Promotions": null,
-        "Tags": [{
-            "Label": "bottles",
-            "Name": "BOTTLES",
-            "TagType": {
-                "Label": "subclass",
-                "Name": "SubClass"
-            }
-        }, {
-            "Label": "bottles",
-            "Name": "BOTTLES",
-            "TagType": {
-                "Label": "class",
-                "Name": "Class"
-            }
-        }, {
-            "Label": "softdrinks",
-            "Name": "SOFTDRINKS",
-            "TagType": {
-                "Label": "category",
-                "Name": "Category"
-            }
-        }, {
-            "Label": "impulse",
-            "Name": "IMPULSE",
-            "TagType": {
-                "Label": "group",
-                "Name": "Group"
-            }
-        }, {
-            "Label": "grocery",
-            "Name": "GROCERY",
-            "TagType": {
-                "Label": "tpc",
-                "Name": "TPC"
-            }
-        }, {
-            "Label": "flavoured-soft-drinks",
-            "Name": "Flavoured Soft Drinks",
-            "TagType": {
-                "Label": "online-1",
-                "Name": "Online 1"
-            }
-        }, {
-            "Label": "soft-drinks",
-            "Name": "Soft Drinks",
-            "TagType": {
-                "Label": "online-2",
-                "Name": "Online 2"
-            }
-        }, {
-            "Label": "drinks",
-            "Name": "Drinks",
-            "TagType": {
-                "Label": "online-3",
-                "Name": "Online 3"
-            }
-        }, {
-            "Label": "cocacola",
-            "Name": "Coca-Cola",
-            "TagType": {
-                "Label": "brand",
-                "Name": "Brand"
-            }
-        }]
-    }, {
-        "Id": 4869344,
-        "Name": "Diet Coke",
-        "Size": "1L",
-        "Brand": "Coca-Cola",
-        "ImageUri": "/customer/v1/coles/products/images/4869344.jpg",
-        "Locations": [{
-            "Aisle": "SERVICE",
-            "Order": 9999.0,
-            "Description": "Service desk",
-            "AisleSide": "Front of Store",
-            "Facing": 0,
-            "Shelf": 0,
-            "LayoutId": "9049",
-            "LayoutName": "COLD DRINK - OD290"
-        }],
-        "Promotions": null,
-        "Tags": [{
-            "Label": "cold-drinks",
-            "Name": "COLD DRINKS",
-            "TagType": {
-                "Label": "subclass",
-                "Name": "SubClass"
-            }
-        }, {
-            "Label": "cold-drinks",
-            "Name": "COLD DRINKS",
-            "TagType": {
-                "Label": "class",
-                "Name": "Class"
-            }
-        }, {
-            "Label": "softdrinks",
-            "Name": "SOFTDRINKS",
-            "TagType": {
-                "Label": "category",
-                "Name": "Category"
-            }
-        }, {
-            "Label": "impulse",
-            "Name": "IMPULSE",
-            "TagType": {
-                "Label": "group",
-                "Name": "Group"
-            }
-        }, {
-            "Label": "grocery",
-            "Name": "GROCERY",
-            "TagType": {
-                "Label": "tpc",
-                "Name": "TPC"
-            }
-        }, {
-            "Label": "flavoured-soft-drinks",
-            "Name": "Flavoured Soft Drinks",
-            "TagType": {
-                "Label": "online-1",
-                "Name": "Online 1"
-            }
-        }, {
-            "Label": "soft-drinks",
-            "Name": "Soft Drinks",
-            "TagType": {
-                "Label": "online-2",
-                "Name": "Online 2"
-            }
-        }, {
-            "Label": "drinks",
-            "Name": "Drinks",
-            "TagType": {
-                "Label": "online-3",
-                "Name": "Online 3"
-            }
-        }, {
-            "Label": "cocacola",
-            "Name": "Coca-Cola",
-            "TagType": {
-                "Label": "brand",
-                "Name": "Brand"
-            }
-        }]
-    }, {
-        "Id": 9391654,
-        "Name": "Coke Vanilla",
-        "Size": "600mL",
-        "Brand": "Coca-Cola",
-        "ImageUri": "/customer/v1/coles/products/images/9391654.jpg",
-        "Locations": [{
-            "Aisle": "SERVICE",
-            "Order": 9999.0,
-            "Description": "Service desk",
-            "AisleSide": "Front of Store",
-            "Facing": 0,
-            "Shelf": 0,
-            "LayoutId": "9037",
-            "LayoutName": "COLD DRINK - C14-900"
-        }, {
-            "Aisle": "SERVICE",
-            "Order": 9999.0,
-            "Description": "Service desk",
-            "AisleSide": "Front of Store",
-            "Facing": 0,
-            "Shelf": 0,
-            "LayoutId": "9049",
-            "LayoutName": "COLD DRINK - OD290"
-        }],
-        "Promotions": null,
-        "Tags": [{
-            "Label": "cold-drinks",
-            "Name": "COLD DRINKS",
-            "TagType": {
-                "Label": "subclass",
-                "Name": "SubClass"
-            }
-        }, {
-            "Label": "cold-drinks",
-            "Name": "COLD DRINKS",
-            "TagType": {
-                "Label": "class",
-                "Name": "Class"
-            }
-        }, {
-            "Label": "softdrinks",
-            "Name": "SOFTDRINKS",
-            "TagType": {
-                "Label": "category",
-                "Name": "Category"
-            }
-        }, {
-            "Label": "impulse",
-            "Name": "IMPULSE",
-            "TagType": {
-                "Label": "group",
-                "Name": "Group"
-            }
-        }, {
-            "Label": "grocery",
-            "Name": "GROCERY",
-            "TagType": {
-                "Label": "tpc",
-                "Name": "TPC"
-            }
-        }, {
-            "Label": "flavoured-soft-drinks",
-            "Name": "Flavoured Soft Drinks",
-            "TagType": {
-                "Label": "online-1",
-                "Name": "Online 1"
-            }
-        }, {
-            "Label": "soft-drinks",
-            "Name": "Soft Drinks",
-            "TagType": {
-                "Label": "online-2",
-                "Name": "Online 2"
-            }
-        }, {
-            "Label": "drinks",
-            "Name": "Drinks",
-            "TagType": {
-                "Label": "online-3",
-                "Name": "Online 3"
-            }
-        }, {
-            "Label": "cocacola",
-            "Name": "Coca-Cola",
-            "TagType": {
-                "Label": "brand",
-                "Name": "Brand"
-            }
-        }]
-    }, {
-        "Id": 6317065,
-        "Name": "Coke Glass Bottle Chilled",
-        "Size": "385mL",
-        "Brand": "Coca-Cola",
-        "ImageUri": "/customer/v1/coles/products/images/6317065.jpg",
-        "Locations": [{
-            "Aisle": "SERVICE",
-            "Order": 9999.0,
-            "Description": "Service desk",
-            "AisleSide": "Front of Store",
-            "Facing": 0,
-            "Shelf": 0,
-            "LayoutId": "9049",
-            "LayoutName": "COLD DRINK - OD290"
-        }],
-        "Promotions": null,
-        "Tags": [{
-            "Label": "cold-drinks",
-            "Name": "COLD DRINKS",
-            "TagType": {
-                "Label": "subclass",
-                "Name": "SubClass"
-            }
-        }, {
-            "Label": "cold-drinks",
-            "Name": "COLD DRINKS",
-            "TagType": {
-                "Label": "class",
-                "Name": "Class"
-            }
-        }, {
-            "Label": "softdrinks",
-            "Name": "SOFTDRINKS",
-            "TagType": {
-                "Label": "category",
-                "Name": "Category"
-            }
-        }, {
-            "Label": "impulse",
-            "Name": "IMPULSE",
-            "TagType": {
-                "Label": "group",
-                "Name": "Group"
-            }
-        }, {
-            "Label": "grocery",
-            "Name": "GROCERY",
-            "TagType": {
-                "Label": "tpc",
-                "Name": "TPC"
-            }
-        }, {
-            "Label": "flavoured-soft-drinks",
-            "Name": "Flavoured Soft Drinks",
-            "TagType": {
-                "Label": "online-1",
-                "Name": "Online 1"
-            }
-        }, {
-            "Label": "soft-drinks",
-            "Name": "Soft Drinks",
-            "TagType": {
-                "Label": "online-2",
-                "Name": "Online 2"
-            }
-        }, {
-            "Label": "drinks",
-            "Name": "Drinks",
-            "TagType": {
-                "Label": "online-3",
-                "Name": "Online 3"
-            }
-        }, {
-            "Label": "cocacola",
-            "Name": "Coca-Cola",
-            "TagType": {
-                "Label": "brand",
-                "Name": "Brand"
-            }
-        }]
-    }, {
-        "Id": 2825519,
-        "Name": "Coke Ginger Mini Can ",
-        "Size": "8 pack",
-        "Brand": "Coca-Cola",
-        "ImageUri": "/customer/v1/coles/products/images/2825519.jpg",
-        "Locations": null,
-        "Promotions": null,
-        "Tags": [{
-            "Label": "cans",
-            "Name": "CANS",
-            "TagType": {
-                "Label": "subclass",
-                "Name": "SubClass"
-            }
-        }, {
-            "Label": "cans",
-            "Name": "CANS",
-            "TagType": {
-                "Label": "class",
-                "Name": "Class"
-            }
-        }, {
-            "Label": "softdrinks",
-            "Name": "SOFTDRINKS",
-            "TagType": {
-                "Label": "category",
-                "Name": "Category"
-            }
-        }, {
-            "Label": "impulse",
-            "Name": "IMPULSE",
-            "TagType": {
-                "Label": "group",
-                "Name": "Group"
-            }
-        }, {
-            "Label": "grocery",
-            "Name": "GROCERY",
-            "TagType": {
-                "Label": "tpc",
-                "Name": "TPC"
-            }
-        }, {
-            "Label": "flavoured-soft-drinks",
-            "Name": "Flavoured Soft Drinks",
-            "TagType": {
-                "Label": "online-1",
-                "Name": "Online 1"
-            }
-        }, {
-            "Label": "soft-drinks",
-            "Name": "Soft Drinks",
-            "TagType": {
-                "Label": "online-2",
-                "Name": "Online 2"
-            }
-        }, {
-            "Label": "drinks",
-            "Name": "Drinks",
-            "TagType": {
-                "Label": "online-3",
-                "Name": "Online 3"
-            }
-        }, {
-            "Label": "cocacola",
-            "Name": "Coca-Cola",
-            "TagType": {
-                "Label": "brand",
-                "Name": "Brand"
-            }
-        }]
-    }, {
-        "Id": 4991202,
-        "Name": "Coke Zero",
-        "Size": "1L",
-        "Brand": "Coca-Cola",
-        "ImageUri": "/customer/v1/coles/products/images/4991202.jpg",
-        "Locations": [{
-            "Aisle": "SERVICE",
-            "Order": 9999.0,
-            "Description": "Service desk",
-            "AisleSide": "Front of Store",
-            "Facing": 0,
-            "Shelf": 0,
-            "LayoutId": "9049",
-            "LayoutName": "COLD DRINK - OD290"
-        }],
-        "Promotions": null,
-        "Tags": [{
-            "Label": "cold-drinks",
-            "Name": "COLD DRINKS",
-            "TagType": {
-                "Label": "subclass",
-                "Name": "SubClass"
-            }
-        }, {
-            "Label": "cold-drinks",
-            "Name": "COLD DRINKS",
-            "TagType": {
-                "Label": "class",
-                "Name": "Class"
-            }
-        }, {
-            "Label": "softdrinks",
-            "Name": "SOFTDRINKS",
-            "TagType": {
-                "Label": "category",
-                "Name": "Category"
-            }
-        }, {
-            "Label": "impulse",
-            "Name": "IMPULSE",
-            "TagType": {
-                "Label": "group",
-                "Name": "Group"
-            }
-        }, {
-            "Label": "grocery",
-            "Name": "GROCERY",
-            "TagType": {
-                "Label": "tpc",
-                "Name": "TPC"
-            }
-        }, {
-            "Label": "flavoured-soft-drinks",
-            "Name": "Flavoured Soft Drinks",
-            "TagType": {
-                "Label": "online-1",
-                "Name": "Online 1"
-            }
-        }, {
-            "Label": "soft-drinks",
-            "Name": "Soft Drinks",
-            "TagType": {
-                "Label": "online-2",
-                "Name": "Online 2"
-            }
-        }, {
-            "Label": "drinks",
-            "Name": "Drinks",
-            "TagType": {
-                "Label": "online-3",
-                "Name": "Online 3"
-            }
-        }, {
-            "Label": "cocacola",
-            "Name": "Coca-Cola",
-            "TagType": {
-                "Label": "brand",
-                "Name": "Brand"
-            }
-        }]
-    }, {
-        "Id": 9391600,
-        "Name": "Coke Vanilla",
-        "Size": "1.25L",
-        "Brand": "Coca-Cola",
-        "ImageUri": "/customer/v1/coles/products/images/9391600.jpg",
-        "Locations": [{
-            "Aisle": "5",
-            "Order": 5.0,
-            "Description": "Aisle 5",
-            "AisleSide": "Right",
-            "Facing": 0,
-            "Shelf": 0,
-            "LayoutId": "0258",
-            "LayoutName": "DRINKS - BOTTLED"
-        }],
-        "Promotions": [{
-            "PromotionId": 135127744,
-            "Type": "Value (Excl FP)",
-            "Description": "25% Off",
-            "Price": 2.0,
-            "WasPrice": 2.85,
-            "SaveAmount": 0.85,
-            "UnitPrice": "$1.60 per 1L",
-            "UnitOfMeasure": "EA",
-            "PriceDescription": null,
-            "StartDate": "2017-02-22T00:00:00",
-            "EndDate": "2017-02-28T23:59:59",
-            "SavePercent": 29.82
-        }],
-        "Tags": [{
-            "Label": "bottles",
-            "Name": "BOTTLES",
-            "TagType": {
-                "Label": "subclass",
-                "Name": "SubClass"
-            }
-        }, {
-            "Label": "bottles",
-            "Name": "BOTTLES",
-            "TagType": {
-                "Label": "class",
-                "Name": "Class"
-            }
-        }, {
-            "Label": "softdrinks",
-            "Name": "SOFTDRINKS",
-            "TagType": {
-                "Label": "category",
-                "Name": "Category"
-            }
-        }, {
-            "Label": "impulse",
-            "Name": "IMPULSE",
-            "TagType": {
-                "Label": "group",
-                "Name": "Group"
-            }
-        }, {
-            "Label": "grocery",
-            "Name": "GROCERY",
-            "TagType": {
-                "Label": "tpc",
-                "Name": "TPC"
-            }
-        }, {
-            "Label": "flavoured-soft-drinks",
-            "Name": "Flavoured Soft Drinks",
-            "TagType": {
-                "Label": "online-1",
-                "Name": "Online 1"
-            }
-        }, {
-            "Label": "soft-drinks",
-            "Name": "Soft Drinks",
-            "TagType": {
-                "Label": "online-2",
-                "Name": "Online 2"
-            }
-        }, {
-            "Label": "drinks",
-            "Name": "Drinks",
-            "TagType": {
-                "Label": "online-3",
-                "Name": "Online 3"
-            }
-        }, {
-            "Label": "cocacola",
-            "Name": "Coca-Cola",
-            "TagType": {
-                "Label": "brand",
-                "Name": "Brand"
-            }
-        }]
-    }, {
-        "Id": 5468407,
-        "Name": "Coke Chilled",
-        "Size": "600mL",
-        "Brand": "Coca-Cola",
-        "ImageUri": "/customer/v1/coles/products/images/5468407.jpg",
-        "Locations": [{
-            "Aisle": null,
-            "Order": 9999.0,
-            "Description": null,
-            "AisleSide": null,
-            "Facing": 0,
-            "Shelf": 0,
-            "LayoutId": "9036",
-            "LayoutName": "COLD DRINK - C14-580"
-        }, {
-            "Aisle": null,
-            "Order": 9999.0,
-            "Description": null,
-            "AisleSide": null,
-            "Facing": 0,
-            "Shelf": 0,
-            "LayoutId": "9036",
-            "LayoutName": "COLD DRINK - C14-580"
-        }, {
-            "Aisle": null,
-            "Order": 9999.0,
-            "Description": null,
-            "AisleSide": null,
-            "Facing": 0,
-            "Shelf": 0,
-            "LayoutId": "9036",
-            "LayoutName": "COLD DRINK - C14-580"
-        }, {
-            "Aisle": null,
-            "Order": 9999.0,
-            "Description": null,
-            "AisleSide": null,
-            "Facing": 0,
-            "Shelf": 0,
-            "LayoutId": "9036",
-            "LayoutName": "COLD DRINK - C14-580"
-        }, {
-            "Aisle": null,
-            "Order": 9999.0,
-            "Description": null,
-            "AisleSide": null,
-            "Facing": 0,
-            "Shelf": 0,
-            "LayoutId": "0128",
-            "LayoutName": "COLD DRINK - OD230"
-        }, {
-            "Aisle": null,
-            "Order": 9999.0,
-            "Description": null,
-            "AisleSide": null,
-            "Facing": 0,
-            "Shelf": 0,
-            "LayoutId": "0128",
-            "LayoutName": "COLD DRINK - OD230"
-        }, {
-            "Aisle": null,
-            "Order": 9999.0,
-            "Description": null,
-            "AisleSide": null,
-            "Facing": 0,
-            "Shelf": 0,
-            "LayoutId": "0269",
-            "LayoutName": "COLD DRINK - EVENT COOLER"
-        }, {
-            "Aisle": "SERVICE",
-            "Order": 9999.0,
-            "Description": "Service desk",
-            "AisleSide": "Front of Store",
-            "Facing": 0,
-            "Shelf": 0,
-            "LayoutId": "9037",
-            "LayoutName": "COLD DRINK - C14-900"
-        }, {
-            "Aisle": "SERVICE",
-            "Order": 9999.0,
-            "Description": "Service desk",
-            "AisleSide": "Front of Store",
-            "Facing": 0,
-            "Shelf": 0,
-            "LayoutId": "9049",
-            "LayoutName": "COLD DRINK - OD290"
-        }],
-        "Promotions": null,
-        "Tags": [{
-            "Label": "cold-drinks",
-            "Name": "COLD DRINKS",
-            "TagType": {
-                "Label": "subclass",
-                "Name": "SubClass"
-            }
-        }, {
-            "Label": "cold-drinks",
-            "Name": "COLD DRINKS",
-            "TagType": {
-                "Label": "class",
-                "Name": "Class"
-            }
-        }, {
-            "Label": "softdrinks",
-            "Name": "SOFTDRINKS",
-            "TagType": {
-                "Label": "category",
-                "Name": "Category"
-            }
-        }, {
-            "Label": "impulse",
-            "Name": "IMPULSE",
-            "TagType": {
-                "Label": "group",
-                "Name": "Group"
-            }
-        }, {
-            "Label": "grocery",
-            "Name": "GROCERY",
-            "TagType": {
-                "Label": "tpc",
-                "Name": "TPC"
-            }
-        }, {
-            "Label": "flavoured-soft-drinks",
-            "Name": "Flavoured Soft Drinks",
-            "TagType": {
-                "Label": "online-1",
-                "Name": "Online 1"
-            }
-        }, {
-            "Label": "soft-drinks",
-            "Name": "Soft Drinks",
-            "TagType": {
-                "Label": "online-2",
-                "Name": "Online 2"
-            }
-        }, {
-            "Label": "drinks",
-            "Name": "Drinks",
-            "TagType": {
-                "Label": "online-3",
-                "Name": "Online 3"
-            }
-        }, {
-            "Label": "cocacola",
-            "Name": "Coca-Cola",
-            "TagType": {
-                "Label": "brand",
-                "Name": "Brand"
-            }
-        }]
-    }, {
-        "Id": 2034116,
-        "Name": "Coke Zero",
-        "Size": "250mL",
-        "Brand": "Coca-Cola",
-        "ImageUri": "/customer/v1/coles/products/images/2034116.jpg",
-        "Locations": [{
-            "Aisle": null,
-            "Order": 9999.0,
-            "Description": null,
-            "AisleSide": null,
-            "Facing": 0,
-            "Shelf": 0,
-            "LayoutId": "0128",
-            "LayoutName": "COLD DRINK - OD230"
-        }, {
-            "Aisle": "SERVICE",
-            "Order": 9999.0,
-            "Description": "Service desk",
-            "AisleSide": "Front of Store",
-            "Facing": 0,
-            "Shelf": 0,
-            "LayoutId": "9049",
-            "LayoutName": "COLD DRINK - OD290"
-        }],
-        "Promotions": null,
-        "Tags": [{
-            "Label": "cold-drinks",
-            "Name": "COLD DRINKS",
-            "TagType": {
-                "Label": "subclass",
-                "Name": "SubClass"
-            }
-        }, {
-            "Label": "cold-drinks",
-            "Name": "COLD DRINKS",
-            "TagType": {
-                "Label": "class",
-                "Name": "Class"
-            }
-        }, {
-            "Label": "softdrinks",
-            "Name": "SOFTDRINKS",
-            "TagType": {
-                "Label": "category",
-                "Name": "Category"
-            }
-        }, {
-            "Label": "impulse",
-            "Name": "IMPULSE",
-            "TagType": {
-                "Label": "group",
-                "Name": "Group"
-            }
-        }, {
-            "Label": "grocery",
-            "Name": "GROCERY",
-            "TagType": {
-                "Label": "tpc",
-                "Name": "TPC"
-            }
-        }, {
-            "Label": "flavoured-soft-drinks",
-            "Name": "Flavoured Soft Drinks",
-            "TagType": {
-                "Label": "online-1",
-                "Name": "Online 1"
-            }
-        }, {
-            "Label": "soft-drinks",
-            "Name": "Soft Drinks",
-            "TagType": {
-                "Label": "online-2",
-                "Name": "Online 2"
-            }
-        }, {
-            "Label": "drinks",
-            "Name": "Drinks",
-            "TagType": {
-                "Label": "online-3",
-                "Name": "Online 3"
-            }
-        }, {
-            "Label": "cocacola",
-            "Name": "Coca-Cola",
-            "TagType": {
-                "Label": "brand",
-                "Name": "Brand"
-            }
-        }]
-    }, {
-        "Id": 8464800,
-        "Name": "Diet Coke 375mL Cans",
-        "Size": "30 pack",
-        "Brand": "Coca-Cola",
-        "ImageUri": "/customer/v1/coles/products/images/8464800.jpg",
-        "Locations": null,
-        "Promotions": [{
-            "PromotionId": 135127063,
-            "Type": "Value (Excl FP)",
-            "Description": "40% Off",
-            "Price": 18.0,
-            "WasPrice": 34.45,
-            "SaveAmount": 16.45,
-            "UnitPrice": "$1.60 per 1L",
-            "UnitOfMeasure": "EA",
-            "PriceDescription": null,
-            "StartDate": "2017-02-22T00:00:00",
-            "EndDate": "2017-02-28T23:59:59",
-            "SavePercent": 47.75
-        }],
-        "Tags": [{
-            "Label": "cans",
-            "Name": "CANS",
-            "TagType": {
-                "Label": "subclass",
-                "Name": "SubClass"
-            }
-        }, {
-            "Label": "cans",
-            "Name": "CANS",
-            "TagType": {
-                "Label": "class",
-                "Name": "Class"
-            }
-        }, {
-            "Label": "softdrinks",
-            "Name": "SOFTDRINKS",
-            "TagType": {
-                "Label": "category",
-                "Name": "Category"
-            }
-        }, {
-            "Label": "impulse",
-            "Name": "IMPULSE",
-            "TagType": {
-                "Label": "group",
-                "Name": "Group"
-            }
-        }, {
-            "Label": "grocery",
-            "Name": "GROCERY",
-            "TagType": {
-                "Label": "tpc",
-                "Name": "TPC"
-            }
-        }, {
-            "Label": "flavoured-soft-drinks",
-            "Name": "Flavoured Soft Drinks",
-            "TagType": {
-                "Label": "online-1",
-                "Name": "Online 1"
-            }
-        }, {
-            "Label": "soft-drinks",
-            "Name": "Soft Drinks",
-            "TagType": {
-                "Label": "online-2",
-                "Name": "Online 2"
-            }
-        }, {
-            "Label": "drinks",
-            "Name": "Drinks",
-            "TagType": {
-                "Label": "online-3",
-                "Name": "Online 3"
-            }
-        }, {
-            "Label": "cocacola",
-            "Name": "Coca-Cola",
-            "TagType": {
-                "Label": "brand",
-                "Name": "Brand"
-            }
-        }]
-    }, {
-        "Id": 8464810,
-        "Name": "Coke Zero 375mL Cans",
-        "Size": "30 pack",
-        "Brand": "Coca-Cola",
-        "ImageUri": "/customer/v1/coles/products/images/8464810.jpg",
-        "Locations": [{
-            "Aisle": "5",
-            "Order": 5.0,
-            "Description": "Aisle 5",
-            "AisleSide": "Right",
-            "Facing": 0,
-            "Shelf": 0,
-            "LayoutId": "0257",
-            "LayoutName": "DRINKS - CANS"
-        }],
-        "Promotions": [{
-            "PromotionId": 135127087,
-            "Type": "Value (Excl FP)",
-            "Description": "40% Off",
-            "Price": 18.0,
-            "WasPrice": 34.45,
-            "SaveAmount": 16.45,
-            "UnitPrice": "$1.60 per 1L",
-            "UnitOfMeasure": "EA",
-            "PriceDescription": null,
-            "StartDate": "2017-02-22T00:00:00",
-            "EndDate": "2017-02-28T23:59:59",
-            "SavePercent": 47.75
-        }],
-        "Tags": [{
-            "Label": "cans",
-            "Name": "CANS",
-            "TagType": {
-                "Label": "subclass",
-                "Name": "SubClass"
-            }
-        }, {
-            "Label": "cans",
-            "Name": "CANS",
-            "TagType": {
-                "Label": "class",
-                "Name": "Class"
-            }
-        }, {
-            "Label": "softdrinks",
-            "Name": "SOFTDRINKS",
-            "TagType": {
-                "Label": "category",
-                "Name": "Category"
-            }
-        }, {
-            "Label": "impulse",
-            "Name": "IMPULSE",
-            "TagType": {
-                "Label": "group",
-                "Name": "Group"
-            }
-        }, {
-            "Label": "grocery",
-            "Name": "GROCERY",
-            "TagType": {
-                "Label": "tpc",
-                "Name": "TPC"
-            }
-        }, {
-            "Label": "flavoured-soft-drinks",
-            "Name": "Flavoured Soft Drinks",
-            "TagType": {
-                "Label": "online-1",
-                "Name": "Online 1"
-            }
-        }, {
-            "Label": "soft-drinks",
-            "Name": "Soft Drinks",
-            "TagType": {
-                "Label": "online-2",
-                "Name": "Online 2"
-            }
-        }, {
-            "Label": "drinks",
-            "Name": "Drinks",
-            "TagType": {
-                "Label": "online-3",
-                "Name": "Online 3"
-            }
-        }, {
-            "Label": "cocacola",
-            "Name": "Coca-Cola",
-            "TagType": {
-                "Label": "brand",
-                "Name": "Brand"
-            }
-        }]
-    }],
+    "Results": [
+        {
+            "Id": 191736,
+            "Name": "Coke",
+            "Size": "2L",
+            "Brand": "Coca-Cola",
+            "ImageUri": "/customer/v1/coles/products/images/191736.jpg",
+            "Locations": [
+                {
+                    "Aisle": "5",
+                    "Order": 5.0,
+                    "Description": "Aisle 5",
+                    "AisleSide": "Right",
+                    "Facing": 0,
+                    "Shelf": 0,
+                    "LayoutId": "0258",
+                    "LayoutName": "DRINKS - BOTTLED"
+                },
+                {
+                    "Aisle": "5",
+                    "Order": 5.0,
+                    "Description": "Aisle 5",
+                    "AisleSide": "Right",
+                    "Facing": 0,
+                    "Shelf": 0,
+                    "LayoutId": "0258",
+                    "LayoutName": "DRINKS - BOTTLED"
+                },
+                {
+                    "Aisle": "5",
+                    "Order": 5.0,
+                    "Description": "Aisle 5",
+                    "AisleSide": "Right",
+                    "Facing": 0,
+                    "Shelf": 0,
+                    "LayoutId": "0258",
+                    "LayoutName": "DRINKS - BOTTLED"
+                },
+                {
+                    "Aisle": "5",
+                    "Order": 5.0,
+                    "Description": "Aisle 5",
+                    "AisleSide": "Right",
+                    "Facing": 0,
+                    "Shelf": 0,
+                    "LayoutId": "0258",
+                    "LayoutName": "DRINKS - BOTTLED"
+                },
+                {
+                    "Aisle": "5",
+                    "Order": 5.0,
+                    "Description": "Aisle 5",
+                    "AisleSide": "Right",
+                    "Facing": 0,
+                    "Shelf": 0,
+                    "LayoutId": "0258",
+                    "LayoutName": "DRINKS - BOTTLED"
+                }
+            ],
+            "Promotions": null,
+            "Tags": [
+                {
+                    "Label": "bottles",
+                    "Name": "BOTTLES",
+                    "TagType": {
+                        "Label": "subclass",
+                        "Name": "SubClass"
+                    }
+                },
+                {
+                    "Label": "bottles",
+                    "Name": "BOTTLES",
+                    "TagType": {
+                        "Label": "class",
+                        "Name": "Class"
+                    }
+                },
+                {
+                    "Label": "softdrinks",
+                    "Name": "SOFTDRINKS",
+                    "TagType": {
+                        "Label": "category",
+                        "Name": "Category"
+                    }
+                },
+                {
+                    "Label": "impulse",
+                    "Name": "IMPULSE",
+                    "TagType": {
+                        "Label": "group",
+                        "Name": "Group"
+                    }
+                },
+                {
+                    "Label": "grocery",
+                    "Name": "GROCERY",
+                    "TagType": {
+                        "Label": "tpc",
+                        "Name": "TPC"
+                    }
+                },
+                {
+                    "Label": "flavoured-soft-drinks",
+                    "Name": "Flavoured Soft Drinks",
+                    "TagType": {
+                        "Label": "online-1",
+                        "Name": "Online 1"
+                    }
+                },
+                {
+                    "Label": "soft-drinks",
+                    "Name": "Soft Drinks",
+                    "TagType": {
+                        "Label": "online-2",
+                        "Name": "Online 2"
+                    }
+                },
+                {
+                    "Label": "drinks",
+                    "Name": "Drinks",
+                    "TagType": {
+                        "Label": "online-3",
+                        "Name": "Online 3"
+                    }
+                },
+                {
+                    "Label": "cocacola",
+                    "Name": "Coca-Cola",
+                    "TagType": {
+                        "Label": "brand",
+                        "Name": "Brand"
+                    }
+                }
+            ]
+        },
+        {
+            "Id": 4919238,
+            "Name": "Coke Zero",
+            "Size": "2L",
+            "Brand": "Coca-Cola",
+            "ImageUri": "/customer/v1/coles/products/images/4919238.jpg",
+            "Locations": [
+                {
+                    "Aisle": "5",
+                    "Order": 5.0,
+                    "Description": "Aisle 5",
+                    "AisleSide": "Right",
+                    "Facing": 0,
+                    "Shelf": 0,
+                    "LayoutId": "0258",
+                    "LayoutName": "DRINKS - BOTTLED"
+                },
+                {
+                    "Aisle": "5",
+                    "Order": 5.0,
+                    "Description": "Aisle 5",
+                    "AisleSide": "Right",
+                    "Facing": 0,
+                    "Shelf": 0,
+                    "LayoutId": "0258",
+                    "LayoutName": "DRINKS - BOTTLED"
+                }
+            ],
+            "Promotions": null,
+            "Tags": [
+                {
+                    "Label": "bottles",
+                    "Name": "BOTTLES",
+                    "TagType": {
+                        "Label": "subclass",
+                        "Name": "SubClass"
+                    }
+                },
+                {
+                    "Label": "bottles",
+                    "Name": "BOTTLES",
+                    "TagType": {
+                        "Label": "class",
+                        "Name": "Class"
+                    }
+                },
+                {
+                    "Label": "softdrinks",
+                    "Name": "SOFTDRINKS",
+                    "TagType": {
+                        "Label": "category",
+                        "Name": "Category"
+                    }
+                },
+                {
+                    "Label": "impulse",
+                    "Name": "IMPULSE",
+                    "TagType": {
+                        "Label": "group",
+                        "Name": "Group"
+                    }
+                },
+                {
+                    "Label": "grocery",
+                    "Name": "GROCERY",
+                    "TagType": {
+                        "Label": "tpc",
+                        "Name": "TPC"
+                    }
+                },
+                {
+                    "Label": "flavoured-soft-drinks",
+                    "Name": "Flavoured Soft Drinks",
+                    "TagType": {
+                        "Label": "online-1",
+                        "Name": "Online 1"
+                    }
+                },
+                {
+                    "Label": "soft-drinks",
+                    "Name": "Soft Drinks",
+                    "TagType": {
+                        "Label": "online-2",
+                        "Name": "Online 2"
+                    }
+                },
+                {
+                    "Label": "drinks",
+                    "Name": "Drinks",
+                    "TagType": {
+                        "Label": "online-3",
+                        "Name": "Online 3"
+                    }
+                },
+                {
+                    "Label": "cocacola",
+                    "Name": "Coca-Cola",
+                    "TagType": {
+                        "Label": "brand",
+                        "Name": "Brand"
+                    }
+                }
+            ]
+        },
+        {
+            "Id": 6999759,
+            "Name": "Coke Chilled",
+            "Size": "1.5L",
+            "Brand": "Coca-Cola",
+            "ImageUri": "/customer/v1/coles/products/images/6999759.jpg",
+            "Locations": null,
+            "Promotions": null,
+            "Tags": [
+                {
+                    "Label": "cold-drinks",
+                    "Name": "COLD DRINKS",
+                    "TagType": {
+                        "Label": "subclass",
+                        "Name": "SubClass"
+                    }
+                },
+                {
+                    "Label": "cold-drinks",
+                    "Name": "COLD DRINKS",
+                    "TagType": {
+                        "Label": "class",
+                        "Name": "Class"
+                    }
+                },
+                {
+                    "Label": "softdrinks",
+                    "Name": "SOFTDRINKS",
+                    "TagType": {
+                        "Label": "category",
+                        "Name": "Category"
+                    }
+                },
+                {
+                    "Label": "impulse",
+                    "Name": "IMPULSE",
+                    "TagType": {
+                        "Label": "group",
+                        "Name": "Group"
+                    }
+                },
+                {
+                    "Label": "grocery",
+                    "Name": "GROCERY",
+                    "TagType": {
+                        "Label": "tpc",
+                        "Name": "TPC"
+                    }
+                },
+                {
+                    "Label": "flavoured-soft-drinks",
+                    "Name": "Flavoured Soft Drinks",
+                    "TagType": {
+                        "Label": "online-1",
+                        "Name": "Online 1"
+                    }
+                },
+                {
+                    "Label": "soft-drinks",
+                    "Name": "Soft Drinks",
+                    "TagType": {
+                        "Label": "online-2",
+                        "Name": "Online 2"
+                    }
+                },
+                {
+                    "Label": "drinks",
+                    "Name": "Drinks",
+                    "TagType": {
+                        "Label": "online-3",
+                        "Name": "Online 3"
+                    }
+                },
+                {
+                    "Label": "cocacola",
+                    "Name": "Coca-Cola",
+                    "TagType": {
+                        "Label": "brand",
+                        "Name": "Brand"
+                    }
+                }
+            ]
+        },
+        {
+            "Id": 5326344,
+            "Name": "Coke 375mL Cans",
+            "Size": "15 pack",
+            "Brand": "Coca-Cola",
+            "ImageUri": "/customer/v1/coles/products/images/5326344.jpg",
+            "Locations": null,
+            "Promotions": null,
+            "Tags": [
+                {
+                    "Label": "cans",
+                    "Name": "CANS",
+                    "TagType": {
+                        "Label": "subclass",
+                        "Name": "SubClass"
+                    }
+                },
+                {
+                    "Label": "cans",
+                    "Name": "CANS",
+                    "TagType": {
+                        "Label": "class",
+                        "Name": "Class"
+                    }
+                },
+                {
+                    "Label": "softdrinks",
+                    "Name": "SOFTDRINKS",
+                    "TagType": {
+                        "Label": "category",
+                        "Name": "Category"
+                    }
+                },
+                {
+                    "Label": "impulse",
+                    "Name": "IMPULSE",
+                    "TagType": {
+                        "Label": "group",
+                        "Name": "Group"
+                    }
+                },
+                {
+                    "Label": "grocery",
+                    "Name": "GROCERY",
+                    "TagType": {
+                        "Label": "tpc",
+                        "Name": "TPC"
+                    }
+                },
+                {
+                    "Label": "flavoured-soft-drinks",
+                    "Name": "Flavoured Soft Drinks",
+                    "TagType": {
+                        "Label": "online-1",
+                        "Name": "Online 1"
+                    }
+                },
+                {
+                    "Label": "soft-drinks",
+                    "Name": "Soft Drinks",
+                    "TagType": {
+                        "Label": "online-2",
+                        "Name": "Online 2"
+                    }
+                },
+                {
+                    "Label": "drinks",
+                    "Name": "Drinks",
+                    "TagType": {
+                        "Label": "online-3",
+                        "Name": "Online 3"
+                    }
+                },
+                {
+                    "Label": "cocacola",
+                    "Name": "Coca-Cola",
+                    "TagType": {
+                        "Label": "brand",
+                        "Name": "Brand"
+                    }
+                }
+            ]
+        },
+        {
+            "Id": 7365777,
+            "Name": "Coke Can 375mL",
+            "Size": "24 pack",
+            "Brand": "Coca-Cola",
+            "ImageUri": "/customer/v1/coles/products/images/7365777.jpg",
+            "Locations": [
+                {
+                    "Aisle": "5",
+                    "Order": 5.0,
+                    "Description": "Aisle 5",
+                    "AisleSide": "Right",
+                    "Facing": 0,
+                    "Shelf": 0,
+                    "LayoutId": "0257",
+                    "LayoutName": "DRINKS - CANS"
+                }
+            ],
+            "Promotions": null,
+            "Tags": [
+                {
+                    "Label": "cans",
+                    "Name": "CANS",
+                    "TagType": {
+                        "Label": "subclass",
+                        "Name": "SubClass"
+                    }
+                },
+                {
+                    "Label": "cans",
+                    "Name": "CANS",
+                    "TagType": {
+                        "Label": "class",
+                        "Name": "Class"
+                    }
+                },
+                {
+                    "Label": "softdrinks",
+                    "Name": "SOFTDRINKS",
+                    "TagType": {
+                        "Label": "category",
+                        "Name": "Category"
+                    }
+                },
+                {
+                    "Label": "impulse",
+                    "Name": "IMPULSE",
+                    "TagType": {
+                        "Label": "group",
+                        "Name": "Group"
+                    }
+                },
+                {
+                    "Label": "grocery",
+                    "Name": "GROCERY",
+                    "TagType": {
+                        "Label": "tpc",
+                        "Name": "TPC"
+                    }
+                },
+                {
+                    "Label": "flavoured-soft-drinks",
+                    "Name": "Flavoured Soft Drinks",
+                    "TagType": {
+                        "Label": "online-1",
+                        "Name": "Online 1"
+                    }
+                },
+                {
+                    "Label": "soft-drinks",
+                    "Name": "Soft Drinks",
+                    "TagType": {
+                        "Label": "online-2",
+                        "Name": "Online 2"
+                    }
+                },
+                {
+                    "Label": "drinks",
+                    "Name": "Drinks",
+                    "TagType": {
+                        "Label": "online-3",
+                        "Name": "Online 3"
+                    }
+                },
+                {
+                    "Label": "cocacola",
+                    "Name": "Coca-Cola",
+                    "TagType": {
+                        "Label": "brand",
+                        "Name": "Brand"
+                    }
+                }
+            ]
+        },
+        {
+            "Id": 4919170,
+            "Name": "Coke Zero 375mL Cans",
+            "Size": "24 pack",
+            "Brand": "Coca-Cola",
+            "ImageUri": "/customer/v1/coles/products/images/4919170.jpg",
+            "Locations": [
+                {
+                    "Aisle": "5",
+                    "Order": 5.0,
+                    "Description": "Aisle 5",
+                    "AisleSide": "Right",
+                    "Facing": 0,
+                    "Shelf": 0,
+                    "LayoutId": "0257",
+                    "LayoutName": "DRINKS - CANS"
+                }
+            ],
+            "Promotions": null,
+            "Tags": [
+                {
+                    "Label": "cans",
+                    "Name": "CANS",
+                    "TagType": {
+                        "Label": "subclass",
+                        "Name": "SubClass"
+                    }
+                },
+                {
+                    "Label": "cans",
+                    "Name": "CANS",
+                    "TagType": {
+                        "Label": "class",
+                        "Name": "Class"
+                    }
+                },
+                {
+                    "Label": "softdrinks",
+                    "Name": "SOFTDRINKS",
+                    "TagType": {
+                        "Label": "category",
+                        "Name": "Category"
+                    }
+                },
+                {
+                    "Label": "impulse",
+                    "Name": "IMPULSE",
+                    "TagType": {
+                        "Label": "group",
+                        "Name": "Group"
+                    }
+                },
+                {
+                    "Label": "grocery",
+                    "Name": "GROCERY",
+                    "TagType": {
+                        "Label": "tpc",
+                        "Name": "TPC"
+                    }
+                },
+                {
+                    "Label": "flavoured-soft-drinks",
+                    "Name": "Flavoured Soft Drinks",
+                    "TagType": {
+                        "Label": "online-1",
+                        "Name": "Online 1"
+                    }
+                },
+                {
+                    "Label": "soft-drinks",
+                    "Name": "Soft Drinks",
+                    "TagType": {
+                        "Label": "online-2",
+                        "Name": "Online 2"
+                    }
+                },
+                {
+                    "Label": "drinks",
+                    "Name": "Drinks",
+                    "TagType": {
+                        "Label": "online-3",
+                        "Name": "Online 3"
+                    }
+                },
+                {
+                    "Label": "cocacola",
+                    "Name": "Coca-Cola",
+                    "TagType": {
+                        "Label": "brand",
+                        "Name": "Brand"
+                    }
+                }
+            ]
+        },
+        {
+            "Id": 4919249,
+            "Name": "Coke Zero",
+            "Size": "1.5L",
+            "Brand": "Coca-Cola",
+            "ImageUri": "/customer/v1/coles/products/images/4919249.jpg",
+            "Locations": null,
+            "Promotions": null,
+            "Tags": [
+                {
+                    "Label": "cold-drinks",
+                    "Name": "COLD DRINKS",
+                    "TagType": {
+                        "Label": "subclass",
+                        "Name": "SubClass"
+                    }
+                },
+                {
+                    "Label": "cold-drinks",
+                    "Name": "COLD DRINKS",
+                    "TagType": {
+                        "Label": "class",
+                        "Name": "Class"
+                    }
+                },
+                {
+                    "Label": "softdrinks",
+                    "Name": "SOFTDRINKS",
+                    "TagType": {
+                        "Label": "category",
+                        "Name": "Category"
+                    }
+                },
+                {
+                    "Label": "impulse",
+                    "Name": "IMPULSE",
+                    "TagType": {
+                        "Label": "group",
+                        "Name": "Group"
+                    }
+                },
+                {
+                    "Label": "grocery",
+                    "Name": "GROCERY",
+                    "TagType": {
+                        "Label": "tpc",
+                        "Name": "TPC"
+                    }
+                },
+                {
+                    "Label": "flavoured-soft-drinks",
+                    "Name": "Flavoured Soft Drinks",
+                    "TagType": {
+                        "Label": "online-1",
+                        "Name": "Online 1"
+                    }
+                },
+                {
+                    "Label": "soft-drinks",
+                    "Name": "Soft Drinks",
+                    "TagType": {
+                        "Label": "online-2",
+                        "Name": "Online 2"
+                    }
+                },
+                {
+                    "Label": "drinks",
+                    "Name": "Drinks",
+                    "TagType": {
+                        "Label": "online-3",
+                        "Name": "Online 3"
+                    }
+                },
+                {
+                    "Label": "cocacola",
+                    "Name": "Coca-Cola",
+                    "TagType": {
+                        "Label": "brand",
+                        "Name": "Brand"
+                    }
+                }
+            ]
+        },
+        {
+            "Id": 8464796,
+            "Name": "Coke 375mL Cans",
+            "Size": "30 pack",
+            "Brand": "Coca-Cola",
+            "ImageUri": "/customer/v1/coles/products/images/8464796.jpg",
+            "Locations": [
+                {
+                    "Aisle": "5",
+                    "Order": 5.0,
+                    "Description": "Aisle 5",
+                    "AisleSide": "Right",
+                    "Facing": 0,
+                    "Shelf": 0,
+                    "LayoutId": "0257",
+                    "LayoutName": "DRINKS - CANS"
+                }
+            ],
+            "Promotions": [
+                {
+                    "PromotionId": 135127039,
+                    "Type": "Value (Excl FP)",
+                    "Description": "40% Off",
+                    "Price": 18.0,
+                    "WasPrice": 34.45,
+                    "SaveAmount": 16.45,
+                    "UnitPrice": "$1.60 per 1L",
+                    "UnitOfMeasure": "EA",
+                    "PriceDescription": null,
+                    "StartDate": "2017-02-22T00:00:00",
+                    "EndDate": "2017-02-28T23:59:59",
+                    "SavePercent": 47.75
+                }
+            ],
+            "Tags": [
+                {
+                    "Label": "cans",
+                    "Name": "CANS",
+                    "TagType": {
+                        "Label": "subclass",
+                        "Name": "SubClass"
+                    }
+                },
+                {
+                    "Label": "cans",
+                    "Name": "CANS",
+                    "TagType": {
+                        "Label": "class",
+                        "Name": "Class"
+                    }
+                },
+                {
+                    "Label": "softdrinks",
+                    "Name": "SOFTDRINKS",
+                    "TagType": {
+                        "Label": "category",
+                        "Name": "Category"
+                    }
+                },
+                {
+                    "Label": "impulse",
+                    "Name": "IMPULSE",
+                    "TagType": {
+                        "Label": "group",
+                        "Name": "Group"
+                    }
+                },
+                {
+                    "Label": "grocery",
+                    "Name": "GROCERY",
+                    "TagType": {
+                        "Label": "tpc",
+                        "Name": "TPC"
+                    }
+                },
+                {
+                    "Label": "flavoured-soft-drinks",
+                    "Name": "Flavoured Soft Drinks",
+                    "TagType": {
+                        "Label": "online-1",
+                        "Name": "Online 1"
+                    }
+                },
+                {
+                    "Label": "soft-drinks",
+                    "Name": "Soft Drinks",
+                    "TagType": {
+                        "Label": "online-2",
+                        "Name": "Online 2"
+                    }
+                },
+                {
+                    "Label": "drinks",
+                    "Name": "Drinks",
+                    "TagType": {
+                        "Label": "online-3",
+                        "Name": "Online 3"
+                    }
+                },
+                {
+                    "Label": "cocacola",
+                    "Name": "Coca-Cola",
+                    "TagType": {
+                        "Label": "brand",
+                        "Name": "Brand"
+                    }
+                }
+            ]
+        },
+        {
+            "Id": 5326366,
+            "Name": "Coke Zero 375mL Cans",
+            "Size": "15 pack",
+            "Brand": "Coca-Cola",
+            "ImageUri": "/customer/v1/coles/products/images/5326366.jpg",
+            "Locations": null,
+            "Promotions": null,
+            "Tags": [
+                {
+                    "Label": "cans",
+                    "Name": "CANS",
+                    "TagType": {
+                        "Label": "subclass",
+                        "Name": "SubClass"
+                    }
+                },
+                {
+                    "Label": "cans",
+                    "Name": "CANS",
+                    "TagType": {
+                        "Label": "class",
+                        "Name": "Class"
+                    }
+                },
+                {
+                    "Label": "softdrinks",
+                    "Name": "SOFTDRINKS",
+                    "TagType": {
+                        "Label": "category",
+                        "Name": "Category"
+                    }
+                },
+                {
+                    "Label": "impulse",
+                    "Name": "IMPULSE",
+                    "TagType": {
+                        "Label": "group",
+                        "Name": "Group"
+                    }
+                },
+                {
+                    "Label": "grocery",
+                    "Name": "GROCERY",
+                    "TagType": {
+                        "Label": "tpc",
+                        "Name": "TPC"
+                    }
+                },
+                {
+                    "Label": "flavoured-soft-drinks",
+                    "Name": "Flavoured Soft Drinks",
+                    "TagType": {
+                        "Label": "online-1",
+                        "Name": "Online 1"
+                    }
+                },
+                {
+                    "Label": "soft-drinks",
+                    "Name": "Soft Drinks",
+                    "TagType": {
+                        "Label": "online-2",
+                        "Name": "Online 2"
+                    }
+                },
+                {
+                    "Label": "drinks",
+                    "Name": "Drinks",
+                    "TagType": {
+                        "Label": "online-3",
+                        "Name": "Online 3"
+                    }
+                },
+                {
+                    "Label": "cocacola",
+                    "Name": "Coca-Cola",
+                    "TagType": {
+                        "Label": "brand",
+                        "Name": "Brand"
+                    }
+                }
+            ]
+        },
+        {
+            "Id": 418503,
+            "Name": "Diet Coke",
+            "Size": "2L",
+            "Brand": "Coca-Cola",
+            "ImageUri": "/customer/v1/coles/products/images/418503.jpg",
+            "Locations": [
+                {
+                    "Aisle": "5",
+                    "Order": 5.0,
+                    "Description": "Aisle 5",
+                    "AisleSide": "Right",
+                    "Facing": 0,
+                    "Shelf": 0,
+                    "LayoutId": "0258",
+                    "LayoutName": "DRINKS - BOTTLED"
+                },
+                {
+                    "Aisle": "5",
+                    "Order": 5.0,
+                    "Description": "Aisle 5",
+                    "AisleSide": "Right",
+                    "Facing": 0,
+                    "Shelf": 0,
+                    "LayoutId": "0258",
+                    "LayoutName": "DRINKS - BOTTLED"
+                }
+            ],
+            "Promotions": null,
+            "Tags": [
+                {
+                    "Label": "bottles",
+                    "Name": "BOTTLES",
+                    "TagType": {
+                        "Label": "subclass",
+                        "Name": "SubClass"
+                    }
+                },
+                {
+                    "Label": "bottles",
+                    "Name": "BOTTLES",
+                    "TagType": {
+                        "Label": "class",
+                        "Name": "Class"
+                    }
+                },
+                {
+                    "Label": "softdrinks",
+                    "Name": "SOFTDRINKS",
+                    "TagType": {
+                        "Label": "category",
+                        "Name": "Category"
+                    }
+                },
+                {
+                    "Label": "impulse",
+                    "Name": "IMPULSE",
+                    "TagType": {
+                        "Label": "group",
+                        "Name": "Group"
+                    }
+                },
+                {
+                    "Label": "grocery",
+                    "Name": "GROCERY",
+                    "TagType": {
+                        "Label": "tpc",
+                        "Name": "TPC"
+                    }
+                },
+                {
+                    "Label": "flavoured-soft-drinks",
+                    "Name": "Flavoured Soft Drinks",
+                    "TagType": {
+                        "Label": "online-1",
+                        "Name": "Online 1"
+                    }
+                },
+                {
+                    "Label": "soft-drinks",
+                    "Name": "Soft Drinks",
+                    "TagType": {
+                        "Label": "online-2",
+                        "Name": "Online 2"
+                    }
+                },
+                {
+                    "Label": "drinks",
+                    "Name": "Drinks",
+                    "TagType": {
+                        "Label": "online-3",
+                        "Name": "Online 3"
+                    }
+                },
+                {
+                    "Label": "cocacola",
+                    "Name": "Coca-Cola",
+                    "TagType": {
+                        "Label": "brand",
+                        "Name": "Brand"
+                    }
+                }
+            ]
+        },
+        {
+            "Id": 2034105,
+            "Name": "Coke",
+            "Size": "250mL",
+            "Brand": "Coca-Cola",
+            "ImageUri": "/customer/v1/coles/products/images/2034105.jpg",
+            "Locations": [
+                {
+                    "Aisle": null,
+                    "Order": 9999.0,
+                    "Description": null,
+                    "AisleSide": null,
+                    "Facing": 0,
+                    "Shelf": 0,
+                    "LayoutId": "0128",
+                    "LayoutName": "COLD DRINK - OD230"
+                },
+                {
+                    "Aisle": "SERVICE",
+                    "Order": 9999.0,
+                    "Description": "Service desk",
+                    "AisleSide": "Front of Store",
+                    "Facing": 0,
+                    "Shelf": 0,
+                    "LayoutId": "9049",
+                    "LayoutName": "COLD DRINK - OD290"
+                }
+            ],
+            "Promotions": null,
+            "Tags": [
+                {
+                    "Label": "cold-drinks",
+                    "Name": "COLD DRINKS",
+                    "TagType": {
+                        "Label": "subclass",
+                        "Name": "SubClass"
+                    }
+                },
+                {
+                    "Label": "cold-drinks",
+                    "Name": "COLD DRINKS",
+                    "TagType": {
+                        "Label": "class",
+                        "Name": "Class"
+                    }
+                },
+                {
+                    "Label": "softdrinks",
+                    "Name": "SOFTDRINKS",
+                    "TagType": {
+                        "Label": "category",
+                        "Name": "Category"
+                    }
+                },
+                {
+                    "Label": "impulse",
+                    "Name": "IMPULSE",
+                    "TagType": {
+                        "Label": "group",
+                        "Name": "Group"
+                    }
+                },
+                {
+                    "Label": "grocery",
+                    "Name": "GROCERY",
+                    "TagType": {
+                        "Label": "tpc",
+                        "Name": "TPC"
+                    }
+                },
+                {
+                    "Label": "flavoured-soft-drinks",
+                    "Name": "Flavoured Soft Drinks",
+                    "TagType": {
+                        "Label": "online-1",
+                        "Name": "Online 1"
+                    }
+                },
+                {
+                    "Label": "soft-drinks",
+                    "Name": "Soft Drinks",
+                    "TagType": {
+                        "Label": "online-2",
+                        "Name": "Online 2"
+                    }
+                },
+                {
+                    "Label": "drinks",
+                    "Name": "Drinks",
+                    "TagType": {
+                        "Label": "online-3",
+                        "Name": "Online 3"
+                    }
+                },
+                {
+                    "Label": "cocacola",
+                    "Name": "Coca-Cola",
+                    "TagType": {
+                        "Label": "brand",
+                        "Name": "Brand"
+                    }
+                }
+            ]
+        },
+        {
+            "Id": 123011,
+            "Name": "Coke",
+            "Size": "1.25L",
+            "Brand": "Coca-Cola",
+            "ImageUri": "/customer/v1/coles/products/images/123011.jpg",
+            "Locations": [
+                {
+                    "Aisle": "5",
+                    "Order": 5.0,
+                    "Description": "Aisle 5",
+                    "AisleSide": "Right",
+                    "Facing": 0,
+                    "Shelf": 0,
+                    "LayoutId": "0258",
+                    "LayoutName": "DRINKS - BOTTLED"
+                },
+                {
+                    "Aisle": "5",
+                    "Order": 5.0,
+                    "Description": "Aisle 5",
+                    "AisleSide": "Right",
+                    "Facing": 0,
+                    "Shelf": 0,
+                    "LayoutId": "0258",
+                    "LayoutName": "DRINKS - BOTTLED"
+                },
+                {
+                    "Aisle": "5",
+                    "Order": 5.0,
+                    "Description": "Aisle 5",
+                    "AisleSide": "Right",
+                    "Facing": 0,
+                    "Shelf": 0,
+                    "LayoutId": "0258",
+                    "LayoutName": "DRINKS - BOTTLED"
+                },
+                {
+                    "Aisle": "5",
+                    "Order": 5.0,
+                    "Description": "Aisle 5",
+                    "AisleSide": "Right",
+                    "Facing": 0,
+                    "Shelf": 0,
+                    "LayoutId": "0258",
+                    "LayoutName": "DRINKS - BOTTLED"
+                }
+            ],
+            "Promotions": [
+                {
+                    "PromotionId": 135127267,
+                    "Type": "Value (Excl FP)",
+                    "Description": "25% Off",
+                    "Price": 2.0,
+                    "WasPrice": 2.85,
+                    "SaveAmount": 0.85,
+                    "UnitPrice": "$1.60 per 1L",
+                    "UnitOfMeasure": "EA",
+                    "PriceDescription": null,
+                    "StartDate": "2017-02-22T00:00:00",
+                    "EndDate": "2017-02-28T23:59:59",
+                    "SavePercent": 29.82
+                }
+            ],
+            "Tags": [
+                {
+                    "Label": "bottles",
+                    "Name": "BOTTLES",
+                    "TagType": {
+                        "Label": "subclass",
+                        "Name": "SubClass"
+                    }
+                },
+                {
+                    "Label": "bottles",
+                    "Name": "BOTTLES",
+                    "TagType": {
+                        "Label": "class",
+                        "Name": "Class"
+                    }
+                },
+                {
+                    "Label": "softdrinks",
+                    "Name": "SOFTDRINKS",
+                    "TagType": {
+                        "Label": "category",
+                        "Name": "Category"
+                    }
+                },
+                {
+                    "Label": "impulse",
+                    "Name": "IMPULSE",
+                    "TagType": {
+                        "Label": "group",
+                        "Name": "Group"
+                    }
+                },
+                {
+                    "Label": "grocery",
+                    "Name": "GROCERY",
+                    "TagType": {
+                        "Label": "tpc",
+                        "Name": "TPC"
+                    }
+                },
+                {
+                    "Label": "flavoured-soft-drinks",
+                    "Name": "Flavoured Soft Drinks",
+                    "TagType": {
+                        "Label": "online-1",
+                        "Name": "Online 1"
+                    }
+                },
+                {
+                    "Label": "soft-drinks",
+                    "Name": "Soft Drinks",
+                    "TagType": {
+                        "Label": "online-2",
+                        "Name": "Online 2"
+                    }
+                },
+                {
+                    "Label": "drinks",
+                    "Name": "Drinks",
+                    "TagType": {
+                        "Label": "online-3",
+                        "Name": "Online 3"
+                    }
+                },
+                {
+                    "Label": "cocacola",
+                    "Name": "Coca-Cola",
+                    "TagType": {
+                        "Label": "brand",
+                        "Name": "Brand"
+                    }
+                }
+            ]
+        },
+        {
+            "Id": 4869333,
+            "Name": "Coke",
+            "Size": "1L",
+            "Brand": "Coca-Cola",
+            "ImageUri": "/customer/v1/coles/products/images/4869333.jpg",
+            "Locations": [
+                {
+                    "Aisle": "SERVICE",
+                    "Order": 9999.0,
+                    "Description": "Service desk",
+                    "AisleSide": "Front of Store",
+                    "Facing": 0,
+                    "Shelf": 0,
+                    "LayoutId": "9049",
+                    "LayoutName": "COLD DRINK - OD290"
+                }
+            ],
+            "Promotions": null,
+            "Tags": [
+                {
+                    "Label": "cold-drinks",
+                    "Name": "COLD DRINKS",
+                    "TagType": {
+                        "Label": "subclass",
+                        "Name": "SubClass"
+                    }
+                },
+                {
+                    "Label": "cold-drinks",
+                    "Name": "COLD DRINKS",
+                    "TagType": {
+                        "Label": "class",
+                        "Name": "Class"
+                    }
+                },
+                {
+                    "Label": "softdrinks",
+                    "Name": "SOFTDRINKS",
+                    "TagType": {
+                        "Label": "category",
+                        "Name": "Category"
+                    }
+                },
+                {
+                    "Label": "impulse",
+                    "Name": "IMPULSE",
+                    "TagType": {
+                        "Label": "group",
+                        "Name": "Group"
+                    }
+                },
+                {
+                    "Label": "grocery",
+                    "Name": "GROCERY",
+                    "TagType": {
+                        "Label": "tpc",
+                        "Name": "TPC"
+                    }
+                },
+                {
+                    "Label": "flavoured-soft-drinks",
+                    "Name": "Flavoured Soft Drinks",
+                    "TagType": {
+                        "Label": "online-1",
+                        "Name": "Online 1"
+                    }
+                },
+                {
+                    "Label": "soft-drinks",
+                    "Name": "Soft Drinks",
+                    "TagType": {
+                        "Label": "online-2",
+                        "Name": "Online 2"
+                    }
+                },
+                {
+                    "Label": "drinks",
+                    "Name": "Drinks",
+                    "TagType": {
+                        "Label": "online-3",
+                        "Name": "Online 3"
+                    }
+                },
+                {
+                    "Label": "cocacola",
+                    "Name": "Coca-Cola",
+                    "TagType": {
+                        "Label": "brand",
+                        "Name": "Brand"
+                    }
+                }
+            ]
+        },
+        {
+            "Id": 1849318,
+            "Name": "Diet Coke 375mL Cans",
+            "Size": "10 pack",
+            "Brand": "Coca-Cola",
+            "ImageUri": "/customer/v1/coles/products/images/1849318.jpg",
+            "Locations": [
+                {
+                    "Aisle": "5",
+                    "Order": 5.0,
+                    "Description": "Aisle 5",
+                    "AisleSide": "Right",
+                    "Facing": 0,
+                    "Shelf": 0,
+                    "LayoutId": "0257",
+                    "LayoutName": "DRINKS - CANS"
+                }
+            ],
+            "Promotions": [
+                {
+                    "PromotionId": 135128950,
+                    "Type": "Value (Excl FP)",
+                    "Description": "1/2 Price",
+                    "Price": 6.0,
+                    "WasPrice": 12.3,
+                    "SaveAmount": 6.3,
+                    "UnitPrice": "$1.60 per 1L",
+                    "UnitOfMeasure": "EA",
+                    "PriceDescription": null,
+                    "StartDate": "2017-02-22T00:00:00",
+                    "EndDate": "2017-02-28T23:59:59",
+                    "SavePercent": 51.22
+                }
+            ],
+            "Tags": [
+                {
+                    "Label": "cans",
+                    "Name": "CANS",
+                    "TagType": {
+                        "Label": "subclass",
+                        "Name": "SubClass"
+                    }
+                },
+                {
+                    "Label": "cans",
+                    "Name": "CANS",
+                    "TagType": {
+                        "Label": "class",
+                        "Name": "Class"
+                    }
+                },
+                {
+                    "Label": "softdrinks",
+                    "Name": "SOFTDRINKS",
+                    "TagType": {
+                        "Label": "category",
+                        "Name": "Category"
+                    }
+                },
+                {
+                    "Label": "impulse",
+                    "Name": "IMPULSE",
+                    "TagType": {
+                        "Label": "group",
+                        "Name": "Group"
+                    }
+                },
+                {
+                    "Label": "grocery",
+                    "Name": "GROCERY",
+                    "TagType": {
+                        "Label": "tpc",
+                        "Name": "TPC"
+                    }
+                },
+                {
+                    "Label": "flavoured-soft-drinks",
+                    "Name": "Flavoured Soft Drinks",
+                    "TagType": {
+                        "Label": "online-1",
+                        "Name": "Online 1"
+                    }
+                },
+                {
+                    "Label": "soft-drinks",
+                    "Name": "Soft Drinks",
+                    "TagType": {
+                        "Label": "online-2",
+                        "Name": "Online 2"
+                    }
+                },
+                {
+                    "Label": "drinks",
+                    "Name": "Drinks",
+                    "TagType": {
+                        "Label": "online-3",
+                        "Name": "Online 3"
+                    }
+                },
+                {
+                    "Label": "cocacola",
+                    "Name": "Coca-Cola",
+                    "TagType": {
+                        "Label": "brand",
+                        "Name": "Brand"
+                    }
+                }
+            ]
+        },
+        {
+            "Id": 1849293,
+            "Name": "Coke Zero 375mL Cans",
+            "Size": "10 pack",
+            "Brand": "Coca-Cola",
+            "ImageUri": "/customer/v1/coles/products/images/1849293.jpg",
+            "Locations": [
+                {
+                    "Aisle": "5",
+                    "Order": 5.0,
+                    "Description": "Aisle 5",
+                    "AisleSide": "Right",
+                    "Facing": 0,
+                    "Shelf": 0,
+                    "LayoutId": "0257",
+                    "LayoutName": "DRINKS - CANS"
+                },
+                {
+                    "Aisle": "5",
+                    "Order": 5.0,
+                    "Description": "Aisle 5",
+                    "AisleSide": "Right",
+                    "Facing": 0,
+                    "Shelf": 0,
+                    "LayoutId": "0257",
+                    "LayoutName": "DRINKS - CANS"
+                }
+            ],
+            "Promotions": [
+                {
+                    "PromotionId": 135128709,
+                    "Type": "Value (Excl FP)",
+                    "Description": "1/2 Price",
+                    "Price": 6.0,
+                    "WasPrice": 12.3,
+                    "SaveAmount": 6.3,
+                    "UnitPrice": "$1.60 per 1L",
+                    "UnitOfMeasure": "EA",
+                    "PriceDescription": null,
+                    "StartDate": "2017-02-22T00:00:00",
+                    "EndDate": "2017-02-28T23:59:59",
+                    "SavePercent": 51.22
+                }
+            ],
+            "Tags": [
+                {
+                    "Label": "cans",
+                    "Name": "CANS",
+                    "TagType": {
+                        "Label": "subclass",
+                        "Name": "SubClass"
+                    }
+                },
+                {
+                    "Label": "cans",
+                    "Name": "CANS",
+                    "TagType": {
+                        "Label": "class",
+                        "Name": "Class"
+                    }
+                },
+                {
+                    "Label": "softdrinks",
+                    "Name": "SOFTDRINKS",
+                    "TagType": {
+                        "Label": "category",
+                        "Name": "Category"
+                    }
+                },
+                {
+                    "Label": "impulse",
+                    "Name": "IMPULSE",
+                    "TagType": {
+                        "Label": "group",
+                        "Name": "Group"
+                    }
+                },
+                {
+                    "Label": "grocery",
+                    "Name": "GROCERY",
+                    "TagType": {
+                        "Label": "tpc",
+                        "Name": "TPC"
+                    }
+                },
+                {
+                    "Label": "flavoured-soft-drinks",
+                    "Name": "Flavoured Soft Drinks",
+                    "TagType": {
+                        "Label": "online-1",
+                        "Name": "Online 1"
+                    }
+                },
+                {
+                    "Label": "soft-drinks",
+                    "Name": "Soft Drinks",
+                    "TagType": {
+                        "Label": "online-2",
+                        "Name": "Online 2"
+                    }
+                },
+                {
+                    "Label": "drinks",
+                    "Name": "Drinks",
+                    "TagType": {
+                        "Label": "online-3",
+                        "Name": "Online 3"
+                    }
+                },
+                {
+                    "Label": "cocacola",
+                    "Name": "Coca-Cola",
+                    "TagType": {
+                        "Label": "brand",
+                        "Name": "Brand"
+                    }
+                }
+            ]
+        },
+        {
+            "Id": 1755190,
+            "Name": "Coke Zero Glass Bottle Chilled",
+            "Size": "385mL",
+            "Brand": "Coca-Cola",
+            "ImageUri": "/customer/v1/coles/products/images/1755190.jpg",
+            "Locations": [
+                {
+                    "Aisle": "SERVICE",
+                    "Order": 9999.0,
+                    "Description": "Service desk",
+                    "AisleSide": "Front of Store",
+                    "Facing": 0,
+                    "Shelf": 0,
+                    "LayoutId": "9049",
+                    "LayoutName": "COLD DRINK - OD290"
+                }
+            ],
+            "Promotions": null,
+            "Tags": [
+                {
+                    "Label": "cold-drinks",
+                    "Name": "COLD DRINKS",
+                    "TagType": {
+                        "Label": "subclass",
+                        "Name": "SubClass"
+                    }
+                },
+                {
+                    "Label": "cold-drinks",
+                    "Name": "COLD DRINKS",
+                    "TagType": {
+                        "Label": "class",
+                        "Name": "Class"
+                    }
+                },
+                {
+                    "Label": "softdrinks",
+                    "Name": "SOFTDRINKS",
+                    "TagType": {
+                        "Label": "category",
+                        "Name": "Category"
+                    }
+                },
+                {
+                    "Label": "impulse",
+                    "Name": "IMPULSE",
+                    "TagType": {
+                        "Label": "group",
+                        "Name": "Group"
+                    }
+                },
+                {
+                    "Label": "grocery",
+                    "Name": "GROCERY",
+                    "TagType": {
+                        "Label": "tpc",
+                        "Name": "TPC"
+                    }
+                },
+                {
+                    "Label": "flavoured-soft-drinks",
+                    "Name": "Flavoured Soft Drinks",
+                    "TagType": {
+                        "Label": "online-1",
+                        "Name": "Online 1"
+                    }
+                },
+                {
+                    "Label": "soft-drinks",
+                    "Name": "Soft Drinks",
+                    "TagType": {
+                        "Label": "online-2",
+                        "Name": "Online 2"
+                    }
+                },
+                {
+                    "Label": "drinks",
+                    "Name": "Drinks",
+                    "TagType": {
+                        "Label": "online-3",
+                        "Name": "Online 3"
+                    }
+                },
+                {
+                    "Label": "cocacola",
+                    "Name": "Coca-Cola",
+                    "TagType": {
+                        "Label": "brand",
+                        "Name": "Brand"
+                    }
+                }
+            ]
+        },
+        {
+            "Id": 1870223,
+            "Name": "Coke Glass Bottle",
+            "Size": "1L",
+            "Brand": "Coca-Cola",
+            "ImageUri": "/customer/v1/coles/products/images/1870223.jpg",
+            "Locations": [
+                {
+                    "Aisle": "5",
+                    "Order": 5.0,
+                    "Description": "Aisle 5",
+                    "AisleSide": "Right",
+                    "Facing": 0,
+                    "Shelf": 0,
+                    "LayoutId": "0258",
+                    "LayoutName": "DRINKS - BOTTLED"
+                },
+                {
+                    "Aisle": "5",
+                    "Order": 5.0,
+                    "Description": "Aisle 5",
+                    "AisleSide": "Right",
+                    "Facing": 0,
+                    "Shelf": 0,
+                    "LayoutId": "0257",
+                    "LayoutName": "DRINKS - CANS"
+                }
+            ],
+            "Promotions": null,
+            "Tags": [
+                {
+                    "Label": "bottles",
+                    "Name": "BOTTLES",
+                    "TagType": {
+                        "Label": "subclass",
+                        "Name": "SubClass"
+                    }
+                },
+                {
+                    "Label": "bottles",
+                    "Name": "BOTTLES",
+                    "TagType": {
+                        "Label": "class",
+                        "Name": "Class"
+                    }
+                },
+                {
+                    "Label": "softdrinks",
+                    "Name": "SOFTDRINKS",
+                    "TagType": {
+                        "Label": "category",
+                        "Name": "Category"
+                    }
+                },
+                {
+                    "Label": "impulse",
+                    "Name": "IMPULSE",
+                    "TagType": {
+                        "Label": "group",
+                        "Name": "Group"
+                    }
+                },
+                {
+                    "Label": "grocery",
+                    "Name": "GROCERY",
+                    "TagType": {
+                        "Label": "tpc",
+                        "Name": "TPC"
+                    }
+                },
+                {
+                    "Label": "flavoured-soft-drinks",
+                    "Name": "Flavoured Soft Drinks",
+                    "TagType": {
+                        "Label": "online-1",
+                        "Name": "Online 1"
+                    }
+                },
+                {
+                    "Label": "soft-drinks",
+                    "Name": "Soft Drinks",
+                    "TagType": {
+                        "Label": "online-2",
+                        "Name": "Online 2"
+                    }
+                },
+                {
+                    "Label": "drinks",
+                    "Name": "Drinks",
+                    "TagType": {
+                        "Label": "online-3",
+                        "Name": "Online 3"
+                    }
+                },
+                {
+                    "Label": "cocacola",
+                    "Name": "Coca-Cola",
+                    "TagType": {
+                        "Label": "brand",
+                        "Name": "Brand"
+                    }
+                }
+            ]
+        },
+        {
+            "Id": 2049339,
+            "Name": "Coke Zero Glass Bottle",
+            "Size": "1L",
+            "Brand": "Coca-Cola",
+            "ImageUri": "/customer/v1/coles/products/images/2049339.jpg",
+            "Locations": [
+                {
+                    "Aisle": "5",
+                    "Order": 5.0,
+                    "Description": "Aisle 5",
+                    "AisleSide": "Right",
+                    "Facing": 0,
+                    "Shelf": 0,
+                    "LayoutId": "0258",
+                    "LayoutName": "DRINKS - BOTTLED"
+                },
+                {
+                    "Aisle": "5",
+                    "Order": 5.0,
+                    "Description": "Aisle 5",
+                    "AisleSide": "Right",
+                    "Facing": 0,
+                    "Shelf": 0,
+                    "LayoutId": "0257",
+                    "LayoutName": "DRINKS - CANS"
+                }
+            ],
+            "Promotions": null,
+            "Tags": [
+                {
+                    "Label": "bottles",
+                    "Name": "BOTTLES",
+                    "TagType": {
+                        "Label": "subclass",
+                        "Name": "SubClass"
+                    }
+                },
+                {
+                    "Label": "bottles",
+                    "Name": "BOTTLES",
+                    "TagType": {
+                        "Label": "class",
+                        "Name": "Class"
+                    }
+                },
+                {
+                    "Label": "softdrinks",
+                    "Name": "SOFTDRINKS",
+                    "TagType": {
+                        "Label": "category",
+                        "Name": "Category"
+                    }
+                },
+                {
+                    "Label": "impulse",
+                    "Name": "IMPULSE",
+                    "TagType": {
+                        "Label": "group",
+                        "Name": "Group"
+                    }
+                },
+                {
+                    "Label": "grocery",
+                    "Name": "GROCERY",
+                    "TagType": {
+                        "Label": "tpc",
+                        "Name": "TPC"
+                    }
+                },
+                {
+                    "Label": "flavoured-soft-drinks",
+                    "Name": "Flavoured Soft Drinks",
+                    "TagType": {
+                        "Label": "online-1",
+                        "Name": "Online 1"
+                    }
+                },
+                {
+                    "Label": "soft-drinks",
+                    "Name": "Soft Drinks",
+                    "TagType": {
+                        "Label": "online-2",
+                        "Name": "Online 2"
+                    }
+                },
+                {
+                    "Label": "drinks",
+                    "Name": "Drinks",
+                    "TagType": {
+                        "Label": "online-3",
+                        "Name": "Online 3"
+                    }
+                },
+                {
+                    "Label": "cocacola",
+                    "Name": "Coca-Cola",
+                    "TagType": {
+                        "Label": "brand",
+                        "Name": "Brand"
+                    }
+                }
+            ]
+        },
+        {
+            "Id": 4869344,
+            "Name": "Diet Coke",
+            "Size": "1L",
+            "Brand": "Coca-Cola",
+            "ImageUri": "/customer/v1/coles/products/images/4869344.jpg",
+            "Locations": [
+                {
+                    "Aisle": "SERVICE",
+                    "Order": 9999.0,
+                    "Description": "Service desk",
+                    "AisleSide": "Front of Store",
+                    "Facing": 0,
+                    "Shelf": 0,
+                    "LayoutId": "9049",
+                    "LayoutName": "COLD DRINK - OD290"
+                }
+            ],
+            "Promotions": null,
+            "Tags": [
+                {
+                    "Label": "cold-drinks",
+                    "Name": "COLD DRINKS",
+                    "TagType": {
+                        "Label": "subclass",
+                        "Name": "SubClass"
+                    }
+                },
+                {
+                    "Label": "cold-drinks",
+                    "Name": "COLD DRINKS",
+                    "TagType": {
+                        "Label": "class",
+                        "Name": "Class"
+                    }
+                },
+                {
+                    "Label": "softdrinks",
+                    "Name": "SOFTDRINKS",
+                    "TagType": {
+                        "Label": "category",
+                        "Name": "Category"
+                    }
+                },
+                {
+                    "Label": "impulse",
+                    "Name": "IMPULSE",
+                    "TagType": {
+                        "Label": "group",
+                        "Name": "Group"
+                    }
+                },
+                {
+                    "Label": "grocery",
+                    "Name": "GROCERY",
+                    "TagType": {
+                        "Label": "tpc",
+                        "Name": "TPC"
+                    }
+                },
+                {
+                    "Label": "flavoured-soft-drinks",
+                    "Name": "Flavoured Soft Drinks",
+                    "TagType": {
+                        "Label": "online-1",
+                        "Name": "Online 1"
+                    }
+                },
+                {
+                    "Label": "soft-drinks",
+                    "Name": "Soft Drinks",
+                    "TagType": {
+                        "Label": "online-2",
+                        "Name": "Online 2"
+                    }
+                },
+                {
+                    "Label": "drinks",
+                    "Name": "Drinks",
+                    "TagType": {
+                        "Label": "online-3",
+                        "Name": "Online 3"
+                    }
+                },
+                {
+                    "Label": "cocacola",
+                    "Name": "Coca-Cola",
+                    "TagType": {
+                        "Label": "brand",
+                        "Name": "Brand"
+                    }
+                }
+            ]
+        },
+        {
+            "Id": 9391654,
+            "Name": "Coke Vanilla",
+            "Size": "600mL",
+            "Brand": "Coca-Cola",
+            "ImageUri": "/customer/v1/coles/products/images/9391654.jpg",
+            "Locations": [
+                {
+                    "Aisle": "SERVICE",
+                    "Order": 9999.0,
+                    "Description": "Service desk",
+                    "AisleSide": "Front of Store",
+                    "Facing": 0,
+                    "Shelf": 0,
+                    "LayoutId": "9037",
+                    "LayoutName": "COLD DRINK - C14-900"
+                },
+                {
+                    "Aisle": "SERVICE",
+                    "Order": 9999.0,
+                    "Description": "Service desk",
+                    "AisleSide": "Front of Store",
+                    "Facing": 0,
+                    "Shelf": 0,
+                    "LayoutId": "9049",
+                    "LayoutName": "COLD DRINK - OD290"
+                }
+            ],
+            "Promotions": null,
+            "Tags": [
+                {
+                    "Label": "cold-drinks",
+                    "Name": "COLD DRINKS",
+                    "TagType": {
+                        "Label": "subclass",
+                        "Name": "SubClass"
+                    }
+                },
+                {
+                    "Label": "cold-drinks",
+                    "Name": "COLD DRINKS",
+                    "TagType": {
+                        "Label": "class",
+                        "Name": "Class"
+                    }
+                },
+                {
+                    "Label": "softdrinks",
+                    "Name": "SOFTDRINKS",
+                    "TagType": {
+                        "Label": "category",
+                        "Name": "Category"
+                    }
+                },
+                {
+                    "Label": "impulse",
+                    "Name": "IMPULSE",
+                    "TagType": {
+                        "Label": "group",
+                        "Name": "Group"
+                    }
+                },
+                {
+                    "Label": "grocery",
+                    "Name": "GROCERY",
+                    "TagType": {
+                        "Label": "tpc",
+                        "Name": "TPC"
+                    }
+                },
+                {
+                    "Label": "flavoured-soft-drinks",
+                    "Name": "Flavoured Soft Drinks",
+                    "TagType": {
+                        "Label": "online-1",
+                        "Name": "Online 1"
+                    }
+                },
+                {
+                    "Label": "soft-drinks",
+                    "Name": "Soft Drinks",
+                    "TagType": {
+                        "Label": "online-2",
+                        "Name": "Online 2"
+                    }
+                },
+                {
+                    "Label": "drinks",
+                    "Name": "Drinks",
+                    "TagType": {
+                        "Label": "online-3",
+                        "Name": "Online 3"
+                    }
+                },
+                {
+                    "Label": "cocacola",
+                    "Name": "Coca-Cola",
+                    "TagType": {
+                        "Label": "brand",
+                        "Name": "Brand"
+                    }
+                }
+            ]
+        },
+        {
+            "Id": 6317065,
+            "Name": "Coke Glass Bottle Chilled",
+            "Size": "385mL",
+            "Brand": "Coca-Cola",
+            "ImageUri": "/customer/v1/coles/products/images/6317065.jpg",
+            "Locations": [
+                {
+                    "Aisle": "SERVICE",
+                    "Order": 9999.0,
+                    "Description": "Service desk",
+                    "AisleSide": "Front of Store",
+                    "Facing": 0,
+                    "Shelf": 0,
+                    "LayoutId": "9049",
+                    "LayoutName": "COLD DRINK - OD290"
+                }
+            ],
+            "Promotions": null,
+            "Tags": [
+                {
+                    "Label": "cold-drinks",
+                    "Name": "COLD DRINKS",
+                    "TagType": {
+                        "Label": "subclass",
+                        "Name": "SubClass"
+                    }
+                },
+                {
+                    "Label": "cold-drinks",
+                    "Name": "COLD DRINKS",
+                    "TagType": {
+                        "Label": "class",
+                        "Name": "Class"
+                    }
+                },
+                {
+                    "Label": "softdrinks",
+                    "Name": "SOFTDRINKS",
+                    "TagType": {
+                        "Label": "category",
+                        "Name": "Category"
+                    }
+                },
+                {
+                    "Label": "impulse",
+                    "Name": "IMPULSE",
+                    "TagType": {
+                        "Label": "group",
+                        "Name": "Group"
+                    }
+                },
+                {
+                    "Label": "grocery",
+                    "Name": "GROCERY",
+                    "TagType": {
+                        "Label": "tpc",
+                        "Name": "TPC"
+                    }
+                },
+                {
+                    "Label": "flavoured-soft-drinks",
+                    "Name": "Flavoured Soft Drinks",
+                    "TagType": {
+                        "Label": "online-1",
+                        "Name": "Online 1"
+                    }
+                },
+                {
+                    "Label": "soft-drinks",
+                    "Name": "Soft Drinks",
+                    "TagType": {
+                        "Label": "online-2",
+                        "Name": "Online 2"
+                    }
+                },
+                {
+                    "Label": "drinks",
+                    "Name": "Drinks",
+                    "TagType": {
+                        "Label": "online-3",
+                        "Name": "Online 3"
+                    }
+                },
+                {
+                    "Label": "cocacola",
+                    "Name": "Coca-Cola",
+                    "TagType": {
+                        "Label": "brand",
+                        "Name": "Brand"
+                    }
+                }
+            ]
+        },
+        {
+            "Id": 2825519,
+            "Name": "Coke Ginger Mini Can ",
+            "Size": "8 pack",
+            "Brand": "Coca-Cola",
+            "ImageUri": "/customer/v1/coles/products/images/2825519.jpg",
+            "Locations": null,
+            "Promotions": null,
+            "Tags": [
+                {
+                    "Label": "cans",
+                    "Name": "CANS",
+                    "TagType": {
+                        "Label": "subclass",
+                        "Name": "SubClass"
+                    }
+                },
+                {
+                    "Label": "cans",
+                    "Name": "CANS",
+                    "TagType": {
+                        "Label": "class",
+                        "Name": "Class"
+                    }
+                },
+                {
+                    "Label": "softdrinks",
+                    "Name": "SOFTDRINKS",
+                    "TagType": {
+                        "Label": "category",
+                        "Name": "Category"
+                    }
+                },
+                {
+                    "Label": "impulse",
+                    "Name": "IMPULSE",
+                    "TagType": {
+                        "Label": "group",
+                        "Name": "Group"
+                    }
+                },
+                {
+                    "Label": "grocery",
+                    "Name": "GROCERY",
+                    "TagType": {
+                        "Label": "tpc",
+                        "Name": "TPC"
+                    }
+                },
+                {
+                    "Label": "flavoured-soft-drinks",
+                    "Name": "Flavoured Soft Drinks",
+                    "TagType": {
+                        "Label": "online-1",
+                        "Name": "Online 1"
+                    }
+                },
+                {
+                    "Label": "soft-drinks",
+                    "Name": "Soft Drinks",
+                    "TagType": {
+                        "Label": "online-2",
+                        "Name": "Online 2"
+                    }
+                },
+                {
+                    "Label": "drinks",
+                    "Name": "Drinks",
+                    "TagType": {
+                        "Label": "online-3",
+                        "Name": "Online 3"
+                    }
+                },
+                {
+                    "Label": "cocacola",
+                    "Name": "Coca-Cola",
+                    "TagType": {
+                        "Label": "brand",
+                        "Name": "Brand"
+                    }
+                }
+            ]
+        },
+        {
+            "Id": 4991202,
+            "Name": "Coke Zero",
+            "Size": "1L",
+            "Brand": "Coca-Cola",
+            "ImageUri": "/customer/v1/coles/products/images/4991202.jpg",
+            "Locations": [
+                {
+                    "Aisle": "SERVICE",
+                    "Order": 9999.0,
+                    "Description": "Service desk",
+                    "AisleSide": "Front of Store",
+                    "Facing": 0,
+                    "Shelf": 0,
+                    "LayoutId": "9049",
+                    "LayoutName": "COLD DRINK - OD290"
+                }
+            ],
+            "Promotions": null,
+            "Tags": [
+                {
+                    "Label": "cold-drinks",
+                    "Name": "COLD DRINKS",
+                    "TagType": {
+                        "Label": "subclass",
+                        "Name": "SubClass"
+                    }
+                },
+                {
+                    "Label": "cold-drinks",
+                    "Name": "COLD DRINKS",
+                    "TagType": {
+                        "Label": "class",
+                        "Name": "Class"
+                    }
+                },
+                {
+                    "Label": "softdrinks",
+                    "Name": "SOFTDRINKS",
+                    "TagType": {
+                        "Label": "category",
+                        "Name": "Category"
+                    }
+                },
+                {
+                    "Label": "impulse",
+                    "Name": "IMPULSE",
+                    "TagType": {
+                        "Label": "group",
+                        "Name": "Group"
+                    }
+                },
+                {
+                    "Label": "grocery",
+                    "Name": "GROCERY",
+                    "TagType": {
+                        "Label": "tpc",
+                        "Name": "TPC"
+                    }
+                },
+                {
+                    "Label": "flavoured-soft-drinks",
+                    "Name": "Flavoured Soft Drinks",
+                    "TagType": {
+                        "Label": "online-1",
+                        "Name": "Online 1"
+                    }
+                },
+                {
+                    "Label": "soft-drinks",
+                    "Name": "Soft Drinks",
+                    "TagType": {
+                        "Label": "online-2",
+                        "Name": "Online 2"
+                    }
+                },
+                {
+                    "Label": "drinks",
+                    "Name": "Drinks",
+                    "TagType": {
+                        "Label": "online-3",
+                        "Name": "Online 3"
+                    }
+                },
+                {
+                    "Label": "cocacola",
+                    "Name": "Coca-Cola",
+                    "TagType": {
+                        "Label": "brand",
+                        "Name": "Brand"
+                    }
+                }
+            ]
+        },
+        {
+            "Id": 9391600,
+            "Name": "Coke Vanilla",
+            "Size": "1.25L",
+            "Brand": "Coca-Cola",
+            "ImageUri": "/customer/v1/coles/products/images/9391600.jpg",
+            "Locations": [
+                {
+                    "Aisle": "5",
+                    "Order": 5.0,
+                    "Description": "Aisle 5",
+                    "AisleSide": "Right",
+                    "Facing": 0,
+                    "Shelf": 0,
+                    "LayoutId": "0258",
+                    "LayoutName": "DRINKS - BOTTLED"
+                }
+            ],
+            "Promotions": [
+                {
+                    "PromotionId": 135127744,
+                    "Type": "Value (Excl FP)",
+                    "Description": "25% Off",
+                    "Price": 2.0,
+                    "WasPrice": 2.85,
+                    "SaveAmount": 0.85,
+                    "UnitPrice": "$1.60 per 1L",
+                    "UnitOfMeasure": "EA",
+                    "PriceDescription": null,
+                    "StartDate": "2017-02-22T00:00:00",
+                    "EndDate": "2017-02-28T23:59:59",
+                    "SavePercent": 29.82
+                }
+            ],
+            "Tags": [
+                {
+                    "Label": "bottles",
+                    "Name": "BOTTLES",
+                    "TagType": {
+                        "Label": "subclass",
+                        "Name": "SubClass"
+                    }
+                },
+                {
+                    "Label": "bottles",
+                    "Name": "BOTTLES",
+                    "TagType": {
+                        "Label": "class",
+                        "Name": "Class"
+                    }
+                },
+                {
+                    "Label": "softdrinks",
+                    "Name": "SOFTDRINKS",
+                    "TagType": {
+                        "Label": "category",
+                        "Name": "Category"
+                    }
+                },
+                {
+                    "Label": "impulse",
+                    "Name": "IMPULSE",
+                    "TagType": {
+                        "Label": "group",
+                        "Name": "Group"
+                    }
+                },
+                {
+                    "Label": "grocery",
+                    "Name": "GROCERY",
+                    "TagType": {
+                        "Label": "tpc",
+                        "Name": "TPC"
+                    }
+                },
+                {
+                    "Label": "flavoured-soft-drinks",
+                    "Name": "Flavoured Soft Drinks",
+                    "TagType": {
+                        "Label": "online-1",
+                        "Name": "Online 1"
+                    }
+                },
+                {
+                    "Label": "soft-drinks",
+                    "Name": "Soft Drinks",
+                    "TagType": {
+                        "Label": "online-2",
+                        "Name": "Online 2"
+                    }
+                },
+                {
+                    "Label": "drinks",
+                    "Name": "Drinks",
+                    "TagType": {
+                        "Label": "online-3",
+                        "Name": "Online 3"
+                    }
+                },
+                {
+                    "Label": "cocacola",
+                    "Name": "Coca-Cola",
+                    "TagType": {
+                        "Label": "brand",
+                        "Name": "Brand"
+                    }
+                }
+            ]
+        },
+        {
+            "Id": 5468407,
+            "Name": "Coke Chilled",
+            "Size": "600mL",
+            "Brand": "Coca-Cola",
+            "ImageUri": "/customer/v1/coles/products/images/5468407.jpg",
+            "Locations": [
+                {
+                    "Aisle": null,
+                    "Order": 9999.0,
+                    "Description": null,
+                    "AisleSide": null,
+                    "Facing": 0,
+                    "Shelf": 0,
+                    "LayoutId": "9036",
+                    "LayoutName": "COLD DRINK - C14-580"
+                },
+                {
+                    "Aisle": null,
+                    "Order": 9999.0,
+                    "Description": null,
+                    "AisleSide": null,
+                    "Facing": 0,
+                    "Shelf": 0,
+                    "LayoutId": "9036",
+                    "LayoutName": "COLD DRINK - C14-580"
+                },
+                {
+                    "Aisle": null,
+                    "Order": 9999.0,
+                    "Description": null,
+                    "AisleSide": null,
+                    "Facing": 0,
+                    "Shelf": 0,
+                    "LayoutId": "9036",
+                    "LayoutName": "COLD DRINK - C14-580"
+                },
+                {
+                    "Aisle": null,
+                    "Order": 9999.0,
+                    "Description": null,
+                    "AisleSide": null,
+                    "Facing": 0,
+                    "Shelf": 0,
+                    "LayoutId": "9036",
+                    "LayoutName": "COLD DRINK - C14-580"
+                },
+                {
+                    "Aisle": null,
+                    "Order": 9999.0,
+                    "Description": null,
+                    "AisleSide": null,
+                    "Facing": 0,
+                    "Shelf": 0,
+                    "LayoutId": "0128",
+                    "LayoutName": "COLD DRINK - OD230"
+                },
+                {
+                    "Aisle": null,
+                    "Order": 9999.0,
+                    "Description": null,
+                    "AisleSide": null,
+                    "Facing": 0,
+                    "Shelf": 0,
+                    "LayoutId": "0128",
+                    "LayoutName": "COLD DRINK - OD230"
+                },
+                {
+                    "Aisle": null,
+                    "Order": 9999.0,
+                    "Description": null,
+                    "AisleSide": null,
+                    "Facing": 0,
+                    "Shelf": 0,
+                    "LayoutId": "0269",
+                    "LayoutName": "COLD DRINK - EVENT COOLER"
+                },
+                {
+                    "Aisle": "SERVICE",
+                    "Order": 9999.0,
+                    "Description": "Service desk",
+                    "AisleSide": "Front of Store",
+                    "Facing": 0,
+                    "Shelf": 0,
+                    "LayoutId": "9037",
+                    "LayoutName": "COLD DRINK - C14-900"
+                },
+                {
+                    "Aisle": "SERVICE",
+                    "Order": 9999.0,
+                    "Description": "Service desk",
+                    "AisleSide": "Front of Store",
+                    "Facing": 0,
+                    "Shelf": 0,
+                    "LayoutId": "9049",
+                    "LayoutName": "COLD DRINK - OD290"
+                }
+            ],
+            "Promotions": null,
+            "Tags": [
+                {
+                    "Label": "cold-drinks",
+                    "Name": "COLD DRINKS",
+                    "TagType": {
+                        "Label": "subclass",
+                        "Name": "SubClass"
+                    }
+                },
+                {
+                    "Label": "cold-drinks",
+                    "Name": "COLD DRINKS",
+                    "TagType": {
+                        "Label": "class",
+                        "Name": "Class"
+                    }
+                },
+                {
+                    "Label": "softdrinks",
+                    "Name": "SOFTDRINKS",
+                    "TagType": {
+                        "Label": "category",
+                        "Name": "Category"
+                    }
+                },
+                {
+                    "Label": "impulse",
+                    "Name": "IMPULSE",
+                    "TagType": {
+                        "Label": "group",
+                        "Name": "Group"
+                    }
+                },
+                {
+                    "Label": "grocery",
+                    "Name": "GROCERY",
+                    "TagType": {
+                        "Label": "tpc",
+                        "Name": "TPC"
+                    }
+                },
+                {
+                    "Label": "flavoured-soft-drinks",
+                    "Name": "Flavoured Soft Drinks",
+                    "TagType": {
+                        "Label": "online-1",
+                        "Name": "Online 1"
+                    }
+                },
+                {
+                    "Label": "soft-drinks",
+                    "Name": "Soft Drinks",
+                    "TagType": {
+                        "Label": "online-2",
+                        "Name": "Online 2"
+                    }
+                },
+                {
+                    "Label": "drinks",
+                    "Name": "Drinks",
+                    "TagType": {
+                        "Label": "online-3",
+                        "Name": "Online 3"
+                    }
+                },
+                {
+                    "Label": "cocacola",
+                    "Name": "Coca-Cola",
+                    "TagType": {
+                        "Label": "brand",
+                        "Name": "Brand"
+                    }
+                }
+            ]
+        },
+        {
+            "Id": 2034116,
+            "Name": "Coke Zero",
+            "Size": "250mL",
+            "Brand": "Coca-Cola",
+            "ImageUri": "/customer/v1/coles/products/images/2034116.jpg",
+            "Locations": [
+                {
+                    "Aisle": null,
+                    "Order": 9999.0,
+                    "Description": null,
+                    "AisleSide": null,
+                    "Facing": 0,
+                    "Shelf": 0,
+                    "LayoutId": "0128",
+                    "LayoutName": "COLD DRINK - OD230"
+                },
+                {
+                    "Aisle": "SERVICE",
+                    "Order": 9999.0,
+                    "Description": "Service desk",
+                    "AisleSide": "Front of Store",
+                    "Facing": 0,
+                    "Shelf": 0,
+                    "LayoutId": "9049",
+                    "LayoutName": "COLD DRINK - OD290"
+                }
+            ],
+            "Promotions": null,
+            "Tags": [
+                {
+                    "Label": "cold-drinks",
+                    "Name": "COLD DRINKS",
+                    "TagType": {
+                        "Label": "subclass",
+                        "Name": "SubClass"
+                    }
+                },
+                {
+                    "Label": "cold-drinks",
+                    "Name": "COLD DRINKS",
+                    "TagType": {
+                        "Label": "class",
+                        "Name": "Class"
+                    }
+                },
+                {
+                    "Label": "softdrinks",
+                    "Name": "SOFTDRINKS",
+                    "TagType": {
+                        "Label": "category",
+                        "Name": "Category"
+                    }
+                },
+                {
+                    "Label": "impulse",
+                    "Name": "IMPULSE",
+                    "TagType": {
+                        "Label": "group",
+                        "Name": "Group"
+                    }
+                },
+                {
+                    "Label": "grocery",
+                    "Name": "GROCERY",
+                    "TagType": {
+                        "Label": "tpc",
+                        "Name": "TPC"
+                    }
+                },
+                {
+                    "Label": "flavoured-soft-drinks",
+                    "Name": "Flavoured Soft Drinks",
+                    "TagType": {
+                        "Label": "online-1",
+                        "Name": "Online 1"
+                    }
+                },
+                {
+                    "Label": "soft-drinks",
+                    "Name": "Soft Drinks",
+                    "TagType": {
+                        "Label": "online-2",
+                        "Name": "Online 2"
+                    }
+                },
+                {
+                    "Label": "drinks",
+                    "Name": "Drinks",
+                    "TagType": {
+                        "Label": "online-3",
+                        "Name": "Online 3"
+                    }
+                },
+                {
+                    "Label": "cocacola",
+                    "Name": "Coca-Cola",
+                    "TagType": {
+                        "Label": "brand",
+                        "Name": "Brand"
+                    }
+                }
+            ]
+        },
+        {
+            "Id": 8464800,
+            "Name": "Diet Coke 375mL Cans",
+            "Size": "30 pack",
+            "Brand": "Coca-Cola",
+            "ImageUri": "/customer/v1/coles/products/images/8464800.jpg",
+            "Locations": null,
+            "Promotions": [
+                {
+                    "PromotionId": 135127063,
+                    "Type": "Value (Excl FP)",
+                    "Description": "40% Off",
+                    "Price": 18.0,
+                    "WasPrice": 34.45,
+                    "SaveAmount": 16.45,
+                    "UnitPrice": "$1.60 per 1L",
+                    "UnitOfMeasure": "EA",
+                    "PriceDescription": null,
+                    "StartDate": "2017-02-22T00:00:00",
+                    "EndDate": "2017-02-28T23:59:59",
+                    "SavePercent": 47.75
+                }
+            ],
+            "Tags": [
+                {
+                    "Label": "cans",
+                    "Name": "CANS",
+                    "TagType": {
+                        "Label": "subclass",
+                        "Name": "SubClass"
+                    }
+                },
+                {
+                    "Label": "cans",
+                    "Name": "CANS",
+                    "TagType": {
+                        "Label": "class",
+                        "Name": "Class"
+                    }
+                },
+                {
+                    "Label": "softdrinks",
+                    "Name": "SOFTDRINKS",
+                    "TagType": {
+                        "Label": "category",
+                        "Name": "Category"
+                    }
+                },
+                {
+                    "Label": "impulse",
+                    "Name": "IMPULSE",
+                    "TagType": {
+                        "Label": "group",
+                        "Name": "Group"
+                    }
+                },
+                {
+                    "Label": "grocery",
+                    "Name": "GROCERY",
+                    "TagType": {
+                        "Label": "tpc",
+                        "Name": "TPC"
+                    }
+                },
+                {
+                    "Label": "flavoured-soft-drinks",
+                    "Name": "Flavoured Soft Drinks",
+                    "TagType": {
+                        "Label": "online-1",
+                        "Name": "Online 1"
+                    }
+                },
+                {
+                    "Label": "soft-drinks",
+                    "Name": "Soft Drinks",
+                    "TagType": {
+                        "Label": "online-2",
+                        "Name": "Online 2"
+                    }
+                },
+                {
+                    "Label": "drinks",
+                    "Name": "Drinks",
+                    "TagType": {
+                        "Label": "online-3",
+                        "Name": "Online 3"
+                    }
+                },
+                {
+                    "Label": "cocacola",
+                    "Name": "Coca-Cola",
+                    "TagType": {
+                        "Label": "brand",
+                        "Name": "Brand"
+                    }
+                }
+            ]
+        },
+        {
+            "Id": 8464810,
+            "Name": "Coke Zero 375mL Cans",
+            "Size": "30 pack",
+            "Brand": "Coca-Cola",
+            "ImageUri": "/customer/v1/coles/products/images/8464810.jpg",
+            "Locations": [
+                {
+                    "Aisle": "5",
+                    "Order": 5.0,
+                    "Description": "Aisle 5",
+                    "AisleSide": "Right",
+                    "Facing": 0,
+                    "Shelf": 0,
+                    "LayoutId": "0257",
+                    "LayoutName": "DRINKS - CANS"
+                }
+            ],
+            "Promotions": [
+                {
+                    "PromotionId": 135127087,
+                    "Type": "Value (Excl FP)",
+                    "Description": "40% Off",
+                    "Price": 18.0,
+                    "WasPrice": 34.45,
+                    "SaveAmount": 16.45,
+                    "UnitPrice": "$1.60 per 1L",
+                    "UnitOfMeasure": "EA",
+                    "PriceDescription": null,
+                    "StartDate": "2017-02-22T00:00:00",
+                    "EndDate": "2017-02-28T23:59:59",
+                    "SavePercent": 47.75
+                }
+            ],
+            "Tags": [
+                {
+                    "Label": "cans",
+                    "Name": "CANS",
+                    "TagType": {
+                        "Label": "subclass",
+                        "Name": "SubClass"
+                    }
+                },
+                {
+                    "Label": "cans",
+                    "Name": "CANS",
+                    "TagType": {
+                        "Label": "class",
+                        "Name": "Class"
+                    }
+                },
+                {
+                    "Label": "softdrinks",
+                    "Name": "SOFTDRINKS",
+                    "TagType": {
+                        "Label": "category",
+                        "Name": "Category"
+                    }
+                },
+                {
+                    "Label": "impulse",
+                    "Name": "IMPULSE",
+                    "TagType": {
+                        "Label": "group",
+                        "Name": "Group"
+                    }
+                },
+                {
+                    "Label": "grocery",
+                    "Name": "GROCERY",
+                    "TagType": {
+                        "Label": "tpc",
+                        "Name": "TPC"
+                    }
+                },
+                {
+                    "Label": "flavoured-soft-drinks",
+                    "Name": "Flavoured Soft Drinks",
+                    "TagType": {
+                        "Label": "online-1",
+                        "Name": "Online 1"
+                    }
+                },
+                {
+                    "Label": "soft-drinks",
+                    "Name": "Soft Drinks",
+                    "TagType": {
+                        "Label": "online-2",
+                        "Name": "Online 2"
+                    }
+                },
+                {
+                    "Label": "drinks",
+                    "Name": "Drinks",
+                    "TagType": {
+                        "Label": "online-3",
+                        "Name": "Online 3"
+                    }
+                },
+                {
+                    "Label": "cocacola",
+                    "Name": "Coca-Cola",
+                    "TagType": {
+                        "Label": "brand",
+                        "Name": "Brand"
+                    }
+                }
+            ]
+        }
+    ],
     "Keyword": "coke",
     "NoOfResults": 45,
     "Start": 0

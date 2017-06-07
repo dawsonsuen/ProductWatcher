@@ -2,11 +2,6 @@ using System.Collections.Generic;
 
 namespace ProductWatcher.Apis.BWS.Models
 {
-    public class ProductModels
-    {
-
-    }
-
     public class RecommendedProduct : Woolworths.Models.Product
     {
         public object PercentageOffTag { get; set; }
@@ -92,7 +87,7 @@ namespace ProductWatcher.Apis.BWS.Models
         public List<RecommendedProduct> ProductsInSameOffer { get; set; }
     }
 
-    public class RootObject
+    public class ProductModel
     {
         public long PackDefaultStockCode { get; set; }
         public long PackParentStockCode { get; set; }

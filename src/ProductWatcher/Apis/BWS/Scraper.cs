@@ -2,6 +2,7 @@ using System;
 using System.Linq;
 using System.Threading.Tasks;
 using Flurl.Http;
+using Newtonsoft.Json;
 using ProductWatcher.Apis.BWS.Models;
 using ProductWatcher.Models;
 
@@ -24,26 +25,33 @@ namespace ProductWatcher.Apis.BWS
             throw new NotImplementedException();
         }
 
-        public async Task<string> Search(string searchTerm) => await SearchAsync(searchTerm, null);
+        public async Task<string> Search(string searchTerm) => await Search(searchTerm, null);
 
-        public async Task<string> SearchAsync(string searchTerm, string storeData)
+        public async Task<string> Search(string searchTerm, string storeData)
         {
             var url = string.Format(SEARCH_URL, searchTerm);
 
-            //var b = await url.GetStringAsync();
-            var b = await url.GetJsonAsync<SearchModel>();
-
-            return string.Format(PRODUCT_URL, b.Products.Suggestions.First().Stockcode);
+            var b = await url.GetStringAsync();
+            return b;
         }
 
-        public async Task<SearchModel> SearchModelAsync(string searchTerm, string storeData)
+        public async Task<Search[]> GetSearchModel(string rawData)
         {
-            var url = string.Format(SEARCH_URL, searchTerm);
+            var b = JsonConvert.DeserializeObject<BWS.Models.SearchModel>(rawData);
 
-            //var b = await url.GetStringAsync();
-            var b = await url.GetJsonAsync<SearchModel>();
-
-            return b;
+            return b.Products.Suggestions.Select(x =>
+            {
+                return new Search
+                {
+                    Company = CompanyName,
+                    Name = x.Title,
+                    Description = x.ProductName,
+                    Quanity = x.ProductUnitQuantity,
+                    ProductCode = x.Stockcode,
+                    Brand = x.Brand,
+                    Amount = x.Price
+                };
+            }).ToArray();
         }
     }
 }
