@@ -29,49 +29,11 @@ namespace ProductWatcher.Apis.Coles
             return data;
         }
 
-        public async Task<Product> GetProduct(string rawData)
-        {
-            var model = JsonConvert.DeserializeObject<Coles.Models.ShitAsProductModel>(rawData);
-            var product = new Product();
-            product.Company = CompanyName;
+        public async Task<Product> GetProduct(string rawData) => (await GetProducts(rawData))[0];
 
-            var catalogItem = model.catalogEntryView[0];
-            if (catalogItem != null)
-            {
-                var catalogItemCode = catalogItem.p.ToString();
-
-                product.Id = catalogItemCode.ToUpperInvariant().EndsWith("P") ? catalogItemCode.Substring(0, catalogItemCode.Length - 1) : catalogItemCode;
-                product.Name = catalogItem.n;
-
-                var quantityDescription = string.Join(" ", catalogItem.a.O3);
-                product.Description = $"{product.Name} {quantityDescription}";
-
-                if (catalogItem.P1.l4 != null)
-                {
-                    product.Price = catalogItem.P1.l4 ?? -1;
-                    product.SpecialPrice = catalogItem.P1.o ?? -1;
-                }
-                else
-                {
-                    product.Price = catalogItem.P1.o ?? -1;
-                }
-                product.SmallImageLink = catalogItem.t;
-                product.MediumImageLink = catalogItem.fi;
-
-                if (catalogItem.u2 != null)
-                {
-                    var a = catalogItem.u2.Split(' ');
-
-                    product.CupPrice = decimal.Parse(a[0], System.Globalization.NumberStyles.Currency);
-                }
-            }
-
-            return product;
-        }
         public async Task<Product[]> GetProducts(string rawData)
         {
             var model = JsonConvert.DeserializeObject<Coles.Models.ShitAsProductModel>(rawData);
-
 
             var products = model.catalogEntryView.Select(x =>
             {
@@ -82,7 +44,16 @@ namespace ProductWatcher.Apis.Coles
                     var catalogItemCode = x.p.ToString();
 
                     product.Id = catalogItemCode.ToUpperInvariant().EndsWith("P") ? catalogItemCode.Substring(0, catalogItemCode.Length - 1) : catalogItemCode;
+
+                    var brand = x.m ?? string.Empty;
                     product.Name = x.n;
+
+                    if (!product.Name.ToUpperInvariant().Contains(brand.ToUpperInvariant()))
+                    {
+                        product.Name = brand != string.Empty ? $"{brand} {x.n}" : x.n;
+                    }
+
+                    product.Brand = brand;
 
                     var quantityDescription = string.Join(" ", x.a.O3);
                     product.Description = $"{product.Name} {quantityDescription}";
