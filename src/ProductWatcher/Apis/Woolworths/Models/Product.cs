@@ -86,9 +86,9 @@ namespace ProductWatcher.Apis.Woolworths.Models
         public bool IsEdrSpecial { get; set; }
         public decimal? SavingsAmount { get; set; }
         public decimal? WasPrice { get; set; }
-        public int QuantityInTrolley { get; set; }
+        public decimal QuantityInTrolley { get; set; }
         public string Unit { get; set; }
-        public int MinimumQuantity { get; set; }
+        public decimal MinimumQuantity { get; set; }
         public bool IsInTrolley { get; set; }
         public string Source { get; set; }
         public int SupplyLimit { get; set; }
@@ -107,7 +107,7 @@ namespace ProductWatcher.Apis.Woolworths.Models
         public string FullDescription { get; set; }
         public bool IsAvailable { get; set; }
         public bool AgeRestricted { get; set; }
-        public int DisplayQuantity { get; set; }
+        public decimal DisplayQuantity { get; set; }
         public object RichDescription { get; set; }
         public bool IsDeliveryPass { get; set; }
         public bool HideWasSavedPrice { get; set; }

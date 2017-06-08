@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Threading;
 using System.Threading.Tasks;
 //using Autofac;
 //using Autofac.Core;
@@ -16,6 +17,7 @@ using ProductWatcher.Apis;
 using ProductWatcher.DbModels;
 using ProductWatcher.ES.Common;
 using ProductWatcher.ES.ReadModel;
+using ProductWatcher.Models;
 using StructureMap;
 using StructureMap.Graph.Scanning;
 
@@ -46,23 +48,53 @@ namespace ProductWatcher.Cli
 
             using (Container)
             {
-                foreach (var scraper in Container.GetAllInstances<IScrapeProduct>().Where(x => !x.GetType().GetTypeInfo().IsAbstract))
-                {
-                    Console.WriteLine($"Searching {scraper.CompanyName} for {search}....");
-                    var a = scraper.Search(search).Result;
-                    if (debug) Console.WriteLine(a);
+                Dictionary<string, string> debugData = new Dictionary<string, string>();
+                Dictionary<string, Search[]> resultss = new Dictionary<string, Search[]>();
+                var _lock = new object();
+                bool searching = false;
 
+                var allScrapers = Container.GetAllInstances<IScrapeProduct>().Where(x => !x.GetType().GetTypeInfo().IsAbstract);
+
+                Parallel.ForEach(allScrapers, async (scraper) =>
+                 {
+                     var a = await scraper.Search(search);
+                     var b = await scraper.GetSearchModel(a);
+                     lock (_lock)
+                     {
+                         if (debug)
+                         {
+                             debugData.Add(scraper.CompanyName, a);
+                         }
+
+                         resultss.Add(scraper.CompanyName, b);
+                     }
+                 });
+
+                 while(resultss.Count < allScrapers.Count())
+                 {
+                     if(!searching){
+                         searching =true;
+                         Console.WriteLine("Searching.");
+                     }
+                     //Console.Write('.');
+                 }
+
+                foreach (var values in resultss)
+                {
+                    if (debug) Console.WriteLine(debugData[values.Key]);
+                    Console.WriteLine($"Searching {values.Key} for {search}....");
                     Console.WriteLine(" ------------------ ");
-                    var b = scraper.GetSearchModel(a).Result;
-                    foreach (var item in b)
+
+                    foreach (var item in values.Value)
                     {
-                        Console.WriteLine("${0} - {1} x {2}.{3}  {4}", item.Amount, item.Quanity, item.Name, item.Description, item.Brand);
+                        Console.WriteLine("${0} - {1}  {2}.{3}", item.Amount, item.CupSting, item.Description, item.Brand);
                     }
 
                     Console.WriteLine("       --        ");
-                }
-            }
 
+                }
+
+            }
 
         }
 
@@ -77,11 +109,11 @@ namespace ProductWatcher.Cli
                     scan.Assembly(typeof(IScrapeProduct).GetTypeInfo().Assembly);
                     scan.WithDefaultConventions();
                     scan.AddAllTypesOf<IScrapeProduct>();
-                    //scan.AddAllTypesOf<IValidator<Address>>();
+                        //scan.AddAllTypesOf<IValidator<Address>>();
 
-                    //scan.ConnectImplementationsToTypesClosing(typeof(IScrapeProduct));
+                        //scan.ConnectImplementationsToTypesClosing(typeof(IScrapeProduct));
 
-                });
+                    });
             });
 
 

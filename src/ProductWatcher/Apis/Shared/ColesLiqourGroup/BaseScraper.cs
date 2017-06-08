@@ -1,5 +1,6 @@
 using System;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 using Flurl.Http;
 using Newtonsoft.Json;
@@ -28,7 +29,7 @@ namespace ProductWatcher.Apis.Shared.ColesLiqourGroup
 
         public virtual async Task<string> Search(string searchTerm, string storeData)
         {
-            var url = string.Format(SearchUrl, searchTerm);
+            var url = string.Format(SearchUrl, WebUtility.UrlEncode(searchTerm));
 
             var b = await url.GetStringAsync();
             return b;

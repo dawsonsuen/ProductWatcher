@@ -1,5 +1,6 @@
 using System;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 using Flurl.Http;
 using Newtonsoft.Json;
@@ -29,7 +30,7 @@ namespace ProductWatcher.Apis.BWS
 
         public async Task<string> Search(string searchTerm, string storeData)
         {
-            var url = string.Format(SEARCH_URL, searchTerm);
+            var url = string.Format(SEARCH_URL, WebUtility.UrlEncode(searchTerm));
 
             var b = await url.GetStringAsync();
             return b;

@@ -74,7 +74,8 @@ namespace ProductWatcher.Apis.Woolworths
                     Name = x.Name,
                     Description = x.Description,
                     ProductCode = x.Stockcode.ToString(),
-                    Amount = x.Price
+                    Amount = x.Price,
+                    CupSting = x.CupString
                 };
             }).ToArray();
         }

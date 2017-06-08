@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 using Flurl.Http;
 using Newtonsoft.Json;
@@ -70,12 +71,13 @@ namespace ProductWatcher.Apis.Coles
                     product.SmallImageLink = x.t;
                     product.MediumImageLink = x.fi;
 
-                    if (x.u2 != null)
-                    {
-                        var a = x.u2.Split(' ');
+                    //if (x.u2 != null)
+                    //{
+                        //var a = x.u2.Split(' ');
 
+                        product.CupString = x?.u2 ?? "";
                         //product.CupPrice = decimal.Parse(a[0], System.Globalization.NumberStyles.Currency);
-                    }
+                    //}
                 }
                 return product;
             });
@@ -87,7 +89,7 @@ namespace ProductWatcher.Apis.Coles
         public async Task<string> Search(string searchTerm, string storeData)
         {
             //var a = string.Format(SEARCH_URL, searchTerm, "20", "560");
-            var a = string.Format(PRICE_URL, searchTerm);
+            var a = string.Format(PRICE_URL, WebUtility.UrlEncode(searchTerm));
 
             //var b = await a.WithHeaders(SEARCH_URL_HEADERS).GetStringAsync();
             var b = await a.GetStringAsync();
@@ -108,7 +110,8 @@ namespace ProductWatcher.Apis.Coles
                     Brand = x.Brand,
                     ImageUrl = x.SmallImageLink,
                     ProductCode = x.Id.ToString(),
-                    Amount = x.Price
+                    Amount = x.Price,
+                    CupSting = x.CupString
                 };
             }).ToArray();
         }

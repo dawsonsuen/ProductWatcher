@@ -11,5 +11,6 @@ namespace ProductWatcher.Models
         //public decimal SavingAmount { get; set; }
         public string ImageUrl { get; set; }
         public string Brand { get; internal set; }
+        public string CupSting { get; internal set; }
     }
 }
