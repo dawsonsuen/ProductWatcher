@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Threading.Tasks;
 using Flurl.Http;
@@ -37,6 +38,8 @@ namespace ProductWatcher.Cli
 
         public static void Main(string[] args)
         {
+            CultureInfo.CurrentCulture = new CultureInfo("en-Au");
+            CultureInfo.CurrentUICulture = CultureInfo.CurrentCulture;
             SetupConfiguration();
             ConfigureServices();
 

@@ -35,7 +35,8 @@ namespace ProductWatcher.Models
                 var quantityDescription = string.Join(" ", product.a.O3);
                 this.Description = $"{this.Name} {quantityDescription}";
 
-                if (product.P1.l4 != null) {
+                if (product.P1.l4 != null)
+                {
                     this.Price = product.P1.l4 ?? -1;
                     this.SpecialPrice = product.P1.o ?? -1;
                 }
@@ -46,9 +47,18 @@ namespace ProductWatcher.Models
 
                 this.ImgUrl = product.fi;
 
-                if (product.u2 != null) {
+                if (product.u2 != null)
+                {
                     var a = product.u2.Split(' ');
-                    this.DollarPerLitre = decimal.Parse(a[0],System.Globalization.NumberStyles.Currency);
+                    //This model is soooo god damn terrible who cares about $per/L or per kg
+                    try
+                    {
+                        this.DollarPerLitre = decimal.Parse(a[0], System.Globalization.NumberStyles.Currency);
+                    }
+                    catch (Exception)
+                    {
+
+                    }
                 }
             }
 
@@ -161,12 +171,12 @@ namespace ProductWatcher.Models
             public bool IsEdrSpecial { get; set; }
             public decimal? SavingsAmount { get; set; }
             public decimal? WasPrice { get; set; }
-            public int QuantityInTrolley { get; set; }
+            public decimal QuantityInTrolley { get; set; }
             public string Unit { get; set; }
-            public int MinimumQuantity { get; set; }
+            public decimal MinimumQuantity { get; set; }
             public bool IsInTrolley { get; set; }
             public string Source { get; set; }
-            public int SupplyLimit { get; set; }
+            public decimal SupplyLimit { get; set; }
             public string PackageSize { get; set; }
             public bool IsPmDelivery { get; set; }
             public bool IsForCollection { get; set; }
@@ -176,13 +186,13 @@ namespace ProductWatcher.Models
             public ImageTag ImageTag { get; set; }
             public HeaderTag HeaderTag { get; set; }
             public bool HasHeaderTag { get; set; }
-            public int UnitWeightInGrams { get; set; }
+            public decimal UnitWeightInGrams { get; set; }
             public string SupplyLimitMessage { get; set; }
             public string SmallFormatDescription { get; set; }
             public string FullDescription { get; set; }
             public bool IsAvailable { get; set; }
             public bool AgeRestricted { get; set; }
-            public int DisplayQuantity { get; set; }
+            public decimal DisplayQuantity { get; set; }
             public object RichDescription { get; set; }
             public bool IsDeliveryPass { get; set; }
             public bool HideWasSavedPrice { get; set; }
