@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ProductWatcher.Apis.Coles;
 using Xunit;
 using Xunit.Abstractions;
 
@@ -42,10 +42,14 @@ namespace ProductWatcher.Tests
             Assert.NotNull(product);
         }
 
-        //[Fact]
+        [Fact]
         public override async Task Serialize_As_External_Domain_Model()
         {
-            //var data = await _scraper.GetProduct()
+            var data = await _scraper.Search("washing detergent");
+            var woolworthsDomainModel = await _scraper.GetSearchModel(data);
+
+            var a = woolworthsDomainModel.ToList();
+            Assert.False(a.Any(x => a.Where(y => y.ProductCode == x.ProductCode).Count() > 1));
         }
 
         public override Task Serialize_As_Internal_Domain_Model()

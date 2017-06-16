@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
@@ -29,11 +30,15 @@ namespace ProductWatcher.Apis.Woolworths
 
             product.Company = CompanyName;
             product.Id = model.Product.Stockcode.ToString();
-            product.CupPrice = model.Product.CupPrice ?? -1;
+
+            if (product.HasCupPrice)
+            {
+                product.CupPrice = model.Product.CupPrice.Value;
+            }
 
             if (model.Product.IsOnSpecial)
             {
-                product.Price = model.Product.WasPrice ?? -1;
+                product.Price = model.Product.WasPrice.Value;
                 product.SpecialPrice = model.Product.Price;
             }
             else
@@ -48,11 +53,11 @@ namespace ProductWatcher.Apis.Woolworths
             return product;
         }
 
-        public async Task<string> Search(string searchTerm) => await Search(searchTerm, "20");
+        public async Task<string> Search(string searchTerm) => await Search(searchTerm, "35");
 
         public async Task<string> Search(string searchTerm, string storeData)
         {
-            var a = string.Format(SEARCH_URL, WebUtility.UrlEncode(searchTerm), "20");
+            var a = string.Format(SEARCH_URL, WebUtility.UrlEncode(searchTerm), "35");
 
             var b = await a.GetStringAsync();
 
@@ -63,21 +68,27 @@ namespace ProductWatcher.Apis.Woolworths
         {
             var b = JsonConvert.DeserializeObject<Woolworths.Models.SearchModel>(rawData);
 
-            if(b.Products == null) return new Search[0];
+            if (b.Products == null) return new Search[0];
 
-            return b.Products.SelectMany(x => x.Products).Select(x =>
+            var filteredProducts = new List<Search>();
+
+            foreach (var product in b.Products.SelectMany(x => x.Products))
             {
-                return new Search
+                if (filteredProducts.Any(x => x.ProductCode == product.Stockcode.ToString())) continue;
+
+                filteredProducts.Add(new Search
                 {
                     Company = CompanyName,
-                    Brand = x.Brand,
-                    Name = x.Name,
-                    Description = x.Description,
-                    ProductCode = x.Stockcode.ToString(),
-                    Amount = x.Price,
-                    CupSting = x.CupString
-                };
-            }).ToArray();
+                    Brand = product.Brand,
+                    Name = product.Name,
+                    Description = product.Description,
+                    ProductCode = product.Stockcode.ToString(),
+                    Amount = product.Price,
+                    CupSting = product.CupString
+                });
+            }
+
+            return filteredProducts.ToArray();
         }
     }
 }

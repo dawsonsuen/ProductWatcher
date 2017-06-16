@@ -45,9 +45,9 @@ namespace ProductWatcher.Cli
                 Console.WriteLine("Please wait for tasks to finalize... we will exit after all tasks complete");
             };
 
-            Console.WriteLine("Wanna Debug Y/N : (Default: N)");
-            var debugLine = Console.ReadLine().Trim().ToUpperInvariant();
-            var debug = (debugLine == "Y" || debugLine == "YES");
+            //Console.WriteLine("Wanna Debug Y/N : (Default: N)");
+            //var debugLine = Console.ReadLine().Trim().ToUpperInvariant();
+            var debug = false;//(debugLine == "Y" || debugLine == "YES");
 
             Console.WriteLine("Enter he product to search for: ");
             var search = Console.ReadLine();
