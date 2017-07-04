@@ -34,6 +34,15 @@ namespace ProductWatcher.Tests
         }
 
         [Fact]
+        public  async Task Should_not_error_parsing_json_when_item_is_not_availble()
+        {
+            var data = await _scraper.Get("764819");
+            var product = await _scraper.GetProduct(data);
+
+            Assert.NotNull(product);
+        }
+
+        [Fact]
         public override async Task Integreation_Search_Should_WorkAsync()
         {
             var data = await _scraper.Search("candles");

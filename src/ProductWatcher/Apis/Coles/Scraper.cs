@@ -30,7 +30,7 @@ namespace ProductWatcher.Apis.Coles
             return data;
         }
 
-        public async Task<Product> GetProduct(string rawData) => (await GetProducts(rawData))[0];
+        public async Task<Product> GetProduct(string rawData) => (await GetProducts(rawData)).FirstOrDefault();
 
         public async Task<Product[]> GetProducts(string rawData)
         {
@@ -99,7 +99,6 @@ namespace ProductWatcher.Apis.Coles
 
         public async Task<Search[]> GetSearchModel(string rawData)
         {
-            //var b = JsonConvert.DeserializeObject<Coles.Models.Search>(rawData);
             var b = await GetProducts(rawData);
             return b.Select(x =>
             {

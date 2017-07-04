@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Globalization;
@@ -17,7 +18,6 @@ using Newtonsoft.Json;
 using NPoco;
 using ProductWatcher.Apis;
 using ProductWatcher.DbModels;
-//using ProductWatcher.ES.Common;
 using ProductWatcher.ES.ReadModel;
 using ProductWatcher.Models;
 using StructureMap;
@@ -27,120 +27,109 @@ namespace ProductWatcher.Cli
 {
     class Program
     {
+
         public static IConfigurationRoot Configuration { get; set; }
         public static IContainer Container { get; set; }
         public static object _lock = new object();
+
         public static void Main(string[] args)
         {
-            bool shouldExit = false;
             CultureInfo.CurrentCulture = new CultureInfo("en-Au");
             CultureInfo.CurrentUICulture = CultureInfo.CurrentCulture;
 
             SetupConfiguration();
             ConfigureServices();
 
-            Console.CancelKeyPress += (sender, e) =>
-            {
-                shouldExit = true;
-                Console.WriteLine("Please wait for tasks to finalize... we will exit after all tasks complete");
-            };
-
-            //Console.WriteLine("Wanna Debug Y/N : (Default: N)");
-            //var debugLine = Console.ReadLine().Trim().ToUpperInvariant();
-            var debug = false;//(debugLine == "Y" || debugLine == "YES");
-
-            Console.WriteLine("Enter he product to search for: ");
-            var search = Console.ReadLine();
-
             using (Container)
             {
-                var allScrapers = Container.GetAllInstances<IScrapeProduct>().Where(x => !x.GetType().GetTypeInfo().IsAbstract && !x.Alcohol);
+                var allScrapers = Container.GetAllInstances<IScrapeProduct>().Where(x => !x.GetType().GetTypeInfo().IsAbstract);
                 var db = Container.TryGetInstance<IDatabase>();
-                Parallel.ForEach(allScrapers, (scraper) =>
+                var allProducts = db.Query<DbModels.Product>().ToArray().Batch(300);
+
+                Parallel.ForEach(allProducts, async (product) =>
                 {
-                    bool notFailed = true;
-                    try
+                    foreach (var item in product)
                     {
-                       TryGetStuff(scraper, search, db);
-                    }
-                    catch (Exception e)
-                    {
-                        Console.WriteLine(e.ToString());
                         try
                         {
-                           TryGetStuff(scraper, search, db);
+                            var data = new DbModels.Data();
+                            data.ProductId = item.Id;
+                            data.When = DateTime.UtcNow;
+
+                            var scraper = allScrapers.Where(x => x.CompanyName == item.Company).SingleOrDefault();
+
+                            var rawData = await scraper.Get(item.Code);
+                            data.RawData = rawData;
+
+                            LockInsert(db, data);
+                            var productModel = await scraper.GetProduct(data.RawData);
+                            data.ProductModel = JsonConvert.SerializeObject(productModel);
+                            LockUpdate(db, data);
+
+                            var price = new Price
+                            {
+                                DataId = data.Id,
+                                ProductId = item.Id,
+                                OriginalPrice = productModel.Price,
+                                OnSalePrice = productModel.SpecialPrice,
+                                Company = productModel.Company,
+                                Description = productModel.Description,
+                                AdditionalData = new Dictionary<string, object>()
+                                {
+                                    {
+                                    nameof(productModel.CupString), productModel.CupString
+                                    },
+                                    {
+                                    nameof(productModel.CupPrice), productModel.CupPrice
+                                    },
+                                    {
+                                    nameof(productModel.CupMesure), productModel.CupMesure
+                                    },
+                                    {
+                                    nameof(productModel.Blurb), productModel.Blurb
+                                    },
+                                    {
+                                    nameof(productModel.HasCupPrice), productModel.HasCupPrice
+                                    },
+                                    {
+                                    nameof(productModel.Unit), productModel.Unit
+                                    },
+                                    {
+                                    nameof(productModel.MediumImageLink), productModel.MediumImageLink
+                                    },
+                                    {
+                                    nameof(productModel.LargeImageLink), productModel.LargeImageLink
+                                    },
+                                },
+                                When = data.When
+                            };
+
+                            LockInsert(db, price);
+
                         }
-                        catch (Exception)
+                        catch (Exception ex)
                         {
-                            Console.WriteLine($"couldnt save {scraper.CompanyName}");
+                            //log failure
                         }
-                        notFailed = false;
                     }
-                    finally
-                    {
-                        if (notFailed) Console.WriteLine($"saved {scraper.CompanyName}");
-                    }
-                    //  Console.WriteLine("       --        ");
                 });
             }
-
         }
 
-        private static void TryGetStuff(IScrapeProduct scraper, string search, IDatabase db)
+        public static void LockInsert(IDatabase db, object poco)
         {
-            var a = scraper.Search(search).Result;
-            var b = scraper.GetSearchModel(a).Result;
-
-            //  Console.WriteLine($"Searching {scraper.CompanyName} for {search}....");
-            //  Console.WriteLine(" ------------------ ");
-            //  if (debug)
-            //  {
-            //      Console.WriteLine(a);
-            //  }
-
-            // if (scraper is Apis.Coles.Scraper)
-            // {
-            //     foreach (var item in b)
-            //     {
-            //         lock (_lock)
-            //         {
-
-            //         }
-            //         // Console.WriteLine("${0} - {1}  {2}.{3}", item.Amount, item.CupSting, item.Name, item.Brand);
-            //     }
-            // }
-            // else
-            // {
-
-            //var left = db.Query<DbModels.Product>().Where(x => b.Any(y => y.ProductCode == x.Code));
-            //var newsss = b.Where(x => left.Any(y => y.Code == x.ProductCode));
-            List<DbModels.Product> products = new List<DbModels.Product>();
-            foreach (var item in b)
-            {
-                lock (_lock)
-                {
-                    if (!(db.Query<DbModels.Product>().Any(x => x.Code == item.ProductCode)))
-                    {
-                        products.Add(new DbModels.Product()
-                        {
-                            Id = Guid.NewGuid(),
-                            Code = item.ProductCode,
-                            Company = item.Company,
-                            Name = $"{item.Brand} - {item.Name} - {item.Description}"
-                        });
-                    }
-                }
-
-                // Console.WriteLine("${0} - {1}  {2}.{3}", item.Amount, item.CupSting, item.Description, item.Brand);
-            }
-
             lock (_lock)
             {
-                db.InsertBulk(products);
+                db.Insert(poco);
             }
+        }
 
-            //}
-
+        public static void LockUpdate(IDatabase db, object poco)
+        {
+            lock (_lock)
+            {
+                db.Update(poco);
+            }
         }
 
         public static void ConfigureServices()
@@ -180,5 +169,16 @@ namespace ProductWatcher.Cli
 
             Configuration = builder.Build();
         }
+    }
+    public static class Extensions
+    {
+        public static IEnumerable<IEnumerable<T>> Batch<T>(this IEnumerable<T> items, int maxItems)
+        {
+            return items.Select((item, inx) => new { item, inx })
+                        .GroupBy(x => x.inx / maxItems)
+                        .Select(g => g.Select(x => x.item));
+        }
+
+
     }
 }

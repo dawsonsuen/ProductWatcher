@@ -43,7 +43,7 @@ namespace ProductWatcher.Apis.Woolworths
             }
             else
             {
-                product.Price = model.Product.Price;
+                product.Price = model.Product.Price.Value;
             }
 
             product.Name = model.Product.Name;
@@ -72,7 +72,7 @@ namespace ProductWatcher.Apis.Woolworths
 
             var filteredProducts = new List<Search>();
 
-            foreach (var product in b.Products.SelectMany(x => x.Products))
+            foreach (var product in b.Products.SelectMany(x => x.Products).Where(x => x.IsAvailable))
             {
                 if (filteredProducts.Any(x => x.ProductCode == product.Stockcode.ToString())) continue;
 
@@ -83,7 +83,7 @@ namespace ProductWatcher.Apis.Woolworths
                     Name = product.Name,
                     Description = product.Description,
                     ProductCode = product.Stockcode.ToString(),
-                    Amount = product.Price,
+                    Amount = product.Price.Value,
                     CupSting = product.CupString
                 });
             }
