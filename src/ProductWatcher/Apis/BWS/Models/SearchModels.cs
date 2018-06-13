@@ -21,9 +21,9 @@ namespace ProductWatcher.Apis.BWS.Models
         public string VolumeSize { get; set; }
         public string Stockcode { get; set; }
         public string ParentStockcode { get; set; }
-        public decimal Price { get; set; }
+        public decimal? Price { get; set; }
         public bool IsSpecial { get; set; }
-        public decimal AmountSaved { get; set; }
+        public decimal? AmountSaved { get; set; }
         public string ImageFile { get; set; }
         public ProductTag ProductTag { get; set; }
         public string ProductName { get; set; }

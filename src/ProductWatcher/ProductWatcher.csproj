@@ -1,20 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netstandard1.6</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <None Remove="appsettings.json" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Flurl.Http" Version="*" />
-    <PackageReference Include="Newtonsoft.Json" Version="*" />
-    <PackageReference Include="Npgsql" Version="*" />
-    <PackageReference Include="NPoco" Version="*" />
-    <PackageReference Include="Microsoft.AspNetCore.WebUtilities" Version="1.1.0" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Update="appsettings.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    <PackageReference Include="Flurl.Http" Version="2.3.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="NPoco" Version="3.9.3" />
+    <PackageReference Include="MySqlConnector" Version="0.30.0" />
   </ItemGroup>
 </Project>

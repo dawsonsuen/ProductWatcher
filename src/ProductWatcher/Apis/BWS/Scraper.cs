@@ -16,19 +16,19 @@ namespace ProductWatcher.Apis.BWS
         public static string PRODUCT_URL = "https://api.bws.com.au/apis/ui/Product/{0}";
         public string CompanyName => "BWS";
 
-        public Task<string> Get(string productCode)
+        public Task<string> GetAsync(string productCode)
         {
             throw new NotImplementedException();
         }
 
-        public Task<ProductWatcher.Models.Product> GetProduct(string rawData)
+        public Task<ProductWatcher.Models.Product> GetProductAsync(string rawData)
         {
             throw new NotImplementedException();
         }
 
-        public async Task<string> Search(string searchTerm) => await Search(searchTerm, null);
+        public async Task<string> SearchAsync(string searchTerm) => await SearchAsync(searchTerm, null);
 
-        public async Task<string> Search(string searchTerm, string storeData)
+        public async Task<string> SearchAsync(string searchTerm, string storeData)
         {
             var url = string.Format(SEARCH_URL, WebUtility.UrlEncode(searchTerm));
 
@@ -36,7 +36,7 @@ namespace ProductWatcher.Apis.BWS
             return b;
         }
 
-        public async Task<Search[]> GetSearchModel(string rawData)
+        public async Task<Search[]> GetSearchModelAsync(string rawData)
         {
             var b = JsonConvert.DeserializeObject<BWS.Models.SearchModel>(rawData);
 
@@ -50,7 +50,7 @@ namespace ProductWatcher.Apis.BWS
                     Quanity = x.ProductUnitQuantity,
                     ProductCode = x.Stockcode,
                     Brand = x.Brand,
-                    Amount = x.Price
+                    Amount = x.Price.Value
                 };
             }).ToArray();
         }

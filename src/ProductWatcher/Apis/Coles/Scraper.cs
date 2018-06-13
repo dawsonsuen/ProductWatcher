@@ -22,7 +22,7 @@ namespace ProductWatcher.Apis.Coles
                 { "X-Coles-API-Secret", "e6ab96ff-453b-45ba-a2be-ae8d7c12cadf"}
         };
 
-        public async Task<string> Get(string productCode)
+        public async Task<string> GetAsync(string productCode)
         {
             var priceUrl = string.Format(PRICE_URL, productCode);
             var data = await priceUrl.GetStringAsync();
@@ -30,7 +30,7 @@ namespace ProductWatcher.Apis.Coles
             return data;
         }
 
-        public async Task<Product> GetProduct(string rawData) => (await GetProducts(rawData)).FirstOrDefault();
+        public async Task<Product> GetProductAsync(string rawData) => (await GetProducts(rawData)).FirstOrDefault();
 
         public async Task<Product[]> GetProducts(string rawData)
         {
@@ -85,8 +85,8 @@ namespace ProductWatcher.Apis.Coles
             return products.ToArray();
         }
 
-        public async Task<string> Search(string searchTerm) => await Search(searchTerm, null);
-        public async Task<string> Search(string searchTerm, string storeData)
+        public async Task<string> SearchAsync(string searchTerm) => await SearchAsync(searchTerm, null);
+        public async Task<string> SearchAsync(string searchTerm, string storeData)
         {
             //var a = string.Format(SEARCH_URL, searchTerm, "20", "560");
             var a = string.Format(PRICE_URL, WebUtility.UrlEncode(searchTerm));
@@ -97,7 +97,7 @@ namespace ProductWatcher.Apis.Coles
             return b;
         }
 
-        public async Task<Search[]> GetSearchModel(string rawData)
+        public async Task<Search[]> GetSearchModelAsync(string rawData)
         {
             var b = await GetProducts(rawData);
             return b.Select(x =>

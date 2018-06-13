@@ -15,26 +15,26 @@ namespace ProductWatcher.Apis.Shared.ColesLiqourGroup
         public virtual string CompanyName => string.Empty;
         public bool Alcohol => true;
 
-        public virtual async Task<string> Get(string productCode)
+        public virtual async Task<string> GetAsync(string productCode)
         {
             throw new NotImplementedException();
         }
 
-        public virtual async Task<Product> GetProduct(string rawData)
+        public virtual async Task<Product> GetProductAsync(string rawData)
         {
             throw new NotImplementedException();
         }
 
-        public virtual async Task<string> Search(string searchTerm) => await Search(searchTerm, null);
+        public virtual async Task<string> SearchAsync(string searchTerm) => await SearchAsync(searchTerm, null);
 
-        public virtual async Task<string> Search(string searchTerm, string storeData)
+        public virtual async Task<string> SearchAsync(string searchTerm, string storeData)
         {
             var url = string.Format(SearchUrl, WebUtility.UrlEncode(searchTerm));
 
             var b = await url.GetStringAsync();
             return b;
         }
-        public async Task<Search[]> GetSearchModel(string rawData)
+        public async Task<Search[]> GetSearchModelAsync(string rawData)
         {
             var b = JsonConvert.DeserializeObject<Models.SearchModel>(rawData);
 

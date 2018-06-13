@@ -6,24 +6,9 @@ namespace ProductWatcher.ES.Domain
     public abstract class Product
     {
 
-        public class ProductSearched : ICommand
+        public class Added : Event
         {
-            public ProductSearched(Guid streamId, string searchTerm)
-            {
-                this.StreamId = streamId;
-                this.SearchTerm = searchTerm;
-
-            }
-
-            public Guid StreamId { get; set; }
-            public string SearchTerm { get; set; }
-        }
-
-
-
-        public class ProductAdded : ICommand
-        {
-            public ProductAdded(Guid streamId, string productCode, Company company)
+            public Added(Guid streamId, string productCode, Company company)
             {
                 ProductCode = productCode;
                 Company = company;
@@ -32,6 +17,11 @@ namespace ProductWatcher.ES.Domain
             public string ProductCode { get; set; }
             public Company Company { get; set; }
             public Guid StreamId { get; set; }
+        }
+
+        public class UpdatedPrice : Event
+        {
+
         }
 
 

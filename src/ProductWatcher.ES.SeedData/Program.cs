@@ -28,7 +28,7 @@ namespace ProductWatcher.ES.SeedData
             var connectionString = Configuration.GetConnectionString("pgsql");
 
             builder.RegisterInstance(new CommandContext.User(Guid.NewGuid())).Named<CommandContext.IUser>("user");
-            builder.RegisterType<ReadModel.SqlReadModel>().AsImplementedInterfaces();
+            //builder.RegisterType<ReadModel.SqlReadModel>().AsImplementedInterfaces();
             builder.RegisterInstance<IEventTypeLookupStrategy>(new EventTypeLookupStrategy());
             builder.RegisterModule(new EventStoreDatabaseModule(connectionString));
             builder.RegisterModule(new EventProcessorModule(typeof(ES.Domain.Product).GetTypeInfo().Assembly, typeof(ES.ReadModel.Product).GetTypeInfo().Assembly));
@@ -44,7 +44,7 @@ namespace ProductWatcher.ES.SeedData
             {
                 ReplayEvents.Replay(container.Resolve<IFactory>(), scope.Resolve<IAccessDataStore>());
             }
-            var reader = (ReadModel.SqlReadModel)container.Resolve<IReadFromReadModel>();
+            //var reader = (ReadModel.SqlReadModel)container.Resolve<IReadFromReadModel>();
 
             //var x = reader.Get<ReadModel.User>(Guid.Empty);
 

@@ -5,8 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="NEvilES" Version="0.1.0-alpha72" />
-    <PackageReference Include="NEvilES.DataStore" Version="0.1.0-alpha72" />
+    <PackageReference Include="NEvilES" Version="*" />
+    <PackageReference Include="NEvilES.DataStore" Version="*" />
     <PackageReference Include="Autofac" Version="4.3.0" />
     <PackageReference Include="Npgsql" Version="*" />
     <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="*" />

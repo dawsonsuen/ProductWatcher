@@ -5,10 +5,9 @@
     <RuntimeIdentifiers>win7-x64;ubuntu.14.04-x64;linux-arm;win-arm</RuntimeIdentifiers>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="1.1.0" />
-    <PackageReference Include="Microsoft.Extensions.Configuration" Version="1.1.0" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="1.1.0" />
-    <PackageReference Include="Microsoft.AspNetCore.WebUtilities" Version="1.1.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.0.0" />
     <ProjectReference Include="../ProductWatcher/ProductWatcher.csproj" Version="*" />
     <ProjectReference Include="../ProductWatcher.ES.ReadModel/ProductWatcher.ES.ReadModel.csproj" Version="*" />
     <PackageReference Include="StructureMap" Version="4.4.5" />

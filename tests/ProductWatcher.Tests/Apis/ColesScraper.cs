@@ -83,7 +83,7 @@ namespace ProductWatcher.Tests
             //Do this coz deep equalz be ballin up
             var expectedModelStringfiled = JsonConvert.SerializeObject(expectedModel);
 
-            var product = await _scraper.GetProduct(CokeTestDataNotOnSpecial);
+            var product = await _scraper.GetProductAsync(CokeTestDataNotOnSpecial);
             var productStringified = JsonConvert.SerializeObject(product);
 
             Assert.Equal(expectedModelStringfiled, productStringified);
@@ -92,7 +92,7 @@ namespace ProductWatcher.Tests
         [Fact]
         public override async Task Integreation_Get_Product_Price_Should_WorkAsync()
         {
-            var result = await _scraper.Get("8464796");
+            var result = await _scraper.GetAsync("8464796");
 
             Assert.NotNull(result);
         }
@@ -100,7 +100,7 @@ namespace ProductWatcher.Tests
         [Fact]
         public override async Task Integreation_Search_Should_WorkAsync()
         {
-            var searchResults = await _scraper.Search("candles");
+            var searchResults = await _scraper.SearchAsync("candles");
 
             Assert.NotNull(searchResults);
         }

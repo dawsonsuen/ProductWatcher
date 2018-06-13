@@ -16,14 +16,14 @@ namespace ProductWatcher.Apis.Woolworths
         public const string PRICE_URL = "https://www.woolworths.com.au/apis/ui/product/detail/{0}";
         public const string SEARCH_URL = "https://www.woolworths.com.au/apis/ui/Search/products?IsSpecial=false&PageNumber=1&PageSize={1}&SearchTerm={0}&SortType=Personalised";
 
-        public async Task<string> Get(string productCode)
+        public async Task<string> GetAsync(string productCode)
         {
             var priceUrl = string.Format(PRICE_URL, productCode);
             var data = await priceUrl.GetStringAsync();
             return data;
         }
 
-        public async Task<Product> GetProduct(string rawData)
+        public async Task<Product> GetProductAsync(string rawData)
         {
             var model = JsonConvert.DeserializeObject<Apis.Woolworths.Models.ProductModel>(rawData);
             var product = new ProductWatcher.Models.Product();
@@ -53,9 +53,9 @@ namespace ProductWatcher.Apis.Woolworths
             return product;
         }
 
-        public async Task<string> Search(string searchTerm) => await Search(searchTerm, "35");
+        public async Task<string> SearchAsync(string searchTerm) => await SearchAsync(searchTerm, "35");
 
-        public async Task<string> Search(string searchTerm, string storeData)
+        public async Task<string> SearchAsync(string searchTerm, string storeData)
         {
             var a = string.Format(SEARCH_URL, WebUtility.UrlEncode(searchTerm), "35");
 
@@ -64,7 +64,7 @@ namespace ProductWatcher.Apis.Woolworths
             return b;
         }
 
-        public async Task<Search[]> GetSearchModel(string rawData)
+        public async Task<Search[]> GetSearchModelAsync(string rawData)
         {
             var b = JsonConvert.DeserializeObject<Woolworths.Models.SearchModel>(rawData);
 
@@ -84,7 +84,8 @@ namespace ProductWatcher.Apis.Woolworths
                     Description = product.Description,
                     ProductCode = product.Stockcode.ToString(),
                     Amount = product.Price.Value,
-                    CupSting = product.CupString
+                    CupSting = product.CupString,
+                    ImageUrl = product.MediumImageFile
                 });
             }
 

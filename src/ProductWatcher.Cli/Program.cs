@@ -58,11 +58,11 @@ namespace ProductWatcher.Cli
 
                             var scraper = allScrapers.Where(x => x.CompanyName == item.Company).SingleOrDefault();
 
-                            var rawData = await scraper.Get(item.Code);
+                            var rawData = await scraper.GetAsync(item.Code);
                             data.RawData = rawData;
 
                             LockInsert(db, data);
-                            var productModel = await scraper.GetProduct(data.RawData);
+                            var productModel = await scraper.GetProductAsync(data.RawData);
                             data.ProductModel = JsonConvert.SerializeObject(productModel);
                             LockUpdate(db, data);
 

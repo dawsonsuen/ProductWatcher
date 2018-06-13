@@ -29,6 +29,7 @@ namespace ProductWatcher.Search.Cli
     {
         public static IConfigurationRoot Configuration { get; set; }
         public static IContainer Container { get; set; }
+        public static List<DbModels.Product> products = new List<DbModels.Product>();
         public static object _lock = new object();
         public static void Main(string[] args)
         {
@@ -54,8 +55,8 @@ namespace ProductWatcher.Search.Cli
 
             using (Container)
             {
-                var allScrapers = Container.GetAllInstances<IScrapeProduct>().Where(x => !x.GetType().GetTypeInfo().IsAbstract && !x.Alcohol);
-                var db = Container.TryGetInstance<IDatabase>();
+                var allScrapers = Container.GetAllInstances<IScrapeProduct>().Where(x => !x.GetType().GetTypeInfo().IsAbstract);
+                Database db = null;//Container.TryGetInstance<IDatabase>();
                 Parallel.ForEach(allScrapers, (scraper) =>
                 {
                     bool notFailed = true;
@@ -88,58 +89,37 @@ namespace ProductWatcher.Search.Cli
 
         private static void TryGetStuff(IScrapeProduct scraper, string search, IDatabase db)
         {
-            var a = scraper.Search(search).Result;
-            var b = scraper.GetSearchModel(a).Result;
+            var a = scraper.SearchAsync(search).Result;
+            var b = scraper.GetSearchModelAsync(a).Result;
 
-            //  Console.WriteLine($"Searching {scraper.CompanyName} for {search}....");
-            //  Console.WriteLine(" ------------------ ");
-            //  if (debug)
-            //  {
-            //      Console.WriteLine(a);
-            //  }
+             Console.WriteLine($"Searching {scraper.CompanyName} for {search}....");
+             Console.WriteLine(" ------------------ ");
+             if (true)
+             {
+                //Console.WriteLine(a);
+             }
 
-            // if (scraper is Apis.Coles.Scraper)
-            // {
-            //     foreach (var item in b)
-            //     {
-            //         lock (_lock)
-            //         {
-
-            //         }
-            //         // Console.WriteLine("${0} - {1}  {2}.{3}", item.Amount, item.CupSting, item.Name, item.Brand);
-            //     }
-            // }
-            // else
-            // {
-
-            //var left = db.Query<DbModels.Product>().Where(x => b.Any(y => y.ProductCode == x.Code));
-            //var newsss = b.Where(x => left.Any(y => y.Code == x.ProductCode));
             List<DbModels.Product> products = new List<DbModels.Product>();
             foreach (var item in b)
             {
-                lock (_lock)
-                {
-                    if (!(db.Query<DbModels.Product>().Any(x => x.Code == item.ProductCode)))
-                    {
-                        products.Add(new DbModels.Product()
-                        {
-                            Id = Guid.NewGuid(),
-                            Code = item.ProductCode,
-                            Company = item.Company,
-                            Name = $"{item.Brand} - {item.Name} - {item.Description}"
-                        });
-                    }
-                }
+                // lock (_lock)
+                // {
+                //     if (!(db.Query<DbModels.Product>().Any(x => x.Code == item.ProductCode)))
+                //     {
+                //         products.Add(new DbModels.Product()
+                //         {
+                //             Id = Guid.NewGuid(),
+                //             Code = item.ProductCode,
+                //             Company = item.Company,
+                //             Name = $"{item.Brand} - {item.Name} - {item.Description}"
+                //         });
+                //     }
+                // }
 
-                // Console.WriteLine("${0} - {1}  {2}.{3}", item.Amount, item.CupSting, item.Description, item.Brand);
+                Console.WriteLine("${0} - {1}  {2}.{3}", item.Amount, item.CupSting, item.Name, item.Brand);
             }
 
-            lock (_lock)
-            {
-                db.InsertBulk(products);
-            }
 
-            //}
 
         }
 
@@ -148,7 +128,7 @@ namespace ProductWatcher.Search.Cli
             var container = new Container();
             container.Configure((x) =>
             {
-                x.For<IDatabase>().Use(new Database(Configuration.GetConnectionString("postgres"), DatabaseType.PostgreSQL, Npgsql.NpgsqlFactory.Instance));
+                //x.For<IDatabase>().Use(new Database(Configuration.GetConnectionString("postgres"), DatabaseType.PostgreSQL, Npgsql.NpgsqlFactory.Instance));
                 x.Scan(scan =>
                 {
                     scan.TheCallingAssembly();

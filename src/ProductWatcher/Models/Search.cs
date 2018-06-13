@@ -10,7 +10,7 @@ namespace ProductWatcher.Models
         public decimal Amount { get; set; }
         //public decimal SavingAmount { get; set; }
         public string ImageUrl { get; set; }
-        public string Brand { get; internal set; }
-        public string CupSting { get; internal set; }
+        public string Brand { get; set; }
+        public string CupSting { get; set; }
     }
 }

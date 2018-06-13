@@ -27,8 +27,8 @@ namespace ProductWatcher.Tests
         [Fact]
         public override async Task Integreation_Get_Product_Price_Should_WorkAsync()
         {
-            var data = await _scraper.Get("42605");
-            var product = await _scraper.GetProduct(data);
+            var data = await _scraper.GetAsync("42605");
+            var product = await _scraper.GetProductAsync(data);
 
             Assert.NotNull(product);
         }
@@ -36,8 +36,8 @@ namespace ProductWatcher.Tests
         [Fact]
         public  async Task Should_not_error_parsing_json_when_item_is_not_availble()
         {
-            var data = await _scraper.Get("764819");
-            var product = await _scraper.GetProduct(data);
+            var data = await _scraper.GetAsync("764819");
+            var product = await _scraper.GetProductAsync(data);
 
             Assert.NotNull(product);
         }
@@ -45,17 +45,17 @@ namespace ProductWatcher.Tests
         [Fact]
         public override async Task Integreation_Search_Should_WorkAsync()
         {
-            var data = await _scraper.Search("candles");
-            var products = await _scraper.GetSearchModel(data);
-            var product = await _scraper.GetProduct(products[0].ProductCode);
+            var data = await _scraper.SearchAsync("candles");
+            var products = await _scraper.GetSearchModelAsync(data);
+            var product = await _scraper.GetProductAsync(products[0].ProductCode);
             Assert.NotNull(product);
         }
 
         [Fact]
         public override async Task Serialize_As_External_Domain_Model()
         {
-            var data = await _scraper.Search("washing detergent");
-            var woolworthsDomainModel = await _scraper.GetSearchModel(data);
+            var data = await _scraper.SearchAsync("washing detergent");
+            var woolworthsDomainModel = await _scraper.GetSearchModelAsync(data);
 
             var a = woolworthsDomainModel.ToList();
             Assert.False(a.Any(x => a.Where(y => y.ProductCode == x.ProductCode).Count() > 1));
